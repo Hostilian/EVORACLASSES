@@ -1,0 +1,29 @@
+/* Activity 02A — Twenties stylesheet
+   Solution for INF13207L practical exercise */
+
+h1 {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+h2 {
+  color: gray;
+  margin-left: 100px;
+}
+
+p {
+  font-size: small;
+  font-family: sans-serif;
+  margin-left: 100px;
+}
+
+img {
+  float: right;
+  margin: 0 12px;
+}
+
+p em,
+p strong {
+  color: blue;
+  font-weight: bold;
+}

@@ -1,0 +1,68 @@
+/* Activity 04.2 — Responsive Web Design (Jenware)
+   Solution for INF13207L practical exercise */
+
+/* === BASE STYLES (mobile-first) === */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+
+/* Responsive images: never wider than browser */
+img { max-width: 100%; display: block; }
+
+header { background: #4a4a4a; color: white; padding: 1em; }
+header h1 { margin-bottom: .5em; }
+
+nav ul { list-style: none; overflow: auto; }
+nav li { float: left; }
+nav li a { display: block; padding: .5em 1em; color: white; text-decoration: none; }
+nav li a:hover { background: #666; }
+
+.content { }
+
+.products { padding: 1em; }
+.products h2 { margin-bottom: .5em; border-bottom: 2px solid #ccc; padding-bottom: .3em; }
+.products article { margin-bottom: 1.5em; overflow: auto; }
+
+.testimonials { background: #fff; padding: 1em; }
+.testimonials blockquote { border-left: 3px solid #4a4a4a; padding: .5em 1em; margin: .5em 0; color: #555; }
+
+footer { background: #333; color: white; text-align: center; padding: 1em; }
+
+/* === 481px AND ABOVE === */
+@media (min-width: 481px) {
+
+  .products article img {
+    float: left;
+    margin: 0 6px;       /* top/bottom: 0, left/right: 6px */
+  }
+
+  /* Stop text wrapping after image */
+  .more { clear: left; }
+
+  .products { margin: 1em; }
+
+  .testimonials {
+    border-radius: 16px;
+    margin: 1em 5%;      /* 1em top/bottom, 5% left/right */
+  }
+}
+
+/* === 780px AND ABOVE === */
+@media (min-width: 780px) {
+
+  .products {
+    float: left;
+    width: 55%;
+  }
+
+  .testimonials {
+    float: right;
+    /* Same top distance as products */
+  }
+
+  /* Page content max 1024px, centred */
+  .content {
+    max-width: 1024px;
+    margin: 0 auto;      /* centres the block horizontally */
+  }
+}

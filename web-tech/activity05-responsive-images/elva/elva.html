@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elva — Responsive Images (Activity 05)</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 1em; }
+    img { max-width: 100%; display: block; margin: 1em 0; }
+    h1, h2 { border-bottom: 1px solid #ccc; padding-bottom: .3em; }
+    .note { background: #fffbe6; border-left: 3px solid #f0b429; padding: .5em 1em; margin: 1em 0; font-size: .9em; }
+  </style>
+</head>
+<body>
+  <h1>Activity 05 — Responsive Images</h1>
+
+  <!-- Image 1: Regular image -->
+  <h2>Image 1 — Standard (not responsive)</h2>
+  <img src="https://via.placeholder.com/800x600?text=elva-800w.jpg" alt="Elva portrait 800w">
+
+  <!-- Image 2: Art direction with <picture> (Part B)
+       ≤799px: close portrait version
+       ≥800px: wide shot version -->
+  <h2>Image 2 — Art Direction via &lt;picture&gt; (Part B)</h2>
+  <div class="note">📐 Resize the browser window to see a different image load!</div>
+  <picture>
+    <source
+      media="(max-width: 799px)"
+      srcset="https://via.placeholder.com/480x640?text=elva-480w-close-portrait.jpg">
+    <source
+      media="(min-width: 800px)"
+      srcset="https://via.placeholder.com/800x600?text=elva-800w.jpg">
+    <img src="https://via.placeholder.com/800x600?text=elva-800w.jpg" alt="Elva">
+  </picture>
+
+  <!-- Image 3: Resolution switching with srcset (Part A)
+       ≤600px: 480w version
+       >600px: 800w version -->
+  <h2>Image 3 — Resolution Switching via srcset (Part A)</h2>
+  <div class="note">📐 This image serves a smaller file on small screens to save bandwidth!</div>
+  <img
+    srcset="https://via.placeholder.com/480x360?text=elva-fairy-480w.jpg 480w,
+            https://via.placeholder.com/800x600?text=elva-fairy-800w.jpg 800w"
+    sizes="(max-width: 600px) 480px,
+           800px"
+    src="https://via.placeholder.com/800x600?text=elva-fairy-800w.jpg"
+    alt="Elva dressed as a fairy">
+
+  <h2>How it works</h2>
+  <table style="border-collapse:collapse; width:100%">
+    <tr style="background:#f5f5f5">
+      <th style="border:1px solid #ccc; padding:.5em">Technique</th>
+      <th style="border:1px solid #ccc; padding:.5em">Element</th>
+      <th style="border:1px solid #ccc; padding:.5em">Use when</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:.5em">Resolution switching</td>
+      <td style="border:1px solid #ccc; padding:.5em"><code>srcset + sizes</code></td>
+      <td style="border:1px solid #ccc; padding:.5em">Same image, different sizes for bandwidth saving</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:.5em">Art direction</td>
+      <td style="border:1px solid #ccc; padding:.5em"><code>&lt;picture&gt;</code></td>
+      <td style="border:1px solid #ccc; padding:.5em">Completely different image for different viewports</td>
+    </tr>
+  </table>
+</body>
+</html>

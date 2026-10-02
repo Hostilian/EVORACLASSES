@@ -1,0 +1,72 @@
+/* Activity 02B — Black Goose Bistro: Font & Text Styling
+   Solution for INF13207L practical exercise */
+
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+h1 {
+  font-family: 'Marko One', serif;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: .1em .1em .2em lightslategray;
+}
+
+h2 {
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Adjacent sibling: first p immediately after h2 */
+h2 + p {
+  text-align: center;
+  font-style: italic;
+}
+
+p, dl {
+  font-size: calc(1em * 7/8);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dt strong {
+  font-style: italic;
+  color: maroon;
+}
+
+div#info {
+  color: teal;
+  text-align: center;
+}
+
+div#info p {
+  color: gray;
+  font-style: italic;
+}
+
+div#header p {
+  color: gray;
+  text-align: center;
+}
+
+.price {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: gray;
+}
+
+.label {
+  font-weight: bold;
+  font-style: normal;
+  font-variant: small-caps;
+}
+
+p.warning {
+  font-size: x-small;
+  color: red;
+}

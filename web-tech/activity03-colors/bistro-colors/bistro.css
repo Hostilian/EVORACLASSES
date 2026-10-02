@@ -1,0 +1,46 @@
+/* Activity 03 — Colors & Backgrounds
+   Solution for INF13207L practical exercise */
+
+/* Part A — Colors */
+h1 {
+  color: #993399;    /* rgb(153, 51, 153) — purple */
+  font-size: 140%;
+}
+
+h2 {
+  color: #cc6600;    /* rgb(204, 102, 0) — orange-brown */
+}
+
+body {
+  background-color: #d2dc9d;   /* rgb(210, 220, 157) — light green */
+  background-image: url(images/bullseye.png);   /* Part B step 1 */
+}
+
+div#header {
+  background-color: rgba(255, 255, 255, 0.5);   /* white 50% transparent */
+  /* Part B final shorthand: */
+  background: rgba(255,255,255,0.5) url(images/blackgoose.png) no-repeat center 100px fixed;
+}
+
+/* Link pseudo-classes — ORDER IS CRITICAL: :link :visited :focus :hover :active */
+a:link {
+  color: #993399;
+}
+
+a:visited {
+  color: #937393;
+}
+
+a:focus {
+  color: maroon;
+  background-color: #ffd9d9;
+}
+
+a:hover {
+  color: #c700f2;
+  background-color: white;
+}
+
+a:active {
+  color: red;
+}
