@@ -1,0 +1,33 @@
+#separator:tab
+#html:true
+#tags column:3
+#deck:Software Methods — INF13204L
+
+What is the project for INF13204L? Describe it in one sentence.	<b>NEEI LAN Party 2026</b> — a software system for managing registrations (~5000) and tournaments for a LAN Party event, including payments for external participants and real-time tournament results.	MDS_project
+How many registrations does the NEEI LAN Party 2026 expect?	<b>~5000 registrations</b>. This is an estimate — not a hard max, not 5000 simultaneous users.	MDS_project
+List the 5 user types (utilizadores) in the LAN Party system.	<b>U01</b> — University participant (inscreve-se, gratuito)<br><b>U02</b> — External participant (pode pagar)<br><b>U03</b> — NEEI organisation (manages everything)<br><b>U04</b> — Tournament manager (manages assigned tournament)<br><b>U05</b> — Visitor/spectator (view only, no registration)	MDS_project
+What is feature F04? Who can use it?	<b>F04 — Inscrever-se na LAN Party</b> (Register for the event)<br>Users: <b>U01</b> (university) and <b>U02</b> (external)<br>Origin: E (Explicit in client request)	MDS_project
+What is feature F10? Who can use it?	<b>F10 — Iniciar um pagamento aplicável</b> (Start a payment)<br>User: <b>U02</b> only (external participants may need to pay)<br>Origin: E	MDS_project
+What do the origin codes E, D, P mean in the project?	<b>E</b> — Explicit (stated by client)<br><b>D</b> — Derived (needed to make the system work, needs validation)<br><b>P</b> — Proposed (additional idea, needs client approval)	MDS_project
+What does system restriction R07 say?	<b>R07 — Role-based access</b>: Management of registrations, payments, and results must be limited to authorised users. Each participant can only access their own private data.	MDS_project
+What does R09 say? Why is it a non-functional requirement?	<b>R09 — Payment consistency</b>: A repeated or invalid payment confirmation must NOT cause a duplicate charge or unauthorised activation. This is about <b>reliability and integrity</b> — a non-functional quality.	MDS_project
+What does R03 say? What type of requirement is it?	<b>R03 — Real-time results</b>: Tournament results must be viewable in real time. Type: <b>performance/non-functional</b>. Needs a measurable limit (max delay) agreed with client.	MDS_project
+What is the SDLC? Name the phases.	<b>Software Development Life Cycle</b>:<br>1. Requirements → 2. Design → 3. Implementation → 4. Testing → 5. Deployment → 6. Maintenance	SW_sdlc
+Difference between Waterfall and Agile?	<b>Waterfall</b>: linear, each phase complete before next, hard to change<br><b>Agile</b>: iterative, deliver working software in short cycles, adapt to change	SW_methods
+Name the 4 Agile Manifesto values.	1. Individuals and interactions over processes and tools<br>2. <b>Working software</b> over documentation<br>3. <b>Customer collaboration</b> over contract negotiation<br>4. Responding to change over following a plan	SW_agile
+The 3 Scrum roles?	<b>Product Owner</b> — owns backlog, sets priorities<br><b>Scrum Master</b> — facilitates, removes blockers (NOT a manager)<br><b>Development Team</b> — self-organising, builds the product	SW_scrum
+The 5 Scrum events?	1. <b>Sprint</b> (1–4 weeks)<br>2. <b>Sprint Planning</b><br>3. <b>Daily Scrum</b> (15 min standup)<br>4. <b>Sprint Review</b> (demo to stakeholders)<br>5. <b>Sprint Retrospective</b> (improve process)	SW_scrum
+The 3 Scrum artifacts?	<b>Product Backlog</b> — all features (PO manages)<br><b>Sprint Backlog</b> — this sprint's tasks<br><b>Increment</b> — working, shippable software	SW_scrum
+Write the User Story template.	<b>"As a [user], I want [feature] so that [benefit]."</b><br>Example for LAN Party: "As an external participant (U02), I want to pay online so that I can complete my registration."	SW_scrum
+What is Kanban? How is it different from Scrum?	Kanban = visual workflow with <b>WIP limits</b>. No sprints, no fixed roles. Continuous flow.<br>Board: To Do → In Progress → Done.<br>Scrum: time-boxed sprints, fixed team roles.	SW_kanban
+What is a Use Case diagram? Name its elements.	Shows interactions between <b>actors</b> and the system.<br>Elements: Actor (stick figure), Use Case (oval), System boundary (rectangle), Association (line), Include «include», Extend «extend»	SW_uml
+What is a Class diagram?	Shows <b>structure</b>: classes, attributes, methods, relationships (Association, Inheritance, Composition, Aggregation, Dependency).	SW_uml
+What is a Sequence diagram?	Shows <b>time-ordered interactions</b> between objects. Uses: lifelines (dashed vertical), messages (horizontal arrows), activation boxes.	SW_uml
+Functional vs non-functional requirements?	<b>Functional</b>: WHAT the system does.<br>Example: "User can register for the LAN Party."<br><b>Non-functional</b>: HOW WELL it does it.<br>Example: "System handles 5000 registrations without degradation." (performance)	SW_methods
+Name the 4 testing levels in order.	1. <b>Unit</b> — individual functions<br>2. <b>Integration</b> — components together<br>3. <b>System</b> — full end-to-end<br>4. <b>Acceptance (UAT)</b> — user confirms requirements	SW_testing
+Black-box vs white-box testing?	<b>Black-box</b>: tests behaviour without seeing code. Input → check output.<br><b>White-box</b>: tests internal code paths. Tester sees the code.	SW_testing
+What does SOLID stand for?	<b>S</b>ingle Responsibility<br><b>O</b>pen/Closed<br><b>L</b>iskov Substitution<br><b>I</b>nterface Segregation<br><b>D</b>ependency Inversion	SW_solid
+Basic Git commands?	<code>git clone</code> — copy repo<br><code>git add .</code> — stage changes<br><code>git commit -m "msg"</code> — save snapshot<br><code>git push</code> — upload<br><code>git pull</code> — download + merge	SW_git
+What is a pull request?	Request to <b>merge your branch</b> into another. Enables code review before merging.	SW_git
+What is CI/CD?	<b>CI</b> — auto build + test on every push<br><b>CD</b> — auto deploy after tests pass	SW_git
+What is the MVC design pattern?	<b>Model</b> — data + business logic<br><b>View</b> — UI/presentation<br><b>Controller</b> — handles input, coordinates Model and View	SW_patterns

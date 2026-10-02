@@ -1,0 +1,62 @@
+#separator:tab
+#html:true
+#tags column:3
+#deck:Web Technologies — INF13207L
+
+What does HTTP 404 mean?	<b>File Not Found</b> — server received the request but couldn't find the resource.<br>Seen in Python logs: <code>code 404, message File not found</code>	T00_http
+What command starts a local Python web server on port 8080?	<code>python3 -m http.server 8080</code><br>Access at: <code>http://localhost:8080/index.html</code>	T00_http
+What is the difference between HTTP and HTTPS?	<b>HTTP</b> = plain text, unencrypted<br><b>HTTPS</b> = encrypted with SSL/TLS<br>Passwords are exposed over plain HTTP!	T00_http
+Common web ports: HTTP / HTTPS / dev server?	HTTP = <b>80</b> · HTTPS = <b>443</b> · Dev = <b>8080</b> or <b>8000</b>	T00_http
+What does <code>ping</code> do?	Tests <b>connectivity</b> with a server and shows response times.	T00_tools
+What does <code>curl</code> do?	Sends HTTP requests from command line — like a browser without a UI.	T00_tools
+What does <code>nmap</code> do?	Scans a server to see which <b>ports are open/listening</b>.	T00_tools
+How do you add a favicon to an HTML page?	In <code>&lt;head&gt;</code>:<br><code>&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;</code>	T00_http
+What does <code>&lt;!DOCTYPE html&gt;</code> do? Where must it go?	Declares <b>HTML5 standards mode</b>. Must be <b>absolute line 1</b> — before everything.	T01_HTML
+Write the complete HTML5 document skeleton.	<code>&lt;!DOCTYPE html&gt;<br>&lt;html lang="en"&gt;<br>&lt;head&gt;<br>&nbsp;&lt;meta charset="utf-8"&gt;<br>&nbsp;&lt;title&gt;Title&lt;/title&gt;<br>&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&lt;h1&gt;Heading&lt;/h1&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</code>	T01_HTML
+TRUE/FALSE: &lt;head&gt; contains visible content.	<b>FALSE.</b> Only metadata. All visible content goes in &lt;body&gt;.	T01_HTML
+Name 4 void/self-closing elements.	<code>&lt;br&gt;</code> <code>&lt;hr&gt;</code> <code>&lt;img&gt;</code> <code>&lt;meta&gt;</code> <code>&lt;link&gt;</code> <code>&lt;input&gt;</code> — no closing tag needed.	T01_tags
+Difference between &lt;div&gt; and &lt;span&gt;?	<code>&lt;div&gt;</code> = <b>block</b> — new line, full width.<br><code>&lt;span&gt;</code> = <b>inline</b> — stays in text flow.	T01_tags
+What are the 2 REQUIRED attributes of &lt;img&gt;?	<code>src</code> — image path<br><code>alt</code> — description (accessibility + fallback). Both required!	T02_images
+Difference between absolute and relative URL?	<b>Absolute:</b> <code>http://example.com/page.html</code> — full address<br><b>Relative:</b> <code>../index.html</code> — path from current file	T02_links
+File at <code>site/pages/about.html</code> — path to <code>site/index.html</code>?	<code>../index.html</code> — <code>..</code> goes up one folder level.	T02_links
+File at <code>a/b/c/page.html</code> — path to <code>a/index.html</code>?	<code>../../index.html</code> — <code>../..</code> goes up two levels.	T02_links
+How do you create a same-page fragment link?	Target: <code>&lt;h2 id="salmon"&gt;Salmon&lt;/h2&gt;</code><br>Link: <code>&lt;a href="#salmon"&gt;Go to Salmon&lt;/a&gt;</code>	T02_links
+Difference between SVG and PNG?	<b>SVG</b> = vector, scales without pixelation, CSS-controllable<br><b>PNG</b> = raster, quality degrades when enlarged	T02_images
+What does <code>div p</code> vs <code>div, p</code> select?	<code>div p</code> = all &lt;p&gt; INSIDE div (descendant — space)<br><code>div, p</code> = BOTH div AND p separately (grouping — comma)<br>⚠️ #1 exam mistake!	T03_selectors
+What does the child combinator <code>&gt;</code> do?	<code>div &gt; p</code> = only <b>direct children</b>. Not grandchildren.<br>vs <code>div p</code> = all descendants at any depth.	T03_selectors
+What does adjacent sibling <code>+</code> select?	<code>h2 + p</code> = first &lt;p&gt; <b>immediately after</b> h2 at same level.<br>Exercise 02B: <code>h2 + p { text-align: center; font-style: italic; }</code>	T03_selectors
+Specificity ranking low to high?	Element <code>p</code> = (0,0,1)<br>Class <code>.price</code> = (0,1,0)<br>ID <code>#header</code> = (1,0,0)	T03_selectors
+Write all colour notations with examples.	Named: <code>red</code><br>Hex: <code>#993399</code><br>RGB: <code>rgb(153,51,153)</code><br>RGBa: <code>rgba(255,255,255,0.5)</code><br>HSL: <code>hsl(300,50%,40%)</code>	T03_colors
+When can you shorten hex to 3 digits?	Only when each pair has identical doubled digits:<br>✅ <code>#FF0066</code> → <code>#F06</code><br>❌ <code>#C8B2E6</code> → cannot shorten	T03_colors
+Difference: <code>opacity: 0.5</code> vs <code>rgba()</code>?	<code>opacity</code> = entire element + ALL children transparent<br><code>rgba()</code> = only that colour transparent. Children unaffected.	T03_colors
+Correct pseudo-class order?	<b>:link → :visited → :focus → :hover → :active</b><br>Memory: <b>LoVe Fears HAte</b>	T03_pseudo
+Write Exercise 03 link pseudo-class CSS.	<code>a:link { color: #993399; }<br>a:visited { color: #937393; }<br>a:focus { color: maroon; }<br>a:hover { color: #c700f2; background-color: white; }<br>a:active { color: red; }</code>	T03_pseudo
+How do you link a Google Font?	In &lt;head&gt; before CSS: <code>&lt;link href="https://fonts.googleapis.com/css?family=Marko+One" rel="stylesheet"&gt;</code><br>Then CSS: <code>font-family: 'Marko One', serif;</code>	T03_fonts
+What is <code>font-size: calc(1em * 7/8)</code>?	Calculates 7/8 of parent font-size = 0.875em = 87.5%.<br>Exercise 02B: <code>p, dl { font-size: calc(1em * 7/8); }</code>	T03_fonts
+Write Exercise 02B text-shadow on h1.	<code>text-shadow: .1em .1em .2em lightslategray;</code><br>h-offset, v-offset, blur, color. NO spread value.	T03_fonts
+Box model layers inside out?	<b>Content → Padding → Border → Margin</b>	T03_boxmodel
+Padding 4-value order?	<b>Top Right Bottom Left</b> (clockwise). Memory: <b>TRouBLe</b>	T03_boxmodel
+Why won't a border show with width + color only?	Missing <code>border-style</code> — default is <code>none</code>!<br>Fix: <code>border: 3px solid red;</code>	T03_boxmodel
+What is margin collapse?	Vertical margins don't add — largest wins.<br>2em + 4em = 4em, not 6em.	T03_boxmodel
+Difference: text-shadow vs box-shadow spread?	<code>text-shadow</code>: NO spread (h v blur color)<br><code>box-shadow</code>: HAS spread (h v blur spread color)	T03_boxmodel
+Exercise 03 bistro background shorthand final answer?	<code>background: url(images/blackgoose.png) no-repeat center 100px fixed;</code>	T03_backgrounds
+What does <code>background-attachment: fixed</code> do?	Background stays fixed to viewport — does NOT scroll with page.	T03_backgrounds
+CSS display values?	<code>block</code> — new line, full width<br><code>inline</code> — in text flow<br><code>inline-block</code> — inline with dimensions<br><code>none</code> — removed from layout<br><code>flex</code> / <code>grid</code>	T03_display
+What does float do? What problem can it cause?	Removes from flow, content wraps around it.<br>⚠️ Container collapses to 0 height if all children are floated.	T03_float
+How do you fix a collapsed float container?	<code>overflow: auto;</code> on the container.	T03_float
+What is the <code>clear</code> property?	Stops element from sitting beside floated elements.<br><code>clear: both</code> most common — clears both sides.	T03_float
+CSS position values?	<code>static</code> — default<br><code>relative</code> — offset, keeps space<br><code>absolute</code> — removed from flow<br><code>fixed</code> — viewport-locked<br><code>sticky</code> — relative until scroll	T03_position
+Write the viewport meta tag.	<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code><br>Required for responsive! Without it → mobile ignores media queries.	T04_responsive
+How do you make images never wider than browser?	<code>img { max-width: 100%; }</code>	T04_responsive
+What is a media query? Write the syntax.	Applies CSS only when a condition is true:<br><code>@media (min-width: 481px) { img { float: left; } }</code>	T04_mediaqueries
+Write Jenware 481px media query.	<code>@media (min-width: 481px) {<br>&nbsp;&nbsp;.products article img { float: left; margin: 0 6px; }<br>&nbsp;&nbsp;.more { clear: left; }<br>&nbsp;&nbsp;div.products { margin: 1em; }<br>&nbsp;&nbsp;section.testimonials { border-radius: 16px; margin: 1em 5%; }<br>}</code>	T04_mediaqueries
+Write Jenware 780px media query.	<code>@media (min-width: 780px) {<br>&nbsp;&nbsp;div.products { float: left; width: 55%; }<br>&nbsp;&nbsp;section.testimonials { float: right; }<br>&nbsp;&nbsp;div.content { max-width: 1024px; margin: 0 auto; }<br>}</code>	T04_mediaqueries
+What does <code>margin: 0 auto</code> do?	Centres a block element horizontally. Requires a defined width/max-width.	T04_mediaqueries
+Difference: srcset vs &lt;picture&gt;?	<code>srcset</code> = same image, different resolutions (browser chooses)<br><code>&lt;picture&gt;</code> = different images for different conditions (you choose)	T05_responsive_images
+Write the srcset for Exercise 05 (elva-fairy).	<code>&lt;img srcset="elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w" sizes="(max-width: 600px) 480px, 800px" src="elva-fairy-800w.jpg" alt="Elva"&gt;</code>	T05_responsive_images
+Write the &lt;picture&gt; element for Exercise 05 Part B.	<code>&lt;picture&gt;<br>&nbsp;&lt;source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg"&gt;<br>&nbsp;&lt;source media="(min-width: 800px)" srcset="elva-800w.jpg"&gt;<br>&nbsp;&lt;img src="elva-800w.jpg" alt="Elva"&gt;<br>&lt;/picture&gt;</code>	T05_responsive_images
+TRUE/FALSE: &lt;img&gt; inside &lt;picture&gt; is optional.	<b>FALSE.</b> Always required — fallback + alt text for all sources.	T05_responsive_images
+TRAP: hover CSS is correct but doesn't work — why?	Wrong pseudo-class order. Must be :link :visited :focus :hover :active.	exam_trap
+TRAP: no border appears even with width and color set — why?	Missing border-style. Default is none. Add: <code>border-style: solid;</code>	exam_trap
+TRAP: em vs rem?	<code>em</code> = relative to parent (can compound). <code>rem</code> = always relative to &lt;html&gt; root.	exam_trap
+TRAP: opacity vs rgba for transparent backgrounds?	Use <code>rgba()</code> — <code>opacity</code> makes the entire element AND its children transparent.	exam_trap

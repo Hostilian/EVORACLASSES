@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#tags column:3
+#deck:Data Analysis — INF14387L
+
+What is ETL? Name and describe each step.	<b>Extract, Transform, Load</b><br><b>Extract</b> — get data from sources (databases, APIs, files)<br><b>Transform</b> — clean, reshape, aggregate, standardise<br><b>Load</b> — write to destination (data warehouse, database)	DATA_etl
+Difference: structured vs semi-structured vs unstructured data?	<b>Structured</b> — tables, strict schema (SQL, CSV)<br><b>Semi-structured</b> — some organisation, no strict schema (JSON, XML)<br><b>Unstructured</b> — no predefined format (text, images, video)	DATA_types
+Write SQL to get all columns from products where price > 50, sorted by price.	<code>SELECT * FROM products<br>WHERE price &gt; 50<br>ORDER BY price;</code>	DATA_sql
+Write SQL to count employees per department, show only depts with more than 5.	<code>SELECT dept, COUNT(*) AS total<br>FROM employees<br>GROUP BY dept<br>HAVING COUNT(*) &gt; 5;</code>	DATA_sql
+Difference between WHERE and HAVING in SQL?	<code>WHERE</code> — filters <b>rows</b> before grouping<br><code>HAVING</code> — filters <b>groups</b> after GROUP BY	DATA_sql
+SQL JOIN types — describe each.	<b>INNER JOIN</b> — rows matching in BOTH tables<br><b>LEFT JOIN</b> — ALL left rows + matching right (NULL if no match)<br><b>RIGHT JOIN</b> — ALL right rows + matching left<br><b>FULL OUTER JOIN</b> — ALL rows from both	DATA_sql
+SQL aggregation functions?	<code>COUNT(*)</code> — number of rows<br><code>SUM(col)</code> — total<br><code>AVG(col)</code> — average<br><code>MAX(col)</code> — highest<br><code>MIN(col)</code> — lowest	DATA_sql
+Write a SQL INNER JOIN example.	<code>SELECT orders.id, customers.name<br>FROM orders<br>INNER JOIN customers<br>ON orders.customer_id = customers.id;</code>	DATA_sql
+What is data normalisation vs standardisation?	<b>Normalisation</b> = scale to [0,1]: (x − min) / (max − min)<br><b>Standardisation</b> = mean=0, SD=1: (x − μ) / σ<br>Use standardisation when algorithm assumes Normal distribution.	DATA_cleaning
+Name 4 common data cleaning problems.	1. <b>Missing values</b> — drop, fill with mean/median/mode, interpolate<br>2. <b>Duplicates</b> — remove repeated rows<br>3. <b>Outliers</b> — cap, remove, or transform<br>4. <b>Inconsistent formats</b> — dates, currencies, capitalisation	DATA_cleaning
+Pandas: load CSV and show first 5 rows + statistics.	<code>import pandas as pd<br>df = pd.read_csv('data.csv')<br>df.head()        # first 5 rows<br>df.describe()    # statistics</code>	DATA_pandas
+What does <code>df.dropna()</code> do?	Removes all rows that contain <b>at least one NaN (missing) value</b>.	DATA_pandas
+What does <code>df.fillna(df.mean())</code> do?	Replaces all NaN values with the <b>column mean</b>.	DATA_pandas
+What does <code>df.groupby('category').mean()</code> do?	Groups rows by unique values in 'category', then calculates <b>mean of all numeric columns</b> per group.	DATA_pandas
+What does <code>df.merge(df2, on='id')</code> do?	Joins two DataFrames on the 'id' column — like a SQL INNER JOIN by default.	DATA_pandas
+Difference between supervised and unsupervised ML?	<b>Supervised</b>: labelled training data. Learn X → y. Examples: classification, regression.<br><b>Unsupervised</b>: no labels. Find hidden patterns. Examples: clustering, PCA.	DATA_ml
+What is overfitting? How do you prevent it?	Model memorises training data — performs poorly on new data.<br>Prevention: train/test split (80/20), cross-validation, regularisation, more data, simpler model.	DATA_ml
+What is a train/test split? Typical ratio?	Divide data: <b>80% training</b> (model learns from this) / <b>20% testing</b> (evaluate on unseen data).<br>Prevents overfitting measurement.	DATA_ml
+What chart type for: categories / time trend / distribution / relationship?	<b>Bar chart</b> — comparing categories<br><b>Line chart</b> — trends over time<br><b>Histogram</b> — distribution of numeric data<br><b>Scatter plot</b> — relationship between 2 variables<br><b>Box plot</b> — spread + outliers	DATA_viz
+What is PCA?	<b>Principal Component Analysis</b> — dimensionality reduction technique.<br>Finds directions (components) of maximum variance. Projects data to fewer dimensions.	DATA_ml
+What is Pearson vs Spearman correlation?	<b>Pearson</b> — measures linear relationship. Sensitive to outliers.<br><b>Spearman</b> — rank-based, measures monotonic relationship. Robust to outliers.	DATA_stats
+Write Python to standardise a DataFrame column.	<code>df['col_scaled'] = (df['col'] - df['col'].mean()) / df['col'].std()</code>	DATA_pandas
+What is a pipeline in data science?	A sequence of data processing steps (cleaning → transformation → model training → evaluation) applied consistently to training and test data.	DATA_etl
