@@ -1,0 +1,143 @@
+{
+  "checked_on": "2026-10-02",
+  "total": 604,
+  "tracks": {
+    "foundation": 279,
+    "exam_practice": 325
+  },
+  "courses": [
+    {
+      "code": "INF13207L",
+      "name": "Web Technologies",
+      "total": 302,
+      "tracks": {
+        "foundation": 147,
+        "exam_practice": 155
+      },
+      "styles": {
+        "recall": 129,
+        "write_code": 107,
+        "trace": 29,
+        "debug": 22,
+        "scenario": 13,
+        "true_false": 2
+      },
+      "combined_file": "01_INF13207L_Web_Technologies.txt",
+      "sha256": {
+        "01_INF13207L_Web_Technologies.txt": "74f9320bd3448b0c0128be05483841a7066cf56846e184bc7e8e99df966a4031",
+        "INF13207L/01_Foundations.txt": "fba3aa818ee50006d3c08028cbd30929fe8682595c5aa14698d32739930355da",
+        "INF13207L/02_Exam_Practice.txt": "fb1d96f414ba930279316d5a8f278803d1d9a82c669ab48194891c86e0548e53"
+      }
+    },
+    {
+      "code": "INF13204L",
+      "name": "Software Methods",
+      "total": 85,
+      "tracks": {
+        "foundation": 61,
+        "exam_practice": 24
+      },
+      "styles": {
+        "recall": 61,
+        "true_false": 1,
+        "scenario": 15,
+        "diagram": 3,
+        "debug": 5
+      },
+      "combined_file": "02_INF13204L_Software_Methods.txt",
+      "sha256": {
+        "02_INF13204L_Software_Methods.txt": "5ea0e17960facc7e2b89bb788af42190b5f751e3704d745a3429dd12f0476dfe",
+        "INF13204L/01_Foundations.txt": "9de032646f928f76a63ecb29ba11de1c0abdcdc11076128ce2325fe22eaf9b72",
+        "INF13204L/02_Exam_Practice.txt": "7293ae9738b0d94a337fdb801338317cbc2f4da2948fe3c78c38d0cc85128a56"
+      }
+    },
+    {
+      "code": "MAT02354L",
+      "name": "Probability and Statistics",
+      "total": 112,
+      "tracks": {
+        "foundation": 36,
+        "exam_practice": 76
+      },
+      "styles": {
+        "recall": 36,
+        "formula": 35,
+        "calculation": 39,
+        "true_false": 2
+      },
+      "combined_file": "03_MAT02354L_Probability_Statistics.txt",
+      "sha256": {
+        "03_MAT02354L_Probability_Statistics.txt": "b270199f96f755484e493703ab0ceffe16298c7491157332842d68caa8ff6230",
+        "MAT02354L/01_Foundations.txt": "c606d168d6a6608ef5641f096ff36278874093b163269f057daebf02ee0a89b4",
+        "MAT02354L/02_Exam_Practice.txt": "0dceb8e7d55c8eaf91b5e01e70389afa5ce024dc54ad3a2e082f11cefa7468f2"
+      }
+    },
+    {
+      "code": "INF14387L",
+      "name": "Data Transformation and Analysis",
+      "total": 74,
+      "tracks": {
+        "foundation": 18,
+        "exam_practice": 56
+      },
+      "styles": {
+        "recall": 18,
+        "scenario": 16,
+        "calculation": 7,
+        "debug": 7,
+        "write_code": 25,
+        "true_false": 1
+      },
+      "combined_file": "04_INF14387L_Data_Analysis.txt",
+      "sha256": {
+        "04_INF14387L_Data_Analysis.txt": "17bd3ee7788bdd591ecace355cabb9bf733a2eba6922dccd2e8ffe774b334ee3",
+        "INF14387L/01_Foundations.txt": "ca2880fb82cb2a42e639c18574e6edcddaeb1e0a01848536ddc6d85b239df6dc",
+        "INF14387L/02_Exam_Practice.txt": "c27dffdfa25bd1e3303b49c6f2fcce164d5bcc395ef9b95bed4ad336761f16e8"
+      }
+    },
+    {
+      "code": "INF13186L",
+      "name": "Human–Computer Interaction",
+      "total": 31,
+      "tracks": {
+        "foundation": 17,
+        "exam_practice": 14
+      },
+      "styles": {
+        "recall": 17,
+        "scenario": 6,
+        "debug": 5,
+        "true_false": 2,
+        "diagram": 1
+      },
+      "combined_file": "05_INF13186L_HCI.txt",
+      "sha256": {
+        "05_INF13186L_HCI.txt": "fad5c7094eac53a19702abe8ce352dc0affc463f4f9de1f76bc1ea818c7ba54b",
+        "INF13186L/01_Foundations.txt": "79977cc8fafd78a7f2a7f6dc15e8ba96be0d865be173c135336f044d47a390f5",
+        "INF13186L/02_Exam_Practice.txt": "e75286f12b76f3f75a1858ebe855acae004ad043cb6a50667ed60746ee47665c"
+      }
+    }
+  ],
+  "combined_sha256": "a98e139ed44cc834dafb043e056d84bf3a0b6cbfb4f16d5d9a5f719783c3431a",
+  "checks": [
+    "All five inputs cite actual course sources",
+    "Unique source questions",
+    "Balanced, restricted HTML and escaped code",
+    "All 17 Web trap topics",
+    "Exact three import directives; UTF-8 without BOM",
+    "One line per note; exactly two real tabs",
+    "Every export round-trips exactly",
+    "Disjoint foundation/practice sets cover every note once",
+    "Combined/split exports and embedded practice-page data match exactly; all local links exist"
+  ],
+  "limit": "Text exports validated; no import into the Anki app was performed.",
+  "browser_checks": [
+    "Answer reveal renders code and formulas clearly",
+    "Course, foundation/practice and topic filters work",
+    "Marking, review-only filter and clearing marks work",
+    "Guide links select the requested course and track",
+    "Filtered browser download matches the validated Anki rows",
+    "All five course sections and five relevant videos are present",
+    "No browser console errors observed"
+  ]
+}

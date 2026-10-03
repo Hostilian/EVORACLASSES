@@ -1,0 +1,18 @@
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Moodle/private source material is intentionally not published
+moodle_sources/
+deck_build/
+*.ipynb
+*.pdf
+*.docx
+
+# Temporary and generated local files
+__pycache__/
+*.pyc
+*.tmp
+

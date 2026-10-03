@@ -1,138 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Évora Erasmus — Hostilian</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #0d1117; color: #e6edf3; min-height: 100vh; }
-    header { background: linear-gradient(135deg, #1a1f2e 0%, #0d1117 100%); border-bottom: 1px solid #30363d; padding: 3rem 2rem; text-align: center; }
-    header h1 { font-size: 2.5rem; font-weight: 700; background: linear-gradient(90deg, #58a6ff, #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    header p { color: #8b949e; margin-top: .5rem; font-size: 1.1rem; }
-    .badges { display: flex; gap: .5rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap; }
-    .badge { background: #21262d; border: 1px solid #30363d; border-radius: 20px; padding: .3rem .9rem; font-size: .8rem; color: #8b949e; }
-    main { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-    .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; transition: border-color .2s, transform .2s; text-decoration: none; color: inherit; display: block; }
-    .card:hover { border-color: #58a6ff; transform: translateY(-3px); }
-    .card-icon { font-size: 2rem; margin-bottom: .75rem; }
-    .card h2 { font-size: 1rem; font-weight: 600; color: #58a6ff; margin-bottom: .25rem; }
-    .card .code { font-size: .75rem; color: #8b949e; font-family: monospace; margin-bottom: .5rem; }
-    .card p { font-size: .9rem; color: #8b949e; line-height: 1.5; }
-    .card .links { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1rem; }
-    .card .links a { background: #21262d; border: 1px solid #30363d; border-radius: 6px; padding: .25rem .6rem; font-size: .78rem; color: #8b949e; text-decoration: none; transition: background .2s; }
-    .card .links a:hover { background: #30363d; color: #e6edf3; }
-    .study-card { border-color: #bc8cff; }
-    .study-card:hover { border-color: #d2a8ff; }
-    .study-card h2 { color: #bc8cff; }
-    h3.section { font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; color: #8b949e; margin: 2.5rem 0 1rem; border-bottom: 1px solid #21262d; padding-bottom: .5rem; }
-    footer { text-align: center; padding: 2rem; color: #8b949e; font-size: .85rem; border-top: 1px solid #21262d; margin-top: 3rem; }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Évora Erasmus — exam and project preparation</title>
+<style>
+:root{--ink:#202a28;--muted:#5c6965;--paper:#f3f1e8;--card:#fffef8;--line:#d8ddd5;--green:#1f5b48;--soft:#e5eee7;--gold:#aa7d2b}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,sans-serif}a{color:var(--green);text-underline-offset:3px}header,main,footer{max-width:1060px;margin:auto;padding:28px}header{padding-top:54px;padding-bottom:35px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}h1{font:clamp(36px,6vw,59px)/1.08 Georgia,serif;margin:12px 0 18px;max-width:820px}header p{max-width:740px;color:var(--muted);font-size:18px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.button{display:inline-block;padding:10px 15px;border:1px solid var(--green);border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}.button.primary{background:var(--green);color:white}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 34px}.metric{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:20px}.metric b{display:block;font:32px Georgia,serif;color:var(--green)}h2{font:30px/1.2 Georgia,serif;margin:42px 0 17px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;text-decoration:none;color:inherit}.card:hover{border-color:var(--green);transform:translateY(-2px)}.card h3{margin:0 0 6px;font-size:18px;color:var(--green)}.card p{color:var(--muted);margin:0}.course{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:17px}.course .code{font-size:12px;font-weight:800;color:var(--gold)}.course h3{margin:4px 0;font-size:16px}.course p{margin:0;color:var(--muted);font-size:14px}.courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.note{border-left:4px solid var(--gold);padding:12px 18px;background:#f4ead5;margin-top:35px}footer{color:var(--muted);font-size:13px;padding-top:10px}@media(max-width:650px){header,main,footer{padding:20px}.summary,.grid{grid-template-columns:1fr}header{padding-top:38px}}@media print{.actions{display:none}}
+</style>
 </head>
 <body>
-<header>
-  <h1>🎓 Évora Erasmus Classes</h1>
-  <p>University of Évora — Erasmus 2026/27</p>
-  <div class="badges">
-    <span class="badge">Hostilian</span>
-    <span class="badge">5 Classes</span>
-    <span class="badge">English Exams</span>
-    <span class="badge">Pass Everything</span>
-  </div>
-</header>
-
+<header><span class="eyebrow">University of Évora · Erasmus 2026/27</span><h1>Prepare for the marks and projects that count.</h1><p>English study support for five courses, built from the material available in Moodle and separated into essential foundations and exam-style practice.</p><div class="actions"><a class="button primary" href="study/study_guide.html">Open passing guide</a><a class="button" href="study/anki_cards.html">Practise interactively</a><a class="button" href="study/anki_decks/README.md">Import into Anki</a></div></header>
 <main>
-  <h3 class="section">📚 Study Materials</h3>
-  <div class="grid">
-    <a class="card study-card" href="web-tech/study-materials/study_guide.html">
-      <div class="card-icon">📖</div>
-      <h2>Web Tech Study Guide</h2>
-      <div class="code">INF13207L</div>
-      <p>Full HTML study guide with YouTube tutorials. Covers T01–T05 with exam practice questions.</p>
-    </a>
-    <a class="card study-card" href="web-tech/study-materials/anki_cards.html">
-      <div class="card-icon">🃏</div>
-      <h2>Interactive Anki Cards</h2>
-      <div class="code">INF13207L — 70 cards</div>
-      <p>5 card types: Flashcard, True/False, MC, Fill-in-blank, Spot the Error. Filter by topic.</p>
-    </a>
-  </div>
-
-  <h3 class="section">🌐 INF13207L — Web Technologies (Prof. José Saias)</h3>
-  <div class="grid">
-    <a class="card" href="web-tech/activity01-basics/BlackGooseBistro/index.html">
-      <div class="card-icon">🦢</div>
-      <h2>Activity 01 — Basic HTML</h2>
-      <div class="code">BlackGooseBistro</div>
-      <p>HTML structure, headings, lists, images, links, fragment anchors, SVG.</p>
-      <div class="links">
-        <a href="web-tech/activity01-basics/BlackGooseBistro/index.html">index.html</a>
-        <a href="web-tech/activity01-basics/BlackGooseBistro/menu.html">menu.html</a>
-        <a href="web-tech/activity01-basics/horario.html">horario.html</a>
-      </div>
-    </a>
-    <a class="card" href="web-tech/activity02-css/twenties/twenties.html">
-      <div class="card-icon">✨</div>
-      <h2>Activity 02A — Twenties CSS</h2>
-      <div class="code">twenties.html + stylesheet.css</div>
-      <p>External CSS, float, borders, margin, font-family, selectors.</p>
-    </a>
-    <a class="card" href="web-tech/activity02-css/blackgoosebistro/menu.html">
-      <div class="card-icon">🍽️</div>
-      <h2>Activity 02B — Bistro Fonts</h2>
-      <div class="code">menu.html + Google Fonts</div>
-      <p>text-shadow, calc(), font-variant, rem, class selectors, adjacent sibling.</p>
-    </a>
-    <a class="card" href="web-tech/activity03-colors/bistro-colors/bistro.html">
-      <div class="card-icon">🎨</div>
-      <h2>Activity 03 — Colors & Backgrounds</h2>
-      <div class="code">bistro.html</div>
-      <p>hex, rgba, pseudo-classes :hover :visited, background-image, repeat-x, fixed.</p>
-    </a>
-    <a class="card" href="web-tech/activity04-responsive/jenware/jenware-rwd.html">
-      <div class="card-icon">📱</div>
-      <h2>Activity 04 — Responsive Design</h2>
-      <div class="code">jenware-rwd.html</div>
-      <p>viewport meta, media queries, float, clear, border-radius, max-width.</p>
-    </a>
-    <a class="card" href="web-tech/activity05-responsive-images/elva/elva.html">
-      <div class="card-icon">🖼️</div>
-      <h2>Activity 05 — Responsive Images</h2>
-      <div class="code">elva.html</div>
-      <p>srcset, sizes, picture element, art direction vs resolution switching.</p>
-    </a>
-  </div>
-
-  <h3 class="section">📋 Other Classes</h3>
-  <div class="grid">
-    <div class="card">
-      <div class="card-icon">⚙️</div>
-      <h2>INF13204L — Software Methods</h2>
-      <div class="code">Prof. Pedro Salgueiro</div>
-      <p>Agile, Scrum, UML, Git, SOLID, design patterns, testing. Materials coming soon.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">📊</div>
-      <h2>MAT02354L — Probability & Stats</h2>
-      <div class="code">Prof. Russell Jara</div>
-      <p>Distributions, hypothesis testing, Bayes, regression, descriptive stats.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🔢</div>
-      <h2>INF14387L — Data Analysis</h2>
-      <div class="code">Prof. Daniela Schmidt</div>
-      <p>ETL, SQL, Pandas, NumPy, data visualisation, ML basics.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🖥️</div>
-      <h2>INF13186L — HCI</h2>
-      <div class="code">Prof. Paulo Quaresma</div>
-      <p>Nielsen heuristics, Norman principles, usability testing, accessibility, prototyping.</p>
-    </div>
-  </div>
-</main>
-<footer>Hostilian · University of Évora Erasmus 2026/27 · Goal: Pass everything 🎯</footer>
-</body>
-</html>
+<div class="summary"><div class="metric"><b>604</b>validated cards</div><div class="metric"><b>279</b>foundations</div><div class="metric"><b>325</b>exam practice</div></div>
+<h2>Study package</h2><div class="grid"><a class="card" href="study/study_guide.html"><h3>Passing guide</h3><p>Assessment weights, minimum marks, dates, project milestones, and the current study priorities.</p></a><a class="card" href="study/anki_cards.html"><h3>Interactive practice</h3><p>Code writing, formulas, calculations, tracing, debugging, diagrams, and scenario answers with review tracking.</p></a><a class="card" href="study/anki_decks/All_Foundations.txt"><h3>All foundations</h3><p>One Anki import containing the concepts required for the posted work.</p></a><a class="card" href="study/anki_decks/All_Exam_Practice.txt"><h3>All exam practice</h3><p>One Anki import containing production and problem-solving questions.</p></a></div>
+<h2>Five current courses</h2><div class="courses"><div class="course"><span class="code">INF13207L</span><h3>Web Technologies</h3><p>302 cards · HTML, CSS, layout, responsive design and posted activities.</p></div><div class="course"><span class="code">INF13204L</span><h3>Software Methods</h3><p>85 cards · processes, requirements and LAN-party practical work.</p></div><div class="course"><span class="code">MAT02354L</span><h3>Probability &amp; Statistics</h3><p>112 cards · probability, distributions, moments and worked calculations.</p></div><div class="course"><span class="code">INF14387L</span><h3>Data Transformation &amp; Analysis</h3><p>74 cards · Python, text processing, data diagnosis and posted notebook work.</p></div><div class="course"><span class="code">INF13186L</span><h3>Human–Computer Interaction</h3><p>31 cards · HCI foundations, user research and AlunUÉ project preparation.</p></div></div>
+<h2>Web practical examples</h2><div class="grid"><a class="card" href="web-tech/activity01-basics/BlackGooseBistro/index.html"><h3>Activity 01 · HTML</h3><p>Black Goose Bistro structure, navigation, images and timetable links.</p></a><a class="card" href="web-tech/activity02-css/twenties/twenties.html"><h3>Activity 02 · CSS</h3><p>Twenties and Bistro typography, selectors, floats and external stylesheets.</p></a><a class="card" href="web-tech/activity03-colors/bistro-colors/bistro.html"><h3>Activity 03 · Colour</h3><p>Colour formats, link states, alpha and backgrounds.</p></a><a class="card" href="web-tech/activity04-responsive/jenware/jenware-rwd.html"><h3>Responsive design examples</h3><p>Media queries, flexible layouts and responsive image markup.</p></a></div>
+<p class="note">These are source-based study questions, not claimed past-paper questions. Check Moodle for later lectures, final project briefs, rooms and deadline changes.</p>
+</main><footer><p><a href="README.md">Repository documentation</a> · <a href="study/validation-report.json">Validation report</a> · Moodle source files are intentionally excluded from this public repository.</p></footer>
+</body></html>
