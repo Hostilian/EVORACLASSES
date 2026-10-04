@@ -1,6 +1,6 @@
 # Évora: Anki decks for passing preparation
 
-**604 English cards**, based on the live Moodle materials checked on **2 October 2026**.
+**604 English cards**, based on the live Moodle teaching materials checked on **2 October 2026**. Administrative/deadline information was cross-checked again on **4 October 2026**.
 
 **Foundations** cover the concepts needed for the taught tasks. **Exam practice** asks you to write code/formulas, calculate, trace results, diagnose mistakes, interpret diagrams, or justify an answer. Each question displays its track and response style.
 
@@ -24,7 +24,15 @@ Alternatively, import [all foundations](All_Foundations.txt) and [all exam pract
 2. Use **Basic**. In the preview, check **Tab**, column 1 = Front, column 2 = Back, column 3 = Tags, and **Allow HTML in fields**.
 3. Confirm the preview contains the expected card count. The files contain actual tabs, three directives, and one physical line per note.
 
-These replace the earlier generic exports. If you already imported that earlier version, remove or move those old notes before importing this replacement; changed question labels can otherwise produce duplicates. Earlier files are preserved under `deck_build/backups/before_moodle_focus`.
+These replace the earlier generic exports. If you already imported that earlier version, remove or move those old notes before importing this replacement; changed question labels can otherwise produce duplicates.
+
+## Current administrative corrections
+
+These corrections affect planning, not the 604-card content itself:
+
+- **Statistics:** 1st frequência is **31 October 2026, 10:00–12:00, Colégio Luís António Verney**. Register through the Moodle poll by **16 October 2026, 23:59** if you intend to sit it.
+- **HCI:** Professor Paulo Quaresma confirmed that you can still join an existing group or create a new one. The first project-phase deadline is **30 October 2026**.
+- **Web:** Professor José Saias confirmed that timetable conflicts may occur and that **all Web activities are on Moodle**; attendance choices in a conflict are the student's responsibility.
 
 ## Use with the course tasks
 
@@ -34,4 +42,4 @@ The active cards use posted teaching material. They are study questions, not act
 
 Moodle assessment rules and project checklists are in the guide. Current materials contain no actual past exam papers. Text formatting and counts were validated; no live Anki import was performed.
 
-Coverage audits: [Web](../deck_build/focused_web_audit.md), [Software/HCI](../deck_build/focused_sw_hci_audit.md), [Statistics/Data](../deck_build/focused_stats_data_audit.md).
+Coverage audits: [Web](../audits/web.md), [Software/HCI](../audits/software-hci.md), [Statistics/Data](../audits/statistics-data.md).
