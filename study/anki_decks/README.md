@@ -1,6 +1,6 @@
 # Évora: Anki decks for passing preparation
 
-**604 English cards**, based on the live Moodle teaching materials checked on **2 October 2026**. Administrative/deadline information was cross-checked again on **4 October 2026**.
+**604 English cards**, based on the live Moodle materials checked on **2 October 2026**.
 
 **Foundations** cover the concepts needed for the taught tasks. **Exam practice** asks you to write code/formulas, calculate, trace results, diagnose mistakes, interpret diagrams, or justify an answer. Each question displays its track and response style.
 
@@ -24,15 +24,7 @@ Alternatively, import [all foundations](All_Foundations.txt) and [all exam pract
 2. Use **Basic**. In the preview, check **Tab**, column 1 = Front, column 2 = Back, column 3 = Tags, and **Allow HTML in fields**.
 3. Confirm the preview contains the expected card count. The files contain actual tabs, three directives, and one physical line per note.
 
-These replace the earlier generic exports. If you already imported that earlier version, remove or move those old notes before importing this replacement; changed question labels can otherwise produce duplicates.
-
-## Current administrative corrections
-
-These corrections affect planning, not the 604-card content itself:
-
-- **Statistics:** 1st frequência is **31 October 2026, 10:00–12:00, Colégio Luís António Verney**. Register through the Moodle poll by **16 October 2026, 23:59** if you intend to sit it.
-- **HCI:** Professor Paulo Quaresma confirmed that you can still join an existing group or create a new one. The first project-phase deadline is **30 October 2026**.
-- **Web:** Professor José Saias confirmed that timetable conflicts may occur and that **all Web activities are on Moodle**; attendance choices in a conflict are the student's responsibility.
+These replace the earlier generic exports. If you already imported that earlier version, remove or move those old notes before importing this replacement; changed question labels can otherwise produce duplicates. Earlier files are preserved under `deck_build/backups/before_moodle_focus`.
 
 ## Use with the course tasks
 

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; worker-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Évora — private study plan</title>
+<link rel="stylesheet" href="planner.css">
+<script src="planner.js" defer></script>
+</head>
+<body>
+<header>
+<span class="eyebrow">Évora · your browser’s private workspace</span>
+<h1>My study plan</h1>
+<p class="intro">Your dated checklist, Anki sessions and deadlines, beside the five course helpers.</p>
+<nav aria-label="Study navigation"><a href="../index.html">Study home</a><a href="study_guide.html">Course guide</a><a href="anki_cards.html">Practice cards</a><a href="https://calendar.google.com/calendar/u/0/r" target="_blank" rel="noopener noreferrer">Google Calendar ↗</a></nav>
+</header>
+<main>
+<section class="card" aria-labelledby="load-title">
+<h2 id="load-title">Load your private plan once</h2>
+<p>Choose <strong>daily-checklists.json</strong> from your local academic folder. This page starts empty: your private tasks and dates are not in the public website.</p>
+<div class="file-controls"><label class="file-label">Choose plan file<input id="plan-file" type="file" accept=".json,application/json"></label><label class="file-label">Import saved progress<input id="progress-file" type="file" accept=".json,application/json" disabled></label><button id="export-progress" type="button" disabled>Save progress file</button></div>
+<p class="small muted">The imported plan and your ticks stay in this browser profile. This page does not upload them or automatically sync with Google Calendar, Moodle, Anki or another device. Import a newer plan when it changes; save a progress file before switching browsers. Source links open only when you choose them. Someone using this browser profile can see its saved plan.</p>
+<p id="file-status" class="status" role="status" aria-live="polite">No private plan loaded.</p>
+</section>
+<section id="onboarding" class="card empty-state"><h2>A place for today’s next step</h2><p>Load your local plan to see the monthly calendar, daily checklist and source verification dates. No study is marked complete by loading a file.</p></section>
+<div id="workspace" hidden>
+<section class="card" aria-labelledby="verification-title"><h2 id="verification-title">What this plan knows</h2><div id="verification"></div><details><summary>Planning assumptions and latest reported progress</summary><div id="plan-notes"></div></details></section>
+<div class="layout">
+<section class="card calendar-panel" aria-labelledby="month-title">
+<div class="calendar-controls"><button id="previous-month" type="button" aria-label="Previous month">←</button><label>Month<select id="month"></select></label><button id="next-month" type="button" aria-label="Next month">→</button><button id="today" type="button">Today</button></div>
+<h2 id="month-title"></h2><p class="small muted">Days are flexible study suggestions. Markers show recorded requirements and commitments; a blank day does not establish free time.</p>
+<div class="weekday-labels" aria-hidden="true"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div><div id="calendar-days" class="calendar-days" aria-label="Choose a date"></div>
+</section>
+<section class="card daily-panel" aria-labelledby="day-title"><h2 id="day-title"></h2><p id="week-total" class="budget" aria-live="polite"></p><div id="checklist"></div><label for="work-note" class="note-label">Actual work or blocker</label><textarea id="work-note" rows="4" maxlength="12000" placeholder="Record your actual attempt, an error, or why you could not begin."></textarea><p class="small muted">Ticks and notes are your study report. They do not verify a submission, group registration, attendance, a grade or mastery.</p><p id="save-status" class="small" role="status" aria-live="polite"></p></section>
+</div>
+<section class="card" aria-labelledby="requirements-title"><h2 id="requirements-title">Requirements and commitments for this day</h2><div id="requirements"></div></section>
+<section class="card" aria-labelledby="upcoming-title"><h2 id="upcoming-title">Upcoming requirements</h2><p class="small muted">The next 30 days from the selected date, including conditional dates and provisional windows. Consult the source before acting.</p><div id="upcoming"></div><details><summary>Requirements without a confirmed date</summary><div id="undated"></div></details></section>
+</div>
+</main>
+<footer><p>Private plan viewer · saved in this browser only. Public helpers support practice; university sources set assessment rules.</p></footer>
+</body>
+</html>
