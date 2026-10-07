@@ -1,0 +1,591 @@
+{
+  "format": "evora-public-suggested-plan-v1",
+  "updated_on": "2026-10-07",
+  "study_timezone": "Europe/London",
+  "campus_timezone": "Europe/Lisbon",
+  "course_sources_last_checked": "2026-10-06",
+  "source_limit": "Saved source facts, not a fresh live Moodle check. Individual source dates are shown. Confirm changed requirements on Moodle.",
+  "study_start": "2026-10-07",
+  "study_end": "2027-02-03",
+  "weekly_base_minutes": 420,
+  "weekly_max_minutes": 480,
+  "courses": [
+    {
+      "code": "INF13186L",
+      "name": "HCI",
+      "full_name": "Human–Computer Interaction"
+    },
+    {
+      "code": "INF13207L",
+      "name": "Web",
+      "full_name": "Web Technologies"
+    },
+    {
+      "code": "MAT02354L",
+      "name": "Statistics",
+      "full_name": "Probability and Statistics"
+    },
+    {
+      "code": "INF13204L",
+      "name": "Software",
+      "full_name": "Software Methods"
+    },
+    {
+      "code": "INF14387L",
+      "name": "Data",
+      "full_name": "Data Transformation and Analysis"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "portuguese-placement",
+      "course": "Portuguese",
+      "title": "Questionnaire, then placement diagnostic",
+      "date": "2026-10-09",
+      "end_date": "2026-10-09",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "If participating in Portuguese",
+      "note": "Confirm the exact cutoff. Questionnaire precedes the diagnostic; technical availability does not replace the announced date.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=559",
+      "source_checked_on": "2026-10-03"
+    },
+    {
+      "id": "stats-f1-choice",
+      "course": "Statistics",
+      "title": "F1 attendance choice",
+      "date": "2026-10-16",
+      "end_date": "2026-10-16",
+      "time": "23:59",
+      "timezone": "Europe/Lisbon",
+      "certainty": "Date and cutoff confirmed",
+      "condition": "If attending the first test",
+      "note": "Save SIM personally and check the saved response. Nonresponse means not attending F1; the normal-exam route remains available. No late registration is announced.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "web-test-1",
+      "course": "Web",
+      "title": "Written test 1",
+      "date": "2026-10-20",
+      "end_date": "2026-10-20",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Continuous assessment route",
+      "note": "Taking this test selects the continuous route. Confirm start time, room and permitted materials.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "data-test-1",
+      "course": "Data",
+      "title": "First-test window",
+      "date": "2026-10-26",
+      "end_date": "2026-10-30",
+      "time": null,
+      "timezone": null,
+      "certainty": "Provisional window; year inferred from course context",
+      "condition": null,
+      "note": "One test somewhere in this window. Exact day, time and room remain unconfirmed.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "software-test-1",
+      "course": "Software",
+      "title": "Written test 1",
+      "date": "2026-10-28",
+      "end_date": "2026-10-28",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Continuous assessment route",
+      "note": "Confirm time, room, coverage and permitted materials.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "hci-phase-1",
+      "course": "HCI",
+      "title": "Phase 1: research report",
+      "date": "2026-10-30",
+      "end_date": "2026-10-30",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": null,
+      "note": "Maximum ten pages; genuine user research is needed. Exact submission cutoff, destination and format remain unconfirmed.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "stats-f1",
+      "course": "Statistics",
+      "title": "First test F1",
+      "date": "2026-10-31",
+      "end_date": "2026-10-31",
+      "time": "10:00–12:00",
+      "timezone": "Europe/Lisbon",
+      "certainty": "Specific announcement gives this test time",
+      "condition": "If registered for F1",
+      "note": "Room pending. The choice title says 09:45 and the FUC has a 09:00–13:00 reservation; those are distinct from the latest specific test time. Confirm arrival instructions.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/forum/discuss.php?d=2101",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "web-test-2",
+      "course": "Web",
+      "title": "Written test 2",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "14:30",
+      "timezone": "Europe/Lisbon",
+      "certainty": "Date and start time confirmed; room pending",
+      "condition": "Continuous assessment route",
+      "note": "",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "hci-phase-2",
+      "course": "HCI",
+      "title": "Phase 2: prototype and heuristics",
+      "date": "2026-11-30",
+      "end_date": "2026-11-30",
+      "time": null,
+      "timezone": null,
+      "certainty": "Posted day/month; year inferred",
+      "condition": null,
+      "note": "Confirm year, exact cutoff and submission destination.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "software-test-2",
+      "course": "Software",
+      "title": "Written test 2",
+      "date": "2026-12-09",
+      "end_date": "2026-12-09",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Continuous assessment route",
+      "note": "Confirm time and room.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "software-project-1",
+      "course": "Software",
+      "title": "Project part 1: specification",
+      "date": "2026-12-14",
+      "end_date": "2026-12-14",
+      "time": "End of day; exact clock time unstated",
+      "timezone": "Europe/Lisbon",
+      "certainty": "Posted day/month; year inferred",
+      "condition": null,
+      "note": "Confirm year, cutoff, file requirements and group submission evidence.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18846",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "data-test-2",
+      "course": "Data",
+      "title": "Second-test window",
+      "date": "2026-12-14",
+      "end_date": "2026-12-18",
+      "time": null,
+      "timezone": null,
+      "certainty": "Provisional window; year inferred",
+      "condition": null,
+      "note": "Exact day, time and room remain unconfirmed.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "software-discussion-1",
+      "course": "Software",
+      "title": "Project part 1 discussion week",
+      "date": "2026-12-14",
+      "end_date": "2026-12-20",
+      "time": null,
+      "timezone": null,
+      "certainty": "Planning representation of the week of 15 December",
+      "condition": null,
+      "note": "The source says week of 15 December. This calendar range is a planning aid, not a confirmed appointment. Exact day and year need confirmation.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18846",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "hci-phase-3",
+      "course": "HCI",
+      "title": "Phase 3: final prototype and usability tests",
+      "date": "2026-12-30",
+      "end_date": "2026-12-30",
+      "time": null,
+      "timezone": null,
+      "certainty": "Posted day/month; year inferred",
+      "condition": null,
+      "note": "Confirm year and cutoff; this date falls within the university vacation period.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "data-normal",
+      "course": "Data",
+      "title": "Normal-exam window",
+      "date": "2027-01-04",
+      "end_date": "2027-01-08",
+      "time": null,
+      "timezone": null,
+      "certainty": "Provisional window; year inferred",
+      "condition": "Applicable exam route",
+      "note": "Exact day, time and room remain unconfirmed.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "hci-written",
+      "course": "HCI",
+      "title": "Continuous-assessment written test",
+      "date": "2027-01-08",
+      "end_date": "2027-01-08",
+      "time": null,
+      "timezone": null,
+      "certainty": "Posted day/month; year inferred",
+      "condition": "Applicable assessment route",
+      "note": "Confirm time and route. Shares the date with the Software normal exam; overlap depends on times and route.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "software-normal",
+      "course": "Software",
+      "title": "Normal exam",
+      "date": "2027-01-08",
+      "end_date": "2027-01-08",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Applicable exam route",
+      "note": "The project remains required. Confirm time and room.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "web-normal",
+      "course": "Web",
+      "title": "Third test or normal exam",
+      "date": "2027-01-11",
+      "end_date": "2027-01-11",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Depends on assessment route",
+      "note": "Continuous-assessment candidates cannot switch to the normal-exam route. Confirm time and room.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "hci-normal",
+      "course": "HCI",
+      "title": "Normal exam",
+      "date": "2027-01-14",
+      "end_date": "2027-01-14",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Applicable exam route",
+      "note": "Project remains part of assessment. Confirm route conditions, time and room.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "stats-normal",
+      "course": "Statistics",
+      "title": "Second test and normal exam",
+      "date": "2027-01-15",
+      "end_date": "2027-01-15",
+      "time": "09:00–13:00 reservation window",
+      "timezone": "Europe/Lisbon",
+      "certainty": "Date confirmed; reservation is not a precise exam duration",
+      "condition": "Applicable assessment route",
+      "note": "Specific start/end and room may follow.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=16389",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "software-resit",
+      "course": "Software",
+      "title": "Resit exam",
+      "date": "2027-01-22",
+      "end_date": "2027-01-22",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Applicable resit route",
+      "note": "Project remains required. Confirm time and room.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "data-resit",
+      "course": "Data",
+      "title": "Resit-exam window",
+      "date": "2027-01-25",
+      "end_date": "2027-01-29",
+      "time": null,
+      "timezone": null,
+      "certainty": "Provisional window; year inferred",
+      "condition": "Applicable resit route",
+      "note": "Exact day, time and room remain unconfirmed.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "hci-resit",
+      "course": "HCI",
+      "title": "Resit exam",
+      "date": "2027-01-27",
+      "end_date": "2027-01-27",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Applicable resit route",
+      "note": "Same date as Web resit. Confirm times and route before concluding there is a clash.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "web-resit",
+      "course": "Web",
+      "title": "Resit exam",
+      "date": "2027-01-27",
+      "end_date": "2027-01-27",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Applicable resit route",
+      "note": "Compulsory practical assessment remains relevant. Same date as HCI resit; times unknown.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "stats-resit",
+      "course": "Statistics",
+      "title": "Resit exam",
+      "date": "2027-01-29",
+      "end_date": "2027-01-29",
+      "time": "09:00–13:00 reservation window",
+      "timezone": "Europe/Lisbon",
+      "certainty": "Date confirmed; precise time pending",
+      "condition": "Applicable resit route",
+      "note": "",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=16389",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "web-special",
+      "course": "Web",
+      "title": "Special exam",
+      "date": "2027-07-21",
+      "end_date": "2027-07-21",
+      "time": null,
+      "timezone": null,
+      "certainty": "Date confirmed; exact time unconfirmed",
+      "condition": "Only if eligible",
+      "note": "Eligibility, time and room need confirmation.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "stats-special",
+      "course": "Statistics",
+      "title": "Special exam",
+      "date": "2027-07-23",
+      "end_date": "2027-07-23",
+      "time": "09:00–13:00 reservation window",
+      "timezone": "Europe/Lisbon",
+      "certainty": "Date confirmed; precise time pending",
+      "condition": "Only if eligible",
+      "note": "",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=16389",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "stats-extraordinary",
+      "course": "Statistics",
+      "title": "Extraordinary exam",
+      "date": "2027-09-10",
+      "end_date": "2027-09-10",
+      "time": "09:00–13:00 reservation window",
+      "timezone": "Europe/Lisbon",
+      "certainty": "Date confirmed; precise time pending",
+      "condition": "Only if eligible",
+      "note": "",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=16389",
+      "source_checked_on": "2026-10-06"
+    }
+  ],
+  "undated_requirements": [
+    {
+      "id": "hci-registration",
+      "course": "HCI",
+      "title": "Group and practical-section registration",
+      "note": "Check both separately. Confirm an agreed team and whether a teammate has already made the group response. Save a receipt or exact error; ask about late allocation if needed. A study tick does not confirm official acceptance.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "software-section",
+      "course": "Software",
+      "title": "Practical-section allocation",
+      "note": "The recorded choice window ended 17 September at 14:00 Europe/Lisbon. If no accepted allocation is known, ask how late allocation is recorded. Attendance alone does not verify assignment.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=17184",
+      "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "software-project-2",
+      "course": "Software",
+      "title": "Project part 2: final delivery and presentation",
+      "note": "The printed January 2026 dates conflict with the current course/countdown context. Confirm the year and exact deadlines; no overdue status is inferred.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18847",
+      "source_checked_on": "2026-10-03"
+    },
+    {
+      "id": "data-project",
+      "course": "Data",
+      "title": "Final project",
+      "note": "January is mentioned; exact date, brief, format and method are unconfirmed.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740",
+      "source_checked_on": "2026-10-03"
+    },
+    {
+      "id": "data-forum-topic",
+      "course": "Data",
+      "title": "Mandatory paper discussion topic",
+      "note": "300–500 words across the published prompts. Read an approved paper yourself and confirm deadline, group rules and allowed assistance before writing assessed text.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/forum/view.php?id=24511",
+      "source_checked_on": "2026-10-03"
+    },
+    {
+      "id": "data-forum-comment",
+      "course": "Data",
+      "title": "Individual critical comment",
+      "note": "Each student writes at least 150 words on another group’s topic. Exact cutoff is unconfirmed; another topic must exist first.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/forum/view.php?id=24511",
+      "source_checked_on": "2026-10-03"
+    },
+    {
+      "id": "hci-oral",
+      "course": "HCI",
+      "title": "Mandatory project oral / individual discussion",
+      "note": "Date and time unposted. Confirm arrangements; an unjustified absence affects the project assessment.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720",
+      "source_checked_on": "2026-10-03"
+    },
+    {
+      "id": "web-project-1",
+      "course": "Web",
+      "title": "Practical project 1",
+      "note": "Software, report and presentation; individual or pair. Exact brief, deadline, format and AI rules are unconfirmed.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=14281",
+      "source_checked_on": "2026-10-03"
+    },
+    {
+      "id": "web-project-2",
+      "course": "Web",
+      "title": "Practical project 2",
+      "note": "Confirm the posted brief, deadline, format, submission evidence and AI rules.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=14281",
+      "source_checked_on": "2026-10-03"
+    }
+  ],
+  "initial_priorities": [
+    {
+      "id": "registration-review",
+      "title": "Review course, group and section registrations",
+      "minutes": 35,
+      "course": "HCI",
+      "text": "Check any reopened administrative registration window, then HCI group/practical and Software section acceptance. Use agreed details, check for an existing teammate response and save a receipt or exact error.",
+      "start": "Open the registration page and write down the actual next pending step.",
+      "consequence": "A short window or missing team can delay required project work.",
+      "links": [
+        {
+          "label": "Course registration",
+          "url": "https://siiue2.uevora.pt/aluno/inscricoes"
+        },
+        {
+          "label": "HCI course",
+          "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+        },
+        {
+          "label": "Software section",
+          "url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=17184"
+        }
+      ]
+    },
+    {
+      "id": "conditional-decisions",
+      "title": "Choose the approaching conditional tasks",
+      "minutes": 25,
+      "course": "Statistics",
+      "text": "Decide whether to attend Statistics F1 and whether Portuguese participation is needed. If applicable, inspect the personal choice or questionnaire/diagnostic yourself. Save official responses and receipts personally. The full diagnostic may need a longer replacement block.",
+      "start": "Open the Statistics choice and write F1 or normal exam as your intended route.",
+      "consequence": "F1 needs a saved attendance choice by 16 October; Portuguese placement is dated 9 October.",
+      "links": [
+        {
+          "label": "Statistics choice",
+          "url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474"
+        },
+        {
+          "label": "Portuguese",
+          "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=559"
+        }
+      ]
+    },
+    {
+      "id": "hci-learning-start",
+      "title": "Begin one small HCI learning cycle",
+      "minutes": 35,
+      "course": "HCI",
+      "text": "10 minutes due Anki cards, 15 minutes one matched explanation, then 10 minutes reading the phase 1 instructions and making your own recall attempt or next research step.",
+      "start": "Answer five due cards before revealing the backs.",
+      "consequence": "The 30 October research report needs real research and practice; video watching alone does not establish mastery.",
+      "links": [
+        {
+          "label": "HCI cards",
+          "url": "anki_cards.html?course=INF13186L&track=foundation"
+        },
+        {
+          "label": "Matched HCI videos",
+          "url": "courses/INF13186L.html#video-explanations"
+        },
+        {
+          "label": "Phase 1 source",
+          "url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720"
+        }
+      ]
+    }
+  ],
+  "optional_actions": [
+    {
+      "id": "optional-reflection",
+      "title": "Note one confusing point after an actual attempt",
+      "minutes": 5
+    },
+    {
+      "id": "optional-data-paper",
+      "title": "Optional study slot: inspect the mandatory Data paper task and choose an approved paper",
+      "minutes": 10
+    },
+    {
+      "id": "optional-next-research",
+      "title": "Agree one genuine research step with the project group",
+      "minutes": 10
+    }
+  ]
+}

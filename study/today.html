@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self' https://api.github.com; img-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; worker-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Évora — today’s checklist</title>
+<link rel="stylesheet" href="today.css">
+<script src="today.js" defer></script>
+</head>
+<body>
+<header>
+<a class="home" href="../index.html">← Study home</a>
+<p class="eyebrow">Évora · one useful step at a time</p>
+<h1>Today’s checklist</h1>
+<p class="intro">A suggested start, practice cards and course deadlines you can open on your phone.</p>
+<nav aria-label="Study navigation"><a href="study_guide.html">Course guide</a><a href="anki_cards.html">Anki &amp; practice cards</a><a href="planner.html">Private plan viewer</a></nav>
+</header>
+<main>
+<p id="load-status" class="notice" role="status" aria-live="polite">Loading the general study suggestions…</p>
+<div id="app" hidden>
+<section class="card day-controls" aria-labelledby="selected-title">
+<div><p class="eyebrow">Your flexible study day</p><h2 id="selected-title"></h2></div>
+<div class="date-controls"><button id="previous-day" type="button" aria-label="Previous day">←</button><label for="date">Choose date<input id="date" type="date"></label><button id="next-day" type="button" aria-label="Next day">→</button><button id="today" type="button">Today</button></div>
+<p id="capacity" class="budget"></p>
+<p class="small muted">Suggested blocks include breaks. Choose a real available time yourself; a blank calendar day does not establish availability.</p>
+</section>
+<section class="card" aria-labelledby="priorities-title"><h2 id="priorities-title">Three useful priorities</h2><div id="priorities"></div><div id="breaks"></div><p class="small muted">A tick records your own attempt or review. Keep official registration and submission receipts separately; ticks do not verify acceptance, attendance, grades or mastery.</p><label for="note" class="note-label">What did you actually try? What blocked you?</label><textarea id="note" rows="3" maxlength="3000" placeholder="A short private note, saved in this browser."></textarea><p id="save-status" role="status" aria-live="polite" class="small"></p></section>
+<section class="card" aria-labelledby="proposal-title"><p class="eyebrow">Based on your ticks in this browser</p><h2 id="proposal-title">A suggested next day</h2><div id="proposal"></div><p class="small muted">The proposal carries one unfinished focus item within the remaining weekly budget. It does not add all missed work to tomorrow or change your calendar. Review new deadlines and your actual availability before following it.</p></section>
+<section class="card" aria-labelledby="optional-title"><h2 id="optional-title">Nice to do, if there is room</h2><p class="small muted">These replace lower-priority practice, or use the optional weekly allowance. Keep the week within eight hours including breaks.</p><div id="optional"></div><div id="course-links" class="course-links"></div></section>
+<section class="card" aria-labelledby="month-title"><div class="month-heading"><h2 id="month-title">Upcoming course requirements</h2><label for="month">Month<input id="month" type="month"></label></div><p class="small muted">Official dates, provisional windows and conditional routes stay distinct. Study suggestions are personal targets. Each card shows its saved source date.</p><div id="month-summary" class="notice"></div><div id="upcoming"></div><details><summary>Requirements needing a confirmed date or decision</summary><div id="undated"></div></details></section>
+<section class="card" aria-labelledby="privacy-title"><h2 id="privacy-title">Your checks stay in this browser</h2><p>The suggestions and general course dates are public. Your ticks and notes stay on this device. You can optionally connect a separate private GitHub progress repository below. Without that connection, checks remain in this browser. Telegram delivery needs its separately configured private reminder workflow.</p><details><summary>Optional private phone sync</summary><p>Use a fine-grained GitHub token restricted to your separate <strong>EVORA-STUDY-PROGRESS</strong> data-only repository, with Contents read and write only. Do not grant access to backend workflows, secrets or other repositories. Choose a short expiry. Only this data repository is accepted; the public study repository and private automation code repository are refused. Enter the token here privately; never paste it into a note, progress file or chat.</p><div class="sync-fields"><label for="repo-owner">Your GitHub username<input id="repo-owner" type="text" value="Hostilian" readonly maxlength="39" autocomplete="off" spellcheck="false"></label><label for="repo-name">Private progress repository<input id="repo-name" type="text" value="EVORA-STUDY-PROGRESS" readonly maxlength="100" autocomplete="off" spellcheck="false"></label><label for="repo-token">Private sync token<input id="repo-token" type="password" autocomplete="off" spellcheck="false"></label></div><p class="small muted">The token is kept only in this open page’s memory and is cleared on disconnect or leaving the page. Reconnect after reopening. Repository coordinates, ticks and notes may be saved in this browser. Only GitHub’s API receives authenticated sync requests; personal progress is written only after the target is confirmed private and owned by your signed-in account.</p><div class="backup-controls"><button id="connect" type="button">Connect and read private progress</button><button id="sync-now" type="button" disabled>Sync this day now</button><button id="disconnect" type="button" disabled>Disconnect</button><button id="resolve-conflicts" type="button" hidden>Use this device’s report for equal-time conflicts</button></div><p id="sync-status" class="notice" role="status" aria-live="polite">Private sync is not connected. No token is saved by this website.</p></details><div class="backup-controls"><button id="export" type="button">Save my progress file</button><label class="import-label">Load my progress file<input id="import" type="file" accept=".json,application/json"></label></div><p class="small muted">Use a private progress file when switching devices. Import merges matching task reports; changed tasks do not inherit a completion tick. Keep files containing notes private. Someone using this browser profile can read its saved reports.</p><p id="backup-status" role="status" aria-live="polite"></p></section>
+</div>
+<noscript><p class="notice">Enable JavaScript for the checklist. The <a href="today-plan.json">general plan file</a> and <a href="study_guide.html">course guide</a> remain available.</p></noscript>
+</main>
+<footer><p>Course facts last checked on their recorded source dates. The page reads a public file from this website. Optional authenticated sync sends reports only to your verified private GitHub repository.</p></footer>
+</body>
+</html>
