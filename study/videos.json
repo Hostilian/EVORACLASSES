@@ -1,0 +1,870 @@
+{
+  "checked_on": "2026-10-07",
+  "verification": "Official creator/university source pages and indexed titles/topics checked. Full videos were not watched; playback availability and unlisted runtimes are not guaranteed. The course syllabus and Moodle requirements remain authoritative.",
+  "courses": [
+    {
+      "checked_on": "2026-10-07",
+      "verification_limit": "Official source pages and indexed video titles/descriptions were checked on 7 October 2026. Videos were not watched in full and playback was not independently tested. NN/G durations are rounded estimates from individual official video pages; topic-index rounding can differ. The Udacity clip is a reflection on the gulfs rather than a full seven-stage lecture. Links cover phase 1 research, phase 2 prototypes/heuristics and phase 3 user testing, with course-specific methods and criteria still taken from Moodle. Recommendations support study; watching does not establish mastery or replace real project research.",
+      "course_code": "INF13186L",
+      "videos": [
+        {
+          "title": "Usability 101",
+          "url": "https://www.youtube.com/watch?v=st9AEPOjGpU",
+          "creator": "NNgroup — Kate Kaplan",
+          "topics": [
+            "usability",
+            "learnability",
+            "efficiency",
+            "memorability",
+            "errors",
+            "satisfaction"
+          ],
+          "course_fit": "Aula 2 pages 28–37 and HTML lesson hci-usability. Nielsen's five quality components complement, rather than replace, the lecture's effectiveness–efficiency–satisfaction definition.",
+          "watch_plan": "Watch once, then revisit the usability lesson. Pause to explain each quality component with your own unrelated example.",
+          "practice": "Explain why a fast interface can still fail the user's goal; distinguish effectiveness from efficiency.",
+          "anki_search": [
+            "usability",
+            "efficiency",
+            "effectiveness",
+            "Nielsen",
+            "memorability"
+          ],
+          "duration": "About 4 minutes (rounded duration on official NN/G video page)",
+          "verification_urls": [
+            "https://www.nngroup.com/videos/usability-101/",
+            "https://www.youtube.com/watch?v=st9AEPOjGpU"
+          ]
+        },
+        {
+          "title": "Five User Interview Mistakes to Avoid (in 5 Minutes)",
+          "url": "https://www.youtube.com/watch?v=yBYd5USasXg",
+          "creator": "NNgroup — Therese Fessenden",
+          "topics": [
+            "user interviews",
+            "probing",
+            "leading questions",
+            "research facilitation"
+          ],
+          "course_fit": "Phase 1 real-user interviews. Demonstrates interviewer behaviour that can distort the evidence.",
+          "watch_plan": "Watch before practising an interview. List the mistakes without looking, then rehearse neutral follow-up questions.",
+          "practice": "Rewrite one leading question as a neutral question and give one probing follow-up. Do not invent participants or findings.",
+          "anki_search": [
+            "interview",
+            "research",
+            "user",
+            "questionnaire"
+          ],
+          "duration": "About 6 minutes (official NN/G page; the title says 5 minutes)",
+          "verification_urls": [
+            "https://www.nngroup.com/videos/interview-mistakes-to-avoid/",
+            "https://www.youtube.com/watch?v=yBYd5USasXg"
+          ]
+        },
+        {
+          "title": "What Are Personas and Why Should I Care?",
+          "url": "https://www.youtube.com/watch?v=khLWLtxmMGM",
+          "creator": "NNgroup — Kim Flaherty",
+          "topics": [
+            "personas",
+            "user-centred design",
+            "user research"
+          ],
+          "course_fit": "Phase 1 representative personas. Introductory purpose and use of personas; not a full analysis tutorial.",
+          "watch_plan": "Watch after reviewing the persona requirement. Explain how a persona should change one design decision.",
+          "practice": "Distinguish an evidence-backed user pattern from an invented biography. State what research evidence would justify a persona attribute.",
+          "anki_search": [
+            "persona",
+            "personas",
+            "user-centred"
+          ],
+          "duration": "About 2 minutes (rounded duration on official NN/G video page)",
+          "verification_urls": [
+            "https://www.nngroup.com/videos/personas/",
+            "https://www.youtube.com/watch?v=khLWLtxmMGM"
+          ]
+        },
+        {
+          "title": "How to Empathy Map",
+          "url": "https://www.youtube.com/watch?v=9HwpR3Njq00",
+          "creator": "NNgroup — Sarah Gibbons",
+          "topics": [
+            "empathy maps",
+            "qualitative research",
+            "user attitudes",
+            "user behaviour"
+          ],
+          "course_fit": "Phase 1 empathy maps. Provides a five-step creation process and helps distinguish evidence from assumptions.",
+          "watch_plan": "Watch, then sketch the map categories from memory using an unrelated practice scenario.",
+          "practice": "Explain which entries require real observations or statements, and label untested assumptions as hypotheses.",
+          "anki_search": [
+            "empathy",
+            "research",
+            "user"
+          ],
+          "duration": "About 3 minutes (rounded duration on official NN/G video page)",
+          "verification_urls": [
+            "https://www.nngroup.com/videos/empathy-map/",
+            "https://www.youtube.com/watch?v=9HwpR3Njq00"
+          ]
+        },
+        {
+          "title": "Customer Journey Mapping 101",
+          "url": "https://www.youtube.com/watch?v=2W13ext26kQ",
+          "creator": "NNgroup — Sarah Gibbons",
+          "topics": [
+            "journey maps",
+            "goals",
+            "experience stages",
+            "user-centred design"
+          ],
+          "course_fit": "Phase 1 journey maps. Customer/service examples need adaptation to the actual course context; video does not supply research findings.",
+          "watch_plan": "Watch after the empathy-map introduction. Draw the five components and explain their relationship.",
+          "practice": "Explain the difference between a journey map and an interface click sequence. Identify which parts of a journey require research evidence.",
+          "anki_search": [
+            "journey",
+            "task",
+            "goal"
+          ],
+          "duration": "About 2 minutes (rounded duration on official NN/G video page)",
+          "verification_urls": [
+            "https://www.nngroup.com/videos/journey-mapping-101/",
+            "https://www.youtube.com/watch?v=2W13ext26kQ"
+          ]
+        },
+        {
+          "title": "Paper Prototyping 101",
+          "url": "https://www.youtube.com/watch?v=fw42BYQmuJ4",
+          "creator": "NNgroup — Rachel Krause",
+          "topics": [
+            "phase 2",
+            "paper prototyping",
+            "prototype",
+            "prototyping",
+            "layout",
+            "iteration",
+            "usability feedback"
+          ],
+          "course_fit": "Phase 2 paper tests and the Aula 2 iterative-design lesson. Helps test interaction ideas before medium/high-fidelity implementation; does not teach a particular prototyping application's controls.",
+          "watch_plan": "Watch this short introduction before a paper-prototype practice block. Pause to describe how the user can interact with a paper interface and how a design change could be made immediately.",
+          "practice": "For an unrelated practice interface, sketch two small screens and one realistic task; explain what observation would make you revise the sketch. Do not report a practice rehearsal as real project testing.",
+          "anki_search": [
+            "prototype",
+            "prototyping",
+            "iteration",
+            "evaluation"
+          ],
+          "duration": "About 3 minutes (rounded duration on official NN/G video page)",
+          "verification_urls": [
+            "https://www.nngroup.com/videos/paper-prototyping-101/",
+            "https://www.youtube.com/watch?v=fw42BYQmuJ4"
+          ]
+        },
+        {
+          "title": "How to Conduct a Heuristic Evaluation",
+          "url": "https://www.nngroup.com/videos/conduct-heuristic-evaluation/",
+          "creator": "NNgroup — Kate Moran",
+          "topics": [
+            "phase 2",
+            "heuristic evaluation",
+            "heuristics",
+            "Nielsen",
+            "inspection",
+            "evaluation report",
+            "usability problems"
+          ],
+          "course_fit": "Phase 2 cross-group Nielsen heuristic report. Explains a systematic review process; evaluator findings are potential issues, not observations of real users. Apply the course's report/rating instructions where they differ.",
+          "watch_plan": "Watch the official NN/G video page, then practise one inspection on an unrelated interface. Name the heuristic and record the specific issue before discussing a proposed improvement.",
+          "practice": "Explain the difference between expert inspection and user testing. Describe how you would document one potential violation and its user consequence without inventing test data.",
+          "anki_search": [
+            "heuristic",
+            "Nielsen",
+            "inspection",
+            "evaluation"
+          ],
+          "duration": "About 5 minutes (individual official NN/G video page; topic index rounds it to 4)",
+          "verification_urls": [
+            "https://www.nngroup.com/videos/conduct-heuristic-evaluation/"
+          ]
+        },
+        {
+          "title": "Usability Testing 101",
+          "url": "https://www.youtube.com/watch?v=n8MnoJyl3W4",
+          "creator": "NNgroup — Kate Moran",
+          "topics": [
+            "phase 3",
+            "usability testing",
+            "real users",
+            "representative participants",
+            "tasks",
+            "observation",
+            "evaluation"
+          ],
+          "course_fit": "Phase 3 real-user usability testing and Aula 2 representative-user evaluation. Introductory method; it does not teach SUS scoring, quantitative sample-size calculation or replace the course's required participant count and metrics.",
+          "watch_plan": "Watch before preparing a real-user test protocol. Explain facilitator, task and participant from memory, then check the course requirements for measurements and consent.",
+          "practice": "Write one neutral task prompt for an unrelated practice interface and list what you would observe. Explain why completing the task for the participant would bias the result.",
+          "anki_search": [
+            "usability",
+            "testing",
+            "evaluation",
+            "user",
+            "task"
+          ],
+          "duration": "About 2 minutes (rounded duration on official NN/G video page)",
+          "verification_urls": [
+            "https://www.nngroup.com/videos/usability-testing-101/",
+            "https://www.youtube.com/watch?v=n8MnoJyl3W4"
+          ]
+        },
+        {
+          "title": "Reflection: Gulfs of Evaluation and Execution — Intro to the Design of Everyday Things",
+          "url": "https://www.youtube.com/watch?v=pYNX-_5_ulA",
+          "creator": "Udacity — official Intro to the Design of Everyday Things course",
+          "topics": [
+            "Norman",
+            "gulf of execution",
+            "gulf of evaluation",
+            "action cycle",
+            "interaction"
+          ],
+          "course_fit": "Aula 2 pages 10–14 and HTML lesson hci-norman. Official course reflection on the two gulfs; not a complete explanation of all seven stages or of Abowd–Beale. Supplement with the lecture and retained NN/G article.",
+          "watch_plan": "Watch the reflection clip within a 10-minute cap, then read the NN/G two-gulfs article or the Norman lesson. Map one unrelated interaction into the full seven stages using the course notes.",
+          "practice": "For a timer, distinguish not knowing how to start it from not knowing whether it started. Identify the relevant gulf and justify it. Use Moodle notes to check the complete seven-stage cycle.",
+          "anki_search": [
+            "Norman",
+            "execution",
+            "evaluation",
+            "gulf",
+            "cycle"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=pYNX-_5_ulA"
+          ]
+        }
+      ],
+      "supplements": [
+        {
+          "title": "The Two UX Gulfs: Evaluation and Execution",
+          "url": "https://www.nngroup.com/articles/two-ux-gulfs-evaluation-execution/",
+          "why": "Primary NN/G supporting reading for hci-norman; distinguishes understanding system state from finding how to act."
+        },
+        {
+          "title": "Paper Prototyping: How to Create & Usability-Test Simple UI Prototypes",
+          "url": "https://www.youtube.com/watch?v=OlbdIXLunt4",
+          "why": "Optional longer practical demonstration from the official NNgroup channel. The indexed title labels it a 40-minute tutorial; full playback and exact duration were not verified. Use only one 10–15-minute segment inside an existing study block, not as an extra session. The description says filmed in 2011, so interfaces are dated while the demonstrated paper-test approach remains relevant."
+        }
+      ]
+    },
+    {
+      "checked_on": "2026-10-07",
+      "verification_limit": "Ian Sommerville's official textbook video listings and indexed video titles/descriptions were checked. Videos were not watched in full, direct YouTube fetches were unavailable and playback was not independently tested. Durations are null to avoid unverified or inconsistent duration claims. The introductory requirements video is an optional supplement pending playback confirmation; Requirements Engineering Challenges is the selected alternative.",
+      "course_code": "INF13204L",
+      "videos": [
+        {
+          "title": "Fundamental Activities of Software Engineering",
+          "url": "https://www.youtube.com/watch?v=Z2no7DxDWRI",
+          "creator": "Ian Sommerville",
+          "topics": [
+            "specification",
+            "design and implementation",
+            "validation",
+            "evolution",
+            "process activities"
+          ],
+          "course_fit": "Current Introduction/Software Processes content and the HTML's process-activities study topic.",
+          "watch_plan": "Watch in a maximum 15-minute segment. Pause at each fundamental activity and relate it to an unrelated small system.",
+          "practice": "Give one example of each fundamental activity and explain how validation differs from implementation.",
+          "anki_search": [
+            "process",
+            "specification",
+            "validation",
+            "evolution"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://software-engineering-book.com/videos/se/",
+            "https://www.youtube.com/watch?v=Z2no7DxDWRI"
+          ]
+        },
+        {
+          "title": "Plan-based and Agile Software Processes",
+          "url": "https://www.youtube.com/watch?v=q8X2Rk5sRFI",
+          "creator": "Ian Sommerville",
+          "topics": [
+            "waterfall",
+            "incremental development",
+            "iteration",
+            "reuse-based development",
+            "plan-driven",
+            "agile"
+          ],
+          "course_fit": "Direct match to current Waterfall/incremental/reuse choices. Author explains that real processes often combine plan-based and agile approaches.",
+          "watch_plan": "Watch one 15–20-minute segment, pausing to compare each process. Continue only within the allocated study block.",
+          "practice": "Choose a process for an unrelated practice system and explain one benefit, one limitation and what requirement uncertainty changes.",
+          "anki_search": [
+            "waterfall",
+            "incremental",
+            "reuse",
+            "agile",
+            "process"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://software-engineering-book.com/videos/se/",
+            "https://www.youtube.com/watch?v=q8X2Rk5sRFI"
+          ]
+        },
+        {
+          "title": "Requirements Engineering Processes",
+          "url": "https://www.youtube.com/watch?v=GSe4xIy-iBE",
+          "creator": "Ian Sommerville",
+          "topics": [
+            "requirements elicitation",
+            "analysis",
+            "specification",
+            "validation",
+            "requirements process"
+          ],
+          "course_fit": "Current Requirements Engineering content. The author includes perspectives beyond his textbook, so use Moodle terminology for assessed answers.",
+          "watch_plan": "Watch one maximum 15-minute segment and sketch the process from memory before reopening the lecture material.",
+          "practice": "Draw the requirements process and explain where feedback or revision can happen. Identify the output of each activity.",
+          "anki_search": [
+            "requirements",
+            "elicitation",
+            "validation",
+            "specification"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://software-engineering-book.com/videos/req/",
+            "https://www.youtube.com/watch?v=GSe4xIy-iBE"
+          ]
+        },
+        {
+          "title": "Stakeholders, Viewpoints and Concerns",
+          "url": "https://www.youtube.com/watch?v=P5X-ridjaOY",
+          "creator": "Ian Sommerville",
+          "topics": [
+            "stakeholders",
+            "viewpoints",
+            "concerns",
+            "requirements conflicts"
+          ],
+          "course_fit": "Current stakeholders, differing requirements perspectives and system-wide concerns.",
+          "watch_plan": "Watch one maximum 15-minute segment, then explain stakeholder, viewpoint and concern without looking.",
+          "practice": "Identify three stakeholders for an unrelated practice system and explain one possible requirements conflict and a question to investigate it.",
+          "anki_search": [
+            "stakeholder",
+            "viewpoint",
+            "requirement",
+            "domain"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://software-engineering-book.com/videos/req/",
+            "https://www.youtube.com/watch?v=P5X-ridjaOY"
+          ]
+        },
+        {
+          "title": "Requirements Engineering Challenges",
+          "url": "https://www.youtube.com/watch?v=bK-y0CaGkhU",
+          "creator": "Ian Sommerville",
+          "topics": [
+            "requirements change",
+            "conflicting perspectives",
+            "people",
+            "politics",
+            "requirements uncertainty"
+          ],
+          "course_fit": "Current requirements ambiguity/change-management topics. Selected as the accessible-indexed alternative to the introductory requirements video, whose current playback remains unconfirmed.",
+          "watch_plan": "Use a maximum 15-minute segment. Identify examples of changing requirements and conflicts, then return to the course's definitions.",
+          "practice": "Describe a requirements change in an unrelated scenario and explain what must be rechecked before accepting it.",
+          "anki_search": [
+            "requirements",
+            "change",
+            "ambiguity",
+            "stakeholder"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://software-engineering-book.com/videos/req/",
+            "https://www.youtube.com/watch?v=bK-y0CaGkhU"
+          ]
+        }
+      ],
+      "supplements": [
+        {
+          "title": "An Introduction to Requirements Engineering",
+          "url": "https://www.youtube.com/watch?v=Ec0s0z5uXQ8",
+          "why": "Highly relevant introduction to requirements and requirements engineering, listed by the author at https://software-engineering-book.com/videos/req/. Direct YouTube retrieval failed and current playback is unconfirmed. Do not label playable or fully verified before a browser check; use the selected Challenges video if unavailable. Duration omitted because reports conflict."
+        },
+        {
+          "title": "UML Use Case Diagrams: Everything You Need to Know",
+          "url": "https://www.youtube.com/watch?v=4emxjxonNRI",
+          "why": "Lucidchart's official explanatory video on actors, system boundaries and include/extend relationships supports later project diagram preparation. Indexed description checked; playback/duration unverified. Does not replace the required textual use-case specification or course notation."
+        }
+      ]
+    },
+    {
+      "checked_on": "2026-10-07",
+      "verification_limit": "Specific video pages, primary creator descriptions, titles and available durations were checked through web browsing. The videos were not watched in full. Topic relevance was mapped to the local course study page and saved Moodle audits. These videos are supplementary learning support, not assessed solutions or proof of mastery. The current diagnostic practical requires identifying problems without correcting, deleting or replacing supplied records. Use transformation demonstrations only on separate scratch data.",
+      "course_code": "INF14387L",
+      "videos": [
+        {
+          "title": "Demo: Strings | Python for Beginners [10 of 44]",
+          "url": "https://www.youtube.com/watch?v=zv3cVJHCqXA",
+          "creator": "Microsoft Developer",
+          "topics": [
+            "Python strings",
+            "string manipulation"
+          ],
+          "course_fit": "String-manipulation prerequisite for lowercase and text-preprocessing tasks. This short demo does not cover the complete Portuguese tokenization or stopword task.",
+          "watch_plan": "Watch the short demo, pausing before each output; close it before your own attempt.",
+          "practice": "Invent a sentence, predict the result of basic string operations, then run the code and explain each discrepancy.",
+          "anki_search": [
+            "string",
+            "lower",
+            "text",
+            "split"
+          ],
+          "duration": "4:28",
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=zv3cVJHCqXA",
+            "https://learn.microsoft.com/en-us/shows/intro-to-python-development/python-for-beginners-10-of-44-demo-strings",
+            "https://learn.microsoft.com/en-us/shows/intro-to-python-development/"
+          ]
+        },
+        {
+          "title": "Demo: Collections | Python for Beginners [26 of 44]",
+          "url": "https://www.youtube.com/watch?v=4PaSlXNjawM",
+          "creator": "Microsoft Developer",
+          "topics": [
+            "lists",
+            "dictionaries",
+            "collections"
+          ],
+          "course_fit": "Matches lists and dictionaries in Practical 0 and prepares the structures used for word-frequency work.",
+          "watch_plan": "Watch the short collections demonstration; pause and predict how an item will be accessed.",
+          "practice": "Create a tiny list and dictionary from invented data, retrieve an item from each and explain index versus key access.",
+          "anki_search": [
+            "list",
+            "dictionary",
+            "collections",
+            "key"
+          ],
+          "duration": "4:01",
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=4PaSlXNjawM",
+            "https://learn.microsoft.com/en-us/shows/intro-to-python-development/python-for-beginners-26-of-44-demo-collections",
+            "https://learn.microsoft.com/en-us/shows/intro-to-python-development/"
+          ]
+        },
+        {
+          "title": "Demo: Loops | Python for Beginners [28 of 44]",
+          "url": "https://www.youtube.com/watch?v=rAvD-6MpTw4",
+          "creator": "Microsoft Developer",
+          "topics": [
+            "loops",
+            "iteration",
+            "collections"
+          ],
+          "course_fit": "Matches basic control flow and iterating text tokens or other collections in the posted Python review.",
+          "watch_plan": "Watch this short demo; predict each iteration and result before continuing.",
+          "practice": "Trace a short loop over invented values by hand, run it, and compare the actual output with your prediction.",
+          "anki_search": [
+            "loop",
+            "for",
+            "while",
+            "iteration"
+          ],
+          "duration": "3:04",
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=rAvD-6MpTw4",
+            "https://learn.microsoft.com/en-us/shows/intro-to-python-development/python-for-beginners-28-of-44-demo-loops",
+            "https://learn.microsoft.com/en-us/shows/intro-to-python-development/"
+          ]
+        },
+        {
+          "title": "Python Pandas Tutorial (Part 1): Getting Started with Data Analysis - Installation and Loading Data",
+          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZPA",
+          "creator": "Corey Schafer",
+          "topics": [
+            "pandas",
+            "CSV acquisition",
+            "notebooks",
+            "data inspection"
+          ],
+          "course_fit": "Matches acquisition and basic inspection in the posted Python notebook. Setup is optional when the existing Colab environment already works.",
+          "watch_plan": "Focus on loading and inspection. Skip environment-installation steps if unnecessary; keep viewing inside one budgeted block.",
+          "practice": "Load a separate scratch CSV and inspect its shape, columns, types and a few rows; explain what each check reveals without changing the original data.",
+          "anki_search": [
+            "pandas",
+            "CSV",
+            "DataFrame",
+            "head",
+            "dtypes"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=ZyhVh-qRZPA"
+          ]
+        },
+        {
+          "title": "Python Pandas Tutorial (Part 9): Cleaning Data - Casting Datatypes and Handling Missing Values",
+          "url": "https://www.youtube.com/watch?v=KdmPHEnPJPs",
+          "creator": "Corey Schafer",
+          "topics": [
+            "missing values",
+            "datatypes",
+            "pandas",
+            "data-quality diagnosis"
+          ],
+          "course_fit": "Missing-value and datatype concepts support data-quality diagnosis and later transformation. The current diagnostic practical explicitly forbids correcting, deleting or replacing supplied records: follow transformation demonstrations only on separate scratch data.",
+          "watch_plan": "Study missingness and datatype concepts in a bounded segment. Check current pandas documentation when older syntax differs; do not apply demonstrated cleaning to the diagnostic practical's supplied records.",
+          "practice": "Create a tiny scratch table with a missing entry and a mixed-type column. Describe the problems and evidence first; experiment with transformations only in this separate table.",
+          "anki_search": [
+            "missing",
+            "NaN",
+            "dtype",
+            "data quality",
+            "pandas"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=KdmPHEnPJPs",
+            "https://www.patreon.com/coreyms/posts/python-pandas-9-34300182"
+          ]
+        }
+      ],
+      "supplements": [
+        {
+          "title": "Working with missing data — official pandas documentation",
+          "url": "https://pandas.pydata.org/docs/user_guide/missing_data.html",
+          "why": "Current primary reference for missingness detection and pandas behavior when older video code differs. Detection does not justify correcting the course practical's supplied records."
+        },
+        {
+          "title": "Python for Beginners — Microsoft Learn series",
+          "url": "https://learn.microsoft.com/en-us/shows/intro-to-python-development/",
+          "why": "Primary episode catalogue and verified durations; choose only the short episode corresponding to a gap found in practice or Anki rather than watching the entire series."
+        }
+      ]
+    },
+    {
+      "checked_on": "2026-10-07",
+      "verification_limit": "Specific video pages, primary creator/university descriptions, titles and available durations were checked through web browsing. The videos were not watched in full. Topic relevance was mapped to the local course study page and saved Moodle audits; this does not establish assessment coverage or student mastery. Exact first-test topic boundary remains unconfirmed.",
+      "course_code": "MAT02354L",
+      "videos": [
+        {
+          "title": "02.8 Bayes' Rule",
+          "url": "https://learn.mit.edu/video/8714/02-8-bayes-rule?playlist=8685",
+          "creator": "John Tsitsiklis — MIT",
+          "topics": [
+            "conditional probability",
+            "Bayes' rule"
+          ],
+          "course_fit": "Matches conditional probability and Bayes foundations in the reviewed Weeks 1–2 materials.",
+          "watch_plan": "Watch this short clip after reviewing the conditional-probability definition. Pause and identify the conditioning event.",
+          "practice": "Use a fresh invented example to label prior, likelihood and evidence before calculating a posterior; explain the result without the video.",
+          "anki_search": [
+            "Bayes",
+            "conditional probability",
+            "total probability"
+          ],
+          "duration": "4:28",
+          "verification_urls": [
+            "https://learn.mit.edu/video/8714/02-8-bayes-rule?playlist=8685",
+            "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/resources/bayes-rule/"
+          ]
+        },
+        {
+          "title": "06.2 Variance",
+          "url": "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/resources/variance/",
+          "creator": "John Tsitsiklis — MIT OpenCourseWare",
+          "topics": [
+            "variance",
+            "expectation",
+            "second moments"
+          ],
+          "course_fit": "Supports the current expectation/variance material and the mistake of treating E[X²] as variance.",
+          "watch_plan": "Use one bounded viewing segment, then close the video and write the variance identity from memory.",
+          "practice": "Create a tiny discrete distribution and separately calculate E[X], E[X²] and Var(X). Explain why the last two differ.",
+          "anki_search": [
+            "variance",
+            "expectation",
+            "E[X²]",
+            "moments"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/resources/variance/"
+          ]
+        },
+        {
+          "title": "08.2 Probability Density Functions",
+          "url": "https://learn.mit.edu/video/8766/08-2-probability-density-functions?playlist=8685",
+          "creator": "John Tsitsiklis — MIT",
+          "topics": [
+            "probability density functions",
+            "continuous random variables",
+            "interval probabilities"
+          ],
+          "course_fit": "Matches the PMF/PDF distinction and continuous distributions in current course sources.",
+          "watch_plan": "Watch the short topic clip. Pause before an interval-probability calculation and predict the setup.",
+          "practice": "Explain why a PDF height is not a point probability; integrate a simple density over a fresh short interval and check its support.",
+          "anki_search": [
+            "PDF",
+            "density",
+            "continuous",
+            "PMF"
+          ],
+          "duration": "11:09",
+          "verification_urls": [
+            "https://learn.mit.edu/video/8766/08-2-probability-density-functions?playlist=8685",
+            "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/resources/probability-density-functions/"
+          ]
+        },
+        {
+          "title": "06.7 Joint PMFs and the Expected Value Rule",
+          "url": "https://learn.mit.edu/video/8752/06-7-joint-pmfs-and-the-expected-value-rule?playlist=8685",
+          "creator": "John Tsitsiklis — MIT",
+          "topics": [
+            "joint PMFs",
+            "marginal distributions",
+            "expected value"
+          ],
+          "course_fit": "Matches reviewed joint-distribution tables and expectation; useful preparation for the joint/marginal/conditional topic cluster.",
+          "watch_plan": "Watch after basic PMFs are familiar; pause when a joint table is introduced and predict one marginal.",
+          "practice": "Construct a small normalized joint table, obtain its marginal distributions, and calculate one expectation independently.",
+          "anki_search": [
+            "joint",
+            "marginal",
+            "PMF",
+            "expected value"
+          ],
+          "duration": "10:16",
+          "verification_urls": [
+            "https://learn.mit.edu/video/8752/06-7-joint-pmfs-and-the-expected-value-rule?playlist=8685",
+            "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/resources/joint-pmfs-and-the-expected-value-rule/"
+          ]
+        },
+        {
+          "title": "Lecture 17: Moment Generating Functions | Statistics 110",
+          "url": "https://www.youtube.com/watch?v=N8O6zd6vTZ8",
+          "creator": "Joe Blitzstein — Harvard University",
+          "topics": [
+            "moment generating functions",
+            "moments",
+            "distribution reasoning"
+          ],
+          "course_fit": "Supports the MGF definition and derivatives used in the posted Murteira excerpt. The lecture also covers hybrid Bayes and Laplace's rule, which extend beyond the immediate target; exact F1 coverage is unknown.",
+          "watch_plan": "Use the MGF portion within a bounded study block rather than committing to the whole lecture. Pause at the definition and derivatives.",
+          "practice": "Independently derive E[X] and Var(X) from a simple MGF, stating the interval where it exists and distinguishing raw moments from variance.",
+          "anki_search": [
+            "MGF",
+            "moment generating",
+            "moments",
+            "variance"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=N8O6zd6vTZ8",
+            "https://stat110.hsites.harvard.edu/youtube"
+          ]
+        }
+      ],
+      "supplements": [
+        {
+          "title": "MIT Introduction to Probability — topic video catalogue",
+          "url": "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/resources/lecture-videos/",
+          "why": "Use individual clips only when practice or Anki identifies a gap: CDFs, binomial probabilities, geometric memorylessness, covariance and exponential distributions are represented. This catalogue is supplementary and does not define the Évora test scope."
+        }
+      ]
+    },
+    {
+      "checked_on": "2026-10-07",
+      "verification_limit": "Primary creator/university titles and topic descriptions checked 7 October 2026. Full playback and unlisted runtimes were not independently checked. These explain the listed topics; complete examination scope still requires current Moodle instructions.",
+      "course_code": "INF13207L",
+      "videos": [
+        {
+          "title": "CS50W - Lecture 0 - HTML and CSS",
+          "url": "https://www.youtube.com/watch?v=zFZrkCIc2Oc",
+          "creator": "Brian Yu / Harvard CS50",
+          "topics": [
+            "HTML document structure",
+            "lists",
+            "images",
+            "links",
+            "tables",
+            "CSS",
+            "selectors",
+            "responsive design"
+          ],
+          "course_fit": "Moodle Activity 01 HTML, links, images and timetable; Activity 02 CSS; Activity 04 responsive design. Official chapter boundaries: HTML 03:41, CSS 37:14, responsive design 1:25:06, Bootstrap 1:38:21. Bootstrap and Sass are outside the current supplied activity focus.",
+          "watch_plan": "Choose one 10-15 minute segment beginning at the relevant chapter. Stop before unrelated Bootstrap/Sass material.",
+          "practice": "Close the video and reproduce a small page with a heading, list, image, link and table. Compare prediction to browser output.",
+          "anki_search": [
+            "head",
+            "HTML",
+            "table",
+            "stylesheet",
+            "responsive"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://cs50.harvard.edu/web/weeks/0/",
+            "https://cdn.cs50.net/web/2020/spring/lectures/0/lang/en/lecture0.txt",
+            "https://video.cs50.io/zFZrkCIc2Oc?screen=HbCJtscq-U8"
+          ]
+        },
+        {
+          "title": "CSS Specificity explained",
+          "url": "https://www.youtube.com/watch?v=c0kfcP_nD9E",
+          "creator": "Kevin Powell",
+          "topics": [
+            "specificity",
+            "element selectors",
+            "classes",
+            "IDs",
+            "inline styles",
+            "important",
+            "competing CSS rules"
+          ],
+          "course_fit": "Moodle Activity 02A/02B competing selectors, descendants, IDs/classes and overrides. Deck tags T03_selectors, T03_exercises and exam_trap.",
+          "watch_plan": "Use a maximum 10-15 minute explanation segment, pausing when a selector comparison is shown.",
+          "practice": "Create three competing colour rules. Predict the winning rule before opening the browser, then repair a rule without adding !important.",
+          "anki_search": [
+            "specificity",
+            "selector",
+            "descendant",
+            "important"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=c0kfcP_nD9E"
+          ]
+        },
+        {
+          "title": "Inspect Network Activity - Chrome DevTools 101",
+          "url": "https://www.youtube.com/watch?v=e1gAyQuIFQo",
+          "creator": "Chrome for Developers",
+          "topics": [
+            "Network panel",
+            "HTTP requests",
+            "resource inspection",
+            "headers",
+            "response bodies",
+            "status codes",
+            "network throttling"
+          ],
+          "course_fit": "Moodle Activities 00/01/05 HTTP requests, response headers, missing assets and image selection. Chapters verified in official metadata: request log 01:05; individual resources 04:46; headers/body 05:23.",
+          "watch_plan": "Watch the request-log and resource-inspection sections, then immediately inspect a local practice page.",
+          "practice": "Reload the local page with Network open. Identify HTML, CSS and image requests, one HTTP status code, and the image resource loaded.",
+          "anki_search": [
+            "HTTP",
+            "status",
+            "server",
+            "srcset"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=e1gAyQuIFQo",
+            "https://developer.chrome.com/docs/devtools/network/"
+          ]
+        },
+        {
+          "title": "Get your media queries working with the meta viewport HTML tag",
+          "url": "https://www.youtube.com/watch?v=SElOdK2qTpI",
+          "creator": "Kevin Powell",
+          "topics": [
+            "viewport meta tag",
+            "mobile viewport",
+            "media queries",
+            "responsive design"
+          ],
+          "course_fit": "Moodle Activity 04.2 Jenware requires device-width/initial-scale viewport configuration and testing breakpoints around 481px and 780px. Deck tag T04_responsive.",
+          "watch_plan": "Watch the relevant explanation inside a 10-minute learning allowance, then test the effect yourself.",
+          "practice": "Compare a local page with and without its viewport declaration in device emulation. Explain the difference and test both sides of 481px and 780px.",
+          "anki_search": [
+            "viewport",
+            "media query",
+            "responsive"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=SElOdK2qTpI"
+          ]
+        },
+        {
+          "title": "srcset and sizes attributes - [ images on the web | part one ]",
+          "url": "https://www.youtube.com/watch?v=2QYpkrX2N48",
+          "creator": "Kevin Powell",
+          "topics": [
+            "srcset",
+            "sizes",
+            "width descriptors",
+            "resolution switching",
+            "pixel density",
+            "image resource selection"
+          ],
+          "course_fit": "Moodle Activity 05 Elva requires width descriptors, sizes and observation of resource selection. The companion MDN guide uses the same Elva filenames and 600px example.",
+          "watch_plan": "Choose a 10-15 minute segment rather than scheduling the whole video automatically.",
+          "practice": "Test a local example at two viewport widths and different pixel densities. Record the actual Network resource. Explain why sizes is a source-selection hint and does not impose CSS image width.",
+          "anki_search": [
+            "srcset",
+            "sizes",
+            "density",
+            "resolution"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=2QYpkrX2N48",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images"
+          ]
+        },
+        {
+          "title": "The HTML picture element explained [ Images on the web part 3 ]",
+          "url": "https://www.youtube.com/watch?v=Rik3gHT24AM",
+          "creator": "Kevin Powell",
+          "topics": [
+            "picture element",
+            "art direction",
+            "source elements",
+            "media conditions",
+            "image fallback"
+          ],
+          "course_fit": "Moodle Activity 05 Elva requires switching between portrait and wide images at 799/800px, with an img fallback. Deck tag T04_responsive.",
+          "watch_plan": "Use after understanding srcset. Watch one 10-15 minute segment and then close the explanation.",
+          "practice": "Build an independent practice example that switches a portrait crop and a wide image around 799/800px. Explain source order and why img fallback remains required.",
+          "anki_search": [
+            "picture",
+            "art direction",
+            "fallback",
+            "source"
+          ],
+          "duration": null,
+          "verification_urls": [
+            "https://www.youtube.com/watch?v=Rik3gHT24AM",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images"
+          ]
+        }
+      ],
+      "supplements": [
+        {
+          "title": "MDN - Floats",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Floats",
+          "why": "Primary tutorial verified for Activity 04.1 float/clear exercises, including clear:left/right/both. A Kevin Powell floats-video candidate failed primary retrieval and is excluded from the verified six picks."
+        },
+        {
+          "title": "CSS position deep dive",
+          "url": "https://www.youtube.com/watch?v=fF_NVrd1s14",
+          "why": "Optional substitution for immediate positioning/containing-block difficulty in T03b_layout. Title, scope and YouTube link are confirmed by the creator's own post at https://www.patreon.com/kevinpowell/posts/css-position-92579122; playback and runtime were not checked."
+        },
+        {
+          "title": "MDN - Using responsive images in HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images",
+          "why": "Primary source verified and exceptionally close to Activity 05: the guide uses the same Elva filenames and the 600px resolution-switching example. Read alongside the srcset/picture videos to separate resource selection from rendered CSS width."
+        }
+      ]
+    }
+  ]
+}
