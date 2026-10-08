@@ -1,7 +1,7 @@
 'use strict';
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
-const {dailyTasks}=require('../today.js');
+const {dailyTasks,taskSignature,packet,parsePacket,mergeEntries}=require('../today.js');
 
 function plan() {
   return {
@@ -37,4 +37,27 @@ test('Upcoming Statistics assessment choice stays actionable',()=>{
 test('Public study plan does not infer completion',()=>{
   const tasks=dailyTasks('2026-10-08',plan());
   assert.equal(tasks.some(t=>t.done===true),false);
+});
+
+test('Phone report survives serialization, private reload and second-device merge',()=>{
+  const p=plan(),date='2026-10-08',task=dailyTasks(date,p)[0];
+  const report={done:false,signature:taskSignature(task),title:task.title,minutes:task.minutes,
+    kind:task.kind,user_reported_at:'2026-10-07T12:00:00.000Z'};
+  const stored=packet(date,p,{tasks:{[task.id]:report}});
+  assert.equal(stored.official_completion_inferred,false);
+  const loaded=parsePacket(stored,date);
+  const otherDevice=mergeEntries({tasks:{}},loaded);
+  assert.deepEqual(otherDevice.conflicts,[]);
+  assert.equal(otherDevice.entry.tasks[task.id].done,false);
+});
+
+test('Equal timestamp disagreements block a silent overwrite',()=>{
+  const p=plan(),date='2026-10-08',task=dailyTasks(date,p)[0];
+  const original={done:false,signature:taskSignature(task),title:task.title,minutes:task.minutes,
+    kind:task.kind,user_reported_at:'2026-10-07T12:00:00.000Z'};
+  const a={tasks:{[task.id]:original}};
+  const b={tasks:{[task.id]:{...original,done:true}}};
+  assert.deepEqual(mergeEntries(a,b).conflicts,[task.id]);
+  const c={tasks:{[task.id]:{...original,done:true,user_reported_at:'2026-10-07T13:00:00.000Z'}}};
+  assert.equal(mergeEntries(a,c).entry.tasks[task.id].done,true);
 });
