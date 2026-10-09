@@ -1,6 +1,6 @@
 {
   "format": "evora-public-suggested-plan-v1",
-  "updated_on": "2026-10-07",
+  "updated_on": "2026-10-09",
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
@@ -9,6 +9,64 @@
   "study_end": "2027-02-03",
   "weekly_base_minutes": 420,
   "weekly_max_minutes": 480,
+  "dated_priority_overrides": [
+    {
+      "date": "2026-10-09",
+      "reviewed_on": "2026-10-09",
+      "source_checked_on": "2026-10-06",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=17184",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=559",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "registration-review",
+          "title": "Review pending access and registration receipts",
+          "minutes": 25,
+          "course": "HCI",
+          "text": "Personally inspect any pending official access, group or practical-section request. Check existing teammate responses before repeating a form. Keep the accepted receipt or exact error in your private records; this checklist cannot verify official acceptance.",
+          "start": "Open the relevant official page and write down its actual pending step or exact error.",
+          "consequence": "An unresolved group or section can block the next project step. A draft or sent request is not an accepted registration.",
+          "links": [
+            {"label": "Official student portal", "url": "https://siiue2.uevora.pt/"},
+            {"label": "HCI course", "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"},
+            {"label": "Software practical choice", "url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=17184"}
+          ]
+        },
+        {
+          "id": "portuguese-or-web",
+          "title": "Portuguese placement if participating; otherwise Web practice",
+          "minutes": 40,
+          "course": "Portuguese",
+          "text": "If taking Portuguese, personally complete the questionnaire before the placement diagnostic. Its announced date is 9 October; the cutoff hour remains unconfirmed. These requirements were last checked on 3 October. If not participating, use this block for your own Web exercise. If the diagnostic needs longer, replace lower-priority practice instead of adding study time.",
+          "start": "Decide whether Portuguese applies, then open the questionnaire instructions or your own Web exercise.",
+          "consequence": "Conditional Portuguese placement may close today; an unchecked box does not establish that it was missed or submitted.",
+          "links": [
+            {"label": "Portuguese course", "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=559"},
+            {"label": "Web helper", "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13207L.html"}
+          ]
+        },
+        {
+          "id": "practice",
+          "title": "One short Web learning cycle",
+          "minutes": 30,
+          "course": "Web",
+          "text": "Use 10 minutes for native Anki due cards, 15 minutes for one matched explanation and five minutes for your own recall or HTML/CSS attempt. Keep an error or question for the next session. The first written test is dated 20 October; its exact time remains unconfirmed. Check course AI rules before assessed work.",
+          "start": "Answer five due cards before revealing their backs.",
+          "consequence": "Anki, video and an independent attempt support preparation; they do not establish mastery or assessment completion.",
+          "links": [
+            {"label": "Web cards", "url": "https://hostilian.github.io/EVORACLASSES/study/anki_cards.html?course=INF13207L&track=foundation"},
+            {"label": "Matched Web explanations", "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13207L.html#video-explanations"},
+            {"label": "Official Web course", "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"}
+          ]
+        }
+      ]
+    }
+  ],
   "courses": [
     {
       "code": "INF13186L",

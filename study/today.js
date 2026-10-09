@@ -9,7 +9,24 @@
   const validTime=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(v)&&Number.isFinite(Date.parse(v))&&Date.parse(v)<=Date.now()+5*60*1000;
   const num=v=>Number.isFinite(v)&&v>=0?v:0;
   const safeURL=v=>{try{const u=new URL(v,typeof location==='object'?location.href:'https://hostilian.github.io/EVORACLASSES/study/today.html');return u.protocol==='https:'&&!u.username&&!u.password&&!['localhost','127.0.0.1','[::1]'].includes(u.hostname)?u.href:null;}catch(_){return null;}};
-  function validatePlan(p){if(!plain(p)||p.format!=='evora-public-suggested-plan-v1'||!validDate(p.updated_on)||!Array.isArray(p.requirements)||!Array.isArray(p.courses)||p.weekly_base_minutes!==420||p.weekly_max_minutes!==480)throw Error('General plan format is invalid.');for(const r of p.requirements)if(!validDate(r.date)||!validDate(r.end_date)||r.end_date<r.date||!safeURL(r.source_url))throw Error('A course date or source is invalid.');return p;}
+  function validatePlan(p){
+    if(!plain(p)||p.format!=='evora-public-suggested-plan-v1'||!validDate(p.updated_on)||!validDate(p.study_start)||!validDate(p.study_end)||p.study_end<p.study_start||!Array.isArray(p.requirements)||!Array.isArray(p.courses)||p.weekly_base_minutes!==420||p.weekly_max_minutes!==480)throw Error('General plan format is invalid.');
+    for(const r of p.requirements)if(!validDate(r.date)||!validDate(r.end_date)||r.end_date<r.date||!safeURL(r.source_url))throw Error('A course date or source is invalid.');
+    const overrides=p.dated_priority_overrides===undefined?[]:p.dated_priority_overrides;
+    if(!Array.isArray(overrides)||overrides.length>3000)throw Error('Dated priorities are invalid.');
+    const dates=new Set();
+    for(const o of overrides){
+      if(!plain(o)||!validDate(o.date)||dates.has(o.date)||!coreLimit(o.date,p)||!validDate(o.reviewed_on)||o.reviewed_on>p.updated_on||!validDate(o.source_checked_on)||o.source_checked_on>o.reviewed_on||o.official_deadlines_shifted!==false||!Array.isArray(o.source_urls)||!o.source_urls.length||o.source_urls.length>20||o.source_urls.some(url=>!safeURL(url))||!Array.isArray(o.priorities)||o.priorities.length<1||o.priorities.length>3||o.break_minutes!==10)throw Error('A dated priority has invalid dates, sources or capacity.');
+      dates.add(o.date);
+      const taskIds=new Set();let minutes=o.break_minutes;
+      for(const t of o.priorities){
+        if(!plain(t)||typeof t.id!=='string'||!/^[a-zA-Z0-9-]{1,70}$/.test(t.id)||['break-1','break-2'].includes(t.id)||taskIds.has(t.id)||typeof t.title!=='string'||!t.title.trim()||t.title.length>250||!Number.isInteger(t.minutes)||t.minutes<=0||typeof t.text!=='string'||t.text.length>3000||t.signature!==undefined||t.done!==undefined||t.checked!==undefined||t.kind!==undefined||t.course!==undefined&&typeof t.course!=='string'||t.start!==undefined&&(typeof t.start!=='string'||t.start.length>600)||t.consequence!==undefined&&(typeof t.consequence!=='string'||t.consequence.length>600)||t.links!==undefined&&(!Array.isArray(t.links)||t.links.length>8||t.links.some(l=>!plain(l)||typeof l.label!=='string'||!safeURL(l.url))))throw Error('A dated priority task is invalid.');
+        taskIds.add(t.id);minutes+=t.minutes;
+      }
+      if(minutes!==coreLimit(o.date,p))throw Error('Dated priorities must replace the day within its existing allowance.');
+    }
+    return p;
+  }
   function taskSignature(t){return t.signature||JSON.stringify([t.id,t.title,t.minutes,t.course||'',t.text||'',t.kind]);}
   function withSignature(t){return {...t,signature:taskSignature(t)};}
   const compactText=(value,limit=600)=>String(value||'').trim().replace(/\s+/gu,' ').slice(0,limit);
@@ -19,6 +36,8 @@
   function dailyTasks(date,p,privatePlans={}){
     if(privatePlans[date])return privatePlans[date].tasks.map(t=>({...t}));
     if(!coreLimit(date,p))return [];
+    const override=(p.dated_priority_overrides||[]).find(o=>o.date===date);
+    if(override)return override.priorities.map(t=>withSignature({...t,kind:'priority'})).concat([1,2].map(i=>withSignature({id:'break-'+i,title:'Take a five-minute break',minutes:5,kind:'break'})));
     if(date===p.study_start)return p.initial_priorities.map(t=>withSignature({...t,kind:'priority'})).concat([1,2].map(i=>withSignature({id:'break-'+i,title:'Take a five-minute break',minutes:5,kind:'break'})));
     const wd=new Date(date+'T12:00:00Z').getUTCDay(),name=date==='2026-10-08'?'Web':date==='2026-10-09'?'Statistics':date==='2026-10-10'?'Software':['Data','Data','HCI','Web','Statistics','Software','Data'][wd];
     const c=p.courses.find(c=>c.name===name),code=c?.code,capacity=coreLimit(date,p),study='https://hostilian.github.io/EVORACLASSES/study/';

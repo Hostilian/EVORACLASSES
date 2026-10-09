@@ -4,6 +4,9 @@ English study support for five University of Évora classes. The active package 
 
 ## Start here
 
+- [Library and reminder status](study/pipeline.html): direct links to the private source archive and exact phone setup steps; verified features and pending Moodle/phone/delivery checks remain distinct.
+- [Today’s phone checklist](study/today.html): neutral dated priorities, conditional deadlines and actual-work reporting within the seven-hour base and eight-hour weekly maximum. A saved private key alone does not verify sync or reminder delivery.
+- Public checks run offline on pushes and pull requests: dated-plan budgets, task signatures/history preservation, local links and obvious original/private-file or credential accidents. They use read-only permissions and upload no artifacts. These checks do not establish Moodle completeness, sharing rights or authenticated phone delivery, and they do not block an independently configured branch-based Pages deployment.
 - [Daily home page](https://hostilian.github.io/EVORACLASSES/): direct access to all five course helpers, 30 matched videos, practice cards, Anki setup and the private-plan viewer.
 - [Daily calendar and checklist](study/planner.html): load a local plan file; its contents and progress stay in that browser. The public repository contains the empty viewer, not personal academic records. Load a refreshed file when the plan changes; ticks do not update Google Calendar or official records automatically.
 - [Passing guide](study/study_guide.html): assessment weights, minimum marks, dates, current topics, and project checklists.
