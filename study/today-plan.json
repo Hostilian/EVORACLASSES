@@ -1,6 +1,6 @@
 {
   "format": "evora-public-suggested-plan-v1",
-  "updated_on": "2026-10-09",
+  "updated_on": "2026-10-10",
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
@@ -32,9 +32,18 @@
           "start": "Open the relevant official page and write down its actual pending step or exact error.",
           "consequence": "An unresolved group or section can block the next project step. A draft or sent request is not an accepted registration.",
           "links": [
-            {"label": "Official student portal", "url": "https://siiue2.uevora.pt/"},
-            {"label": "HCI course", "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"},
-            {"label": "Software practical choice", "url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=17184"}
+            {
+              "label": "Official student portal",
+              "url": "https://siiue2.uevora.pt/"
+            },
+            {
+              "label": "HCI course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "Software practical choice",
+              "url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=17184"
+            }
           ]
         },
         {
@@ -46,8 +55,14 @@
           "start": "Decide whether Portuguese applies, then open the questionnaire instructions or your own Web exercise.",
           "consequence": "Conditional Portuguese placement may close today; an unchecked box does not establish that it was missed or submitted.",
           "links": [
-            {"label": "Portuguese course", "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=559"},
-            {"label": "Web helper", "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13207L.html"}
+            {
+              "label": "Portuguese course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=559"
+            },
+            {
+              "label": "Web helper",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13207L.html"
+            }
           ]
         },
         {
@@ -59,9 +74,98 @@
           "start": "Answer five due cards before revealing their backs.",
           "consequence": "Anki, video and an independent attempt support preparation; they do not establish mastery or assessment completion.",
           "links": [
-            {"label": "Web cards", "url": "https://hostilian.github.io/EVORACLASSES/study/anki_cards.html?course=INF13207L&track=foundation"},
-            {"label": "Matched Web explanations", "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13207L.html#video-explanations"},
-            {"label": "Official Web course", "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"}
+            {
+              "label": "Web cards",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/anki_cards.html?course=INF13207L&track=foundation"
+            },
+            {
+              "label": "Matched Web explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13207L.html#video-explanations"
+            },
+            {
+              "label": "Official Web course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "reviewed_on": "2026-10-10",
+      "source_checked_on": "2026-10-06",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "registration-review",
+          "title": "Review pending approvals and saved registration choices",
+          "minutes": 30,
+          "course": "HCI",
+          "text": "Personally check pending course approvals and group or practical receipts. If attending Statistics F1, inspect your saved choice: its cutoff is 16 October at 23:59 Europe/Lisbon. Keep accepted receipts or exact errors private. A sent request or website checkbox does not verify official acceptance.",
+          "start": "Open the relevant official portal and record the actual pending step, saved response or exact error.",
+          "consequence": "Unresolved approval can block the next project step. Nonresponse to the Statistics choice excludes F1; the normal-exam route remains available.",
+          "links": [
+            {
+              "label": "Official student portal",
+              "url": "https://siiue2.uevora.pt/"
+            },
+            {
+              "label": "Statistics F1 choice",
+              "url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474"
+            },
+            {
+              "label": "HCI course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            }
+          ]
+        },
+        {
+          "id": "practice",
+          "title": "Web: Anki, one explanation and your own exercise",
+          "minutes": 40,
+          "course": "Web",
+          "text": "Use ten minutes for native Anki due cards, up to fifteen for one matched HTML/CSS explanation, and fifteen for your own independent exercise and error notes. The first written test is dated 20 October; its exact time remains unconfirmed. Check course AI rules before assessed work.",
+          "start": "Answer five due cards before revealing their backs.",
+          "consequence": "Recall and an independent attempt prepare for the test; they do not establish mastery or assessment completion.",
+          "links": [
+            {
+              "label": "Web cards",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/anki_cards.html?course=INF13207L&track=foundation"
+            },
+            {
+              "label": "Matched Web explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13207L.html#video-explanations"
+            },
+            {
+              "label": "Official Web course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+            }
+          ]
+        },
+        {
+          "id": "hci-research-step",
+          "title": "HCI: identify the next genuine research step",
+          "minutes": 25,
+          "course": "HCI",
+          "text": "Review the Phase 1 brief and any actual team/research evidence. Identify one feasible interview or survey step and the missing information to resolve. Phase 1 is dated 30 October, maximum ten pages; the exact cutoff and submission destination remain unknown. Use real research and disclose any AI role allowed by the course.",
+          "start": "Open the brief and write down what genuine research evidence already exists, or mark it unknown.",
+          "consequence": "Research needs lead time before writing the report. A plan cannot substitute for interviews, survey responses or team permission.",
+          "links": [
+            {
+              "label": "HCI helper",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13186L.html"
+            },
+            {
+              "label": "Official Phase 1 brief",
+              "url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720"
+            }
           ]
         }
       ]
