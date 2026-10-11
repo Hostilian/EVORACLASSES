@@ -1,6 +1,6 @@
 {
   "format": "evora-public-suggested-plan-v1",
-  "updated_on": "2026-10-10",
+  "updated_on": "2026-10-11",
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
@@ -165,6 +165,288 @@
             {
               "label": "Official Phase 1 brief",
               "url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "reviewed_on": "2026-10-11",
+      "source_checked_on": "2026-10-06",
+      "source_urls": [
+        "https://siiue2.uevora.pt/",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "registration-review",
+          "title": "Administration: one focused prerequisite or practice step",
+          "course": "Administration",
+          "minutes": 25,
+          "text": "Personally inspect pending course approvals and accepted group/practical receipts. If choosing Statistics F1, inspect the saved choice and its 16 October 23:59 Europe/Lisbon cutoff. Record accepted status or exact error privately; do not repeat a form without checking its receipt.",
+          "start": "Open the official pending step and record status/error.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://siiue2.uevora.pt/"
+            }
+          ]
+        },
+        {
+          "id": "secondary-practice",
+          "title": "Web: one focused prerequisite or practice step",
+          "course": "Web",
+          "minutes": 35,
+          "text": "Ten minutes for native Anki, up to five minutes for one matched explanation, twenty minutes for an independent HTML/CSS diagnostic and error notes. Prepare for the 20 October test; exact topic boundary/time remains unknown.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13207L.html#video-explanations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "reviewed_on": "2026-10-11",
+      "source_checked_on": "2026-10-06",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "practice",
+          "title": "HCI: one focused prerequisite or practice step",
+          "course": "HCI",
+          "minutes": 35,
+          "text": "Inspect genuine team/research evidence and arrange or conduct one appropriate real user-research step. Analyse only actual findings; no invented participants, answers or personas. The 30 October report needs lead time.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13186L.html#video-explanations"
+            }
+          ]
+        },
+        {
+          "id": "secondary-practice",
+          "title": "Software: one focused prerequisite or practice step",
+          "course": "Software",
+          "minutes": 25,
+          "text": "Five minutes for Anki, five minutes for a matched explanation, fifteen minutes for your own requirements/use-case diagnostic. Keep one unclear concept for clarification before the 28 October test; assessed AI permission is unresolved.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13204L.html#video-explanations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "reviewed_on": "2026-10-11",
+      "source_checked_on": "2026-10-06",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "practice",
+          "title": "Statistics: one focused prerequisite or practice step",
+          "course": "Statistics",
+          "minutes": 50,
+          "text": "Ten minutes for Anki, up to ten minutes for a matched probability explanation, thirty minutes for an independent conditional-probability/distribution attempt and error review. Check your F1 saved choice personally if attending before 16 October 23:59 Europe/Lisbon; room and exact test scope remain unknown.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/MAT02354L.html#video-explanations"
+            }
+          ]
+        },
+        {
+          "id": "secondary-practice",
+          "title": "HCI: one focused prerequisite or practice step",
+          "course": "HCI",
+          "minutes": 10,
+          "text": "Review the actual research notes and identify one missing participant/group dependency. Keep this short prerequisite check within capacity; no report completion or accepted group is inferred.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13186L.html#video-explanations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "reviewed_on": "2026-10-11",
+      "source_checked_on": "2026-10-06",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "practice",
+          "title": "Web: one focused prerequisite or practice step",
+          "course": "Web",
+          "minutes": 60,
+          "text": "Ten minutes for Anki, up to fifteen minutes for one matched explanation, thirty-five minutes for independent timed HTML/CSS practice and error correction. Confirm the actual 20 October test scope, time, room and permitted materials.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13207L.html#video-explanations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "reviewed_on": "2026-10-11",
+      "source_checked_on": "2026-10-06",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "practice",
+          "title": "HCI: one focused prerequisite or practice step",
+          "course": "HCI",
+          "minutes": 40,
+          "text": "Use genuine research evidence for your own analysis, requirements and report outline. If evidence is missing, collect/arrange it first. Maximum ten pages; cutoff and upload destination unknown. Disclose any AI role permitted by the course.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13186L.html#video-explanations"
+            }
+          ]
+        },
+        {
+          "id": "secondary-practice",
+          "title": "Data: one focused prerequisite or practice step",
+          "course": "Data",
+          "minutes": 20,
+          "text": "Review the mandatory scientific-paper discussion instructions and choose/read an approved paper. Record the still-unknown forum deadline, group identifier and AI permission. Each student's critical comment is separate; no post is submitted here.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF14387L.html#video-explanations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "reviewed_on": "2026-10-11",
+      "source_checked_on": "2026-10-06",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=965",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "practice",
+          "title": "Data: one focused prerequisite or practice step",
+          "course": "Data",
+          "minutes": 35,
+          "text": "Ten minutes for Anki, up to ten minutes for a matched explanation, fifteen minutes for an independent data-types/quality/transformation diagnostic and error notes. The 26–30 October test window is provisional; exact day/scope unresolved.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF14387L.html#video-explanations"
+            }
+          ]
+        },
+        {
+          "id": "secondary-practice",
+          "title": "Software: one focused prerequisite or practice step",
+          "course": "Software",
+          "minutes": 25,
+          "text": "Use your own requirements/model example to practise distinguishing user/system requirements and explaining one use case. Review actual errors for the 28 October test. Check assessed AI rules before any project implementation help.",
+          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
+          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "links": [
+            {
+              "label": "Official source",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+            },
+            {
+              "label": "Helper and matched explanations",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13204L.html#video-explanations"
             }
           ]
         }
