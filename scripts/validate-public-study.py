@@ -26,7 +26,7 @@ TEACHING_MAIL_LINKS = {
     "web-tech/activity02-css/blackgoosebistro/menu.html": "mailto:info@blackgoose.com",
     "web-tech/activity03-colors/bistro-colors/bistro.html": "mailto:info@blackgoose.com",
 }
-REVIEWED_FILES = HTML_FILES + ["README.md", "study/today.js", "study/today-plan.json", "scripts/check-study-plan.cjs", "scripts/validate-public-study.py", ".github/workflows/study-checks.yml"]
+REVIEWED_FILES = HTML_FILES + ["README.md", "study/today.js", "study/today-plan.json", "scripts/check-study-plan.cjs", "scripts/check-phone-sync.cjs", "scripts/validate-public-study.py", ".github/workflows/study-checks.yml"]
 FORBIDDEN_SUFFIXES = {".pdf", ".doc", ".docx", ".ppt", ".pptx", ".ipynb", ".xls", ".xlsx", ".pem", ".p12", ".pfx", ".key"}
 PRIVATE_NAMES = {"phone-sync-connection.json", "telegram-destination.json", "master-record.json", "private-study-progress.json", "daily-checklists.json", "credentials.json", "secrets.json", "token.txt"}
 PRIVATE_DIRS = {"academic", "moodle_sources", "moodle-archive", "private-progress", "phone-sync-backend"}
@@ -124,7 +124,8 @@ def main():
             for link in task.get("links", []):
                 check_link(ROOT / "study/today.html", link["url"])
     result = subprocess.run(["node", str(ROOT / "scripts/check-study-plan.cjs")], cwd=ROOT, capture_output=True, text=True, check=True)
-    print(json.dumps({"public_files_checked": len(files), "html_pages_checked": len(html_files), "local_links_checked": links, "plan_contract": json.loads(result.stdout), "mode": "offline", "authenticated_flow_verified": False, "copyright_review_automated": False}))
+    phone_result = subprocess.run(["node", str(ROOT / "scripts/check-phone-sync.cjs")], cwd=ROOT, capture_output=True, text=True, check=True)
+    print(json.dumps({"public_files_checked": len(files), "html_pages_checked": len(html_files), "local_links_checked": links, "plan_contract": json.loads(result.stdout), "phoneSyncContract": json.loads(phone_result.stdout), "mode": "offline", "authenticated_flow_verified": False, "copyright_review_automated": False}))
 
 
 if __name__ == "__main__":
