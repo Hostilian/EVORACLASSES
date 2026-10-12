@@ -12,7 +12,20 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
-HTML_FILES = ["index.html", "study/today.html", "study/phone_setup.html", "study/pipeline.html"]
+HTML_FILES = [
+    "index.html", "study/anki_cards.html", "study/anki_decks/index.html",
+    "study/courses/INF13186L.html", "study/courses/INF13204L.html",
+    "study/courses/INF13207L.html", "study/courses/INF14387L.html",
+    "study/courses/MAT02354L.html", "study/today.html", "study/phone_setup.html",
+    "study/pipeline.html", "study/planner.html", "study/study_guide.html",
+    "study/your_actions.html",
+]
+PROTECTED_HTML = {"study/today.html", "study/phone_setup.html", "study/pipeline.html", "study/planner.html", "study/your_actions.html"}
+TEACHING_MAIL_LINKS = {
+    "web-tech/activity01-basics/BlackGooseBistro/index.html": "mailto:info@blackgoosebistro.com",
+    "web-tech/activity02-css/blackgoosebistro/menu.html": "mailto:info@blackgoose.com",
+    "web-tech/activity03-colors/bistro-colors/bistro.html": "mailto:info@blackgoose.com",
+}
 REVIEWED_FILES = HTML_FILES + ["README.md", "study/today.js", "study/today-plan.json", "scripts/check-study-plan.cjs", "scripts/validate-public-study.py", ".github/workflows/study-checks.yml"]
 FORBIDDEN_SUFFIXES = {".pdf", ".doc", ".docx", ".ppt", ".pptx", ".ipynb", ".xls", ".xlsx", ".pem", ".p12", ".pfx", ".key"}
 PRIVATE_NAMES = {"phone-sync-connection.json", "telegram-destination.json", "master-record.json", "private-study-progress.json", "daily-checklists.json", "credentials.json", "secrets.json", "token.txt"}
@@ -52,6 +65,8 @@ def page(path):
 
 def check_link(source, value):
     url = urlsplit(value)
+    if value == TEACHING_MAIL_LINKS.get(source.relative_to(ROOT).as_posix()):
+        return
     if url.scheme:
         if url.scheme != "https" or url.username or url.password or url.hostname in {"localhost", "127.0.0.1", "::1"}:
             raise ValueError("Unsafe public page link in " + source.name)
@@ -88,10 +103,11 @@ def main():
     for path in files:
         guard_file(path)
     links = 0
-    for relative in HTML_FILES:
-        source = ROOT / relative
+    html_files = sorted(path for path in files if path.suffix.lower() == ".html")
+    for source in html_files:
+        relative = source.relative_to(ROOT).as_posix()
         parsed = page(source)
-        if relative != "index.html" and not parsed.csp:
+        if relative in PROTECTED_HTML and not parsed.csp:
             raise ValueError("Study interface has no content security policy: " + relative)
         for value in parsed.links:
             check_link(source, value)
@@ -108,7 +124,7 @@ def main():
             for link in task.get("links", []):
                 check_link(ROOT / "study/today.html", link["url"])
     result = subprocess.run(["node", str(ROOT / "scripts/check-study-plan.cjs")], cwd=ROOT, capture_output=True, text=True, check=True)
-    print(json.dumps({"public_files_checked": len(files), "local_links_checked": links, "plan_contract": json.loads(result.stdout), "mode": "offline", "authenticated_flow_verified": False, "copyright_review_automated": False}))
+    print(json.dumps({"public_files_checked": len(files), "html_pages_checked": len(html_files), "local_links_checked": links, "plan_contract": json.loads(result.stdout), "mode": "offline", "authenticated_flow_verified": False, "copyright_review_automated": False}))
 
 
 if __name__ == "__main__":
