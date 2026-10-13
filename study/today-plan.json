@@ -1,10 +1,10 @@
 {
   "format": "evora-public-suggested-plan-v1",
-  "updated_on": "2026-10-11",
+  "updated_on": "2026-10-13",
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
-  "source_limit": "Saved source facts, not a fresh live Moodle check. Individual source dates are shown. Confirm changed requirements on Moodle.",
+  "source_limit": "Retained core course pages 6 October and Portuguese 3 October. One Statistics 14 October morning-room announcement was reviewed through official notification mail 13 October; that does not freshly verify the full course, grades or receipts. Each requirement retains its own source date.",
   "study_start": "2026-10-07",
   "study_end": "2027-02-03",
   "weekly_base_minutes": 420,
@@ -219,20 +219,41 @@
     },
     {
       "date": "2026-10-13",
-      "reviewed_on": "2026-10-11",
+      "reviewed_on": "2026-10-13",
       "source_checked_on": "2026-10-06",
       "source_urls": [
         "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
-        "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://siiue2.uevora.pt/",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
       ],
       "official_deadlines_shifted": false,
       "break_minutes": 10,
       "priorities": [
         {
+          "id": "urgent-prerequisite",
+          "title": "Check a necessary official prerequisite",
+          "course": "Administration",
+          "minutes": 10,
+          "text": "Inspect the nearest necessary approval or existing course receipt before repeating any action. If it is already accepted and no change is needed, use these minutes for HCI research. Check the intended discussion and required format before claiming a forum activity complete. This replaces practice time; it is not evidence of unfinished work.",
+          "start": "Open the actual portal or official instruction and locate the accepted receipt or exact error for five minutes.",
+          "consequence": "A suggested checklist item does not save an official form, approve a change, verify a submission or send a message.",
+          "links": [
+            {
+              "label": "University portal",
+              "url": "https://siiue2.uevora.pt/"
+            },
+            {
+              "label": "Data official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+            }
+          ]
+        },
+        {
           "id": "practice",
           "title": "HCI: one focused prerequisite or practice step",
           "course": "HCI",
-          "minutes": 35,
+          "minutes": 25,
           "text": "Inspect genuine team/research evidence and arrange or conduct one appropriate real user-research step. Analyse only actual findings; no invented participants, answers or personas. The 30 October report needs lead time.",
           "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
           "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
@@ -352,7 +373,7 @@
     },
     {
       "date": "2026-10-16",
-      "reviewed_on": "2026-10-11",
+      "reviewed_on": "2026-10-13",
       "source_checked_on": "2026-10-06",
       "source_urls": [
         "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
@@ -385,7 +406,7 @@
           "title": "Data: one focused prerequisite or practice step",
           "course": "Data",
           "minutes": 20,
-          "text": "Review the mandatory scientific-paper discussion instructions and choose/read an approved paper. Record the still-unknown forum deadline, group identifier and AI permission. Each student's critical comment is separate; no post is submitted here.",
+          "text": "Review the mandatory paper-discussion instructions and actual group-post evidence. Check the approved paper, intended discussion and remaining group integration step; keep individual comments distinct from the group 300–500-word post. Use your own work under the course AI rules; do not infer activity completion from a self-email or one comment.",
           "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
           "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
           "links": [
@@ -872,6 +893,22 @@
       "note": "",
       "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=16389",
       "source_checked_on": "2026-10-06"
+    },
+    {
+      "id": "stats-morning-room-2026-10-14",
+      "course": "Statistics",
+      "title": "Morning section: temporary classroom change",
+      "date": "2026-10-14",
+      "end_date": "2026-10-14",
+      "time": "08:30",
+      "timezone": null,
+      "contextual_timezone": "Europe/Lisbon",
+      "certainty": "Date, morning start and room confirmed by official notification; timezone and end not stated",
+      "condition": "Only for the morning section; individual section assignment requires confirmation",
+      "note": "Morning class moves exceptionally to CLAV 130 instead of Anf. 2–5. Other sections are not stated to be canceled. Official announcement received 12 October and reviewed 13 October; live forum page unavailable.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/forum/discuss.php?d=2825#p3251",
+      "source_checked_on": "2026-10-13",
+      "source_verification_method": "Official Moodle announcement notification read in authenticated school mail; not a live Moodle visit"
     }
   ],
   "undated_requirements": [
