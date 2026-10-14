@@ -1,10 +1,10 @@
 {
   "format": "evora-public-suggested-plan-v1",
-  "updated_on": "2026-10-13",
+  "updated_on": "2026-10-14",
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
-  "source_limit": "Retained core course pages 6 October and Portuguese 3 October. One Statistics 14 October morning-room announcement was reviewed through official notification mail 13 October; that does not freshly verify the full course, grades or receipts. Each requirement retains its own source date.",
+  "source_limit": "Core course pages last verified 6 October and Portuguese 3 October. Individual Statistics room and Moodle-maintenance notices were reviewed through official mail on 13/14 October; this does not freshly verify course pages, grades, attendance or receipts. Each item retains its own source date.",
   "study_start": "2026-10-07",
   "study_end": "2027-02-03",
   "weekly_base_minutes": 420,
@@ -291,11 +291,13 @@
     },
     {
       "date": "2026-10-14",
-      "reviewed_on": "2026-10-11",
+      "reviewed_on": "2026-10-14",
       "source_checked_on": "2026-10-06",
       "source_urls": [
         "https://www.moodle.uevora.pt/2627/course/view.php?id=1076",
-        "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://siiue2.uevora.pt/",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474"
       ],
       "official_deadlines_shifted": false,
       "break_minutes": 10,
@@ -320,21 +322,21 @@
           ]
         },
         {
-          "id": "secondary-practice",
-          "title": "HCI: one focused prerequisite or practice step",
-          "course": "HCI",
+          "id": "urgent-prerequisite",
+          "title": "Check a necessary official receipt; otherwise HCI",
+          "course": "Administration",
           "minutes": 10,
-          "text": "Review the actual research notes and identify one missing participant/group dependency. Keep this short prerequisite check within capacity; no report completion or accepted group is inferred.",
-          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
-          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "text": "Inspect an actual necessary approval/receipt or exact portal error before repeating any action. If no change is needed or acceptance is already visible, use this block for HCI research notes. If choosing Statistics F1, personally check the saved response before its 16 October 23:59 Europe/Lisbon cutoff. Planned Moodle maintenance 15 October 09:00 may affect access; no deadline extension is announced.",
+          "start": "Use five minutes to locate the accepted receipt or exact error in the actual portal; do not infer unfinished work from missing checklist reports.",
+          "consequence": "This suggested block replaces HCI time. A website tick, self-email or enrolment is not official acceptance or registration; no form or message is saved here.",
           "links": [
             {
-              "label": "Official source",
-              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+              "label": "University portal",
+              "url": "https://siiue2.uevora.pt/"
             },
             {
-              "label": "Helper and matched explanations",
-              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13186L.html#video-explanations"
+              "label": "Conditional Statistics choice",
+              "url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474"
             }
           ]
         }
@@ -909,6 +911,23 @@
       "source_url": "https://www.moodle.uevora.pt/2627/mod/forum/discuss.php?d=2825#p3251",
       "source_checked_on": "2026-10-13",
       "source_verification_method": "Official Moodle announcement notification read in authenticated school mail; not a live Moodle visit"
+    },
+    {
+      "id": "moodle-maintenance-2026-10-15",
+      "course": "All courses",
+      "title": "Planned Moodle maintenance",
+      "date": "2026-10-15",
+      "end_date": "2026-10-15",
+      "time": "09:00",
+      "timezone": null,
+      "contextual_timezone": "Europe/Lisbon",
+      "certainty": "Official IT notice gives start and planned maximum duration; timezone not explicitly stated",
+      "condition": "When accessing Moodle during maintenance",
+      "note": "Moodle is planned to be inaccessible for up to 3 hours 30 minutes from 09:00. The derived 12:30 end is an estimate, not verified restoration. Avoid this period for the personal F1 receipt buffer; the official 16 October 23:59 Europe/Lisbon cutoff is unchanged.",
+      "source_url": "https://www.moodle.uevora.pt/2627/",
+      "source_link_role": "affected_service_not_original_notice",
+      "source_checked_on": "2026-10-14",
+      "source_verification_method": "Official IT email received 13 October and read 14 October. No public notice URL was provided; evidence retained privately."
     }
   ],
   "undated_requirements": [
