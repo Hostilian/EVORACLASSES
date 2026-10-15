@@ -1,10 +1,10 @@
 {
   "format": "evora-public-suggested-plan-v1",
-  "updated_on": "2026-10-14",
+  "updated_on": "2026-10-15",
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
-  "source_limit": "Core course pages last verified 6 October and Portuguese 3 October. Individual Statistics room and Moodle-maintenance notices were reviewed through official mail on 13/14 October; this does not freshly verify course pages, grades, attendance or receipts. Each item retains its own source date.",
+  "source_limit": "Full core Moodle pages remain last verified 6 October and Portuguese 3 October. Specific official mail notices, including the 15 October F1 reminder and new resource metadata, were reviewed separately; file contents, current grades and saved receipts were not verified. Individual source dates are shown.",
   "study_start": "2026-10-07",
   "study_end": "2027-02-03",
   "weekly_base_minutes": 420,
@@ -375,20 +375,40 @@
     },
     {
       "date": "2026-10-16",
-      "reviewed_on": "2026-10-13",
+      "reviewed_on": "2026-10-15",
       "source_checked_on": "2026-10-06",
       "source_urls": [
         "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
-        "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=965",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474"
       ],
       "official_deadlines_shifted": false,
       "break_minutes": 10,
       "priorities": [
         {
+          "id": "urgent-prerequisite",
+          "course": "Administration",
+          "title": "If attending F1: inspect the actual saved choice",
+          "minutes": 10,
+          "text": "Only if choosing Statistics F1, inspect the actual saved SIM response before 16 October 23:59 Europe/Lisbon. Personally save and verify it only if still needed. If already visible or using the normal-exam route, use these minutes for HCI instead. Missing checklist data does not prove an unfinished registration.",
+          "start": "Locate the actual saved response or exact access error for five minutes; do not repeat an already accepted response.",
+          "consequence": "Nonresponse means not attending F1; the normal-exam route remains available. This replaces ten HCI minutes and adds no extra study time. No official form is saved by the website.",
+          "links": [
+            {
+              "label": "Official conditional attendance choice",
+              "url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474"
+            },
+            {
+              "label": "Statistics notices and illustrative-resource link",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/MAT02354L.html#notice-2026-10-15"
+            }
+          ]
+        },
+        {
           "id": "practice",
           "title": "HCI: one focused prerequisite or practice step",
           "course": "HCI",
-          "minutes": 40,
+          "minutes": 30,
           "text": "Use genuine research evidence for your own analysis, requirements and report outline. If evidence is missing, collect/arrange it first. Maximum ten pages; cutoff and upload destination unknown. Disclose any AI role permitted by the course.",
           "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
           "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
@@ -528,9 +548,12 @@
       "timezone": "Europe/Lisbon",
       "certainty": "Date and cutoff confirmed",
       "condition": "If attending the first test",
-      "note": "Save SIM personally and check the saved response. Nonresponse means not attending F1; the normal-exam route remains available. No late registration is announced.",
+      "note": "The15 October final reminder says 16 October is the last signup day. If attending, personally check the actual saved SIM response. Nonresponse excludes F1, while the normal-exam route remains. No late registration or deadline extension is announced.",
       "source_url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474",
-      "source_checked_on": "2026-10-06"
+      "source_checked_on": "2026-10-15",
+      "cutoff_source_checked_on": "2026-10-06",
+      "reminder_verified_on": "2026-10-15",
+      "source_verification_method": "Official 15 October reminder read through authenticated mail; the exact cutoff is retained from the earlier choice, with no changed deadline."
     },
     {
       "id": "web-test-1",
