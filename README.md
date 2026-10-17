@@ -4,6 +4,8 @@ English study support for five University of Évora classes. The active package 
 
 ## Start here
 
+- [17 October five-course findings](study/recovery_2026-10-17.html): complete course rules, closed Statistics signup, Web Choice deadline, project requirements and unresolved checks. Personal evidence stays in the saved private checklist and calendar.
+
 - [Library and reminder status](study/pipeline.html): direct links to the private source archive and exact phone setup steps; verified features and pending Moodle/phone/delivery checks remain distinct.
 - [Today’s phone checklist](study/today.html): neutral dated priorities, conditional deadlines and actual-work reporting within the seven-hour base and eight-hour weekly maximum. A saved private key alone does not verify sync or reminder delivery.
 - Public checks run offline on pushes and pull requests: dated-plan budgets, task signatures/history preservation, local links and obvious original/private-file or credential accidents. They use read-only permissions and upload no artifacts. These checks do not establish Moodle completeness, sharing rights or authenticated phone delivery, and they do not block an independently configured branch-based Pages deployment.

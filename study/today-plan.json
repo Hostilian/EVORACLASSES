@@ -1,10 +1,10 @@
 {
   "format": "evora-public-suggested-plan-v1",
-  "updated_on": "2026-10-15",
+  "updated_on": "2026-10-17",
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
-  "source_limit": "Full core Moodle pages remain last verified 6 October and Portuguese 3 October. Specific official mail notices, including the 15 October F1 reminder and new resource metadata, were reviewed separately; file contents, current grades and saved receipts were not verified. Individual source dates are shown.",
+  "source_limit": "Full core Moodle sources remain last verified 6 October (Portuguese 3 October). Specific official messages were reviewed through 17 October, including the 16 October Web Choice notice. New PDF contents, saved Choices, current rosters, grades and upload receipts remain unverified. The 17 October course review records the precise source limits.",
   "study_start": "2026-10-07",
   "study_end": "2027-02-03",
   "weekly_base_minutes": 420,
@@ -446,50 +446,872 @@
     },
     {
       "date": "2026-10-17",
-      "reviewed_on": "2026-10-11",
-      "source_checked_on": "2026-10-06",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
       "source_urls": [
-        "https://www.moodle.uevora.pt/2627/course/view.php?id=965",
-        "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
       ],
       "official_deadlines_shifted": false,
       "break_minutes": 10,
       "priorities": [
         {
-          "id": "practice",
-          "title": "Data: one focused prerequisite or practice step",
-          "course": "Data",
+          "id": "web-practice",
+          "course": "Web",
+          "title": "Web: HTML/CSS diagnostic and correction",
           "minutes": 35,
-          "text": "Ten minutes for Anki, up to ten minutes for a matched explanation, fifteen minutes for an independent data-types/quality/transformation diagnostic and error notes. The 26–30 October test window is provisional; exact day/scope unresolved.",
-          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
-          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "text": "Use the teacher's PDFs. Build a small page with correct relative links, images, table and external CSS; check selectors, cascade and box model.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
           "links": [
             {
-              "label": "Official source",
-              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
             },
             {
-              "label": "Helper and matched explanations",
-              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF14387L.html#video-explanations"
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13207L"
             }
           ]
         },
         {
-          "id": "secondary-practice",
-          "title": "Software: one focused prerequisite or practice step",
-          "course": "Software",
-          "minutes": 25,
-          "text": "Use your own requirements/model example to practise distinguishing user/system requirements and explaining one use case. Review actual errors for the 28 October test. Check assessed AI rules before any project implementation help.",
-          "start": "Spend five minutes attempting recall or inspecting genuine source evidence before using explanations.",
-          "consequence": "This suggested block supports timely preparation; it cannot verify mastery, attendance, registration or submission.",
+          "id": "urgent-checks",
+          "course": "Statistics",
+          "title": "Check closed Statistics signup and Web Choice",
+          "minutes": 10,
+          "text": "If no Statistics response was saved by 16 October, an explicit exception is required. If already requested, await the decision. Open Web Choice 27814 and read the route conditions before its Monday-noon cutoff.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
           "links": [
             {
-              "label": "Official source",
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-MAT02354L"
+            }
+          ]
+        },
+        {
+          "id": "hci-team",
+          "course": "HCI",
+          "title": "HCI: actual team and real-research next step",
+          "minutes": 15,
+          "text": "Check the real roster and phase-1 brief. Identify the next genuine interview/survey or evidence task for the report due 30 October.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "web-choice",
+          "course": "Web",
+          "title": "Web: personally save/verify Choice before noon if taking F1",
+          "minutes": 10,
+          "text": "Read the route choice first. For the recorded 20 October test, the 16 October notice sets 19 October 12:00 as the Choice deadline. Retain the actual saved response.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13207L"
+            }
+          ]
+        },
+        {
+          "id": "web-practice",
+          "course": "Web",
+          "title": "Web: timed HTML/CSS attempt and error correction",
+          "minutes": 40,
+          "text": "Use actual PDFs/activities; confirm test time, room and office overlap. Finish one small independent task rather than only reading solutions.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13207L"
+            }
+          ]
+        },
+        {
+          "id": "hci-team",
+          "course": "HCI",
+          "title": "HCI: check allocation and research evidence",
+          "minutes": 10,
+          "text": "Continue only the next real team/research prerequisite; neither an email nor generated sample interviews completes phase 1.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "web-logistics",
+          "course": "Web",
+          "title": "Web test: verify admission, time and room",
+          "minutes": 15,
+          "text": "Use the actual timetable/teacher response. The test is recorded today, but no exact test clock time or room was verified. Arrange work around the assessment; do not infer attendance.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13207L"
+            }
+          ]
+        },
+        {
+          "id": "hci-research",
+          "course": "HCI",
+          "title": "HCI: research notes and task requirements",
+          "minutes": 25,
+          "text": "Use actual participant evidence and organise the report outline under the 10-page limit.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        },
+        {
+          "id": "methods-recall",
+          "course": "Software",
+          "title": "Methods: processes and requirements recall",
+          "minutes": 20,
+          "text": "Write one use case and distinguish user/system requirements. Test date is 28 October, not the 21 October readiness checkpoint.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
               "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
             },
             {
-              "label": "Helper and matched explanations",
-              "url": "https://hostilian.github.io/EVORACLASSES/study/courses/INF13204L.html#video-explanations"
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13204L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "methods-practice",
+          "course": "Software",
+          "title": "Methods: requirements and process questions",
+          "minutes": 30,
+          "text": "Attempt and correct actual-topic questions. Confirm practical team and repository independently.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13204L"
+            }
+          ]
+        },
+        {
+          "id": "hci-evidence",
+          "course": "HCI",
+          "title": "HCI: integrate real research evidence",
+          "minutes": 20,
+          "text": "Convert actual research into tasks and usability requirements; no fabricated findings.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        },
+        {
+          "id": "data-date",
+          "course": "Data",
+          "title": "Data: resolve exact test day and main-topic evidence",
+          "minutes": 10,
+          "text": "Check the 26–30 October window, makeup-class notice, actual group and main post separately from an individual comment.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF14387L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "methods-group",
+          "course": "Software",
+          "title": "Methods: practical group and Eventastic next step",
+          "minutes": 25,
+          "text": "Attend the assigned practical only after checking placement; keep attendance and assessed-work evidence. Leave work with travel time.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13204L"
+            }
+          ]
+        },
+        {
+          "id": "hci-draft",
+          "course": "HCI",
+          "title": "HCI: research-based phase-1 draft",
+          "minutes": 25,
+          "text": "Organise genuine findings, personas, requirements, maps and HTA for an early review.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        },
+        {
+          "id": "stats-basics",
+          "course": "Statistics",
+          "title": "Statistics: one probability/Bayes question",
+          "minutes": 10,
+          "text": "Maintain foundations while F1 admission is unresolved; use January as fallback.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-MAT02354L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "hci-review",
+          "course": "HCI",
+          "title": "HCI: first complete evidence-based draft review",
+          "minutes": 35,
+          "text": "23 October is a personal review target. Check gaps in real research and the 10-page report before 30 October.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        },
+        {
+          "id": "methods-practice",
+          "course": "Software",
+          "title": "Methods: timed requirements exercise",
+          "minutes": 15,
+          "text": "Correct one weakness before the 28 October test.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13204L"
+            }
+          ]
+        },
+        {
+          "id": "data-practical",
+          "course": "Data",
+          "title": "Data: Python/practical next gap",
+          "minutes": 10,
+          "text": "Run the next real Practical 0–2 exercise and retain its output.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF14387L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "methods-mock",
+          "course": "Software",
+          "title": "Methods: timed practice and corrections",
+          "minutes": 30,
+          "text": "Use Introduction, Processes and Requirements Engineering; confirm actual coverage.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13204L"
+            }
+          ]
+        },
+        {
+          "id": "hci-revision",
+          "course": "HCI",
+          "title": "HCI: revise the phase-1 report",
+          "minutes": 20,
+          "text": "Resolve research, team and report gaps from the first review.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        },
+        {
+          "id": "stats-decision",
+          "course": "Statistics",
+          "title": "Statistics: review actual admission decision",
+          "minutes": 10,
+          "text": "Only prepare for the 31 October sitting as admitted after explicit approval; otherwise continue normal-exam foundations.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-MAT02354L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "methods-weakness",
+          "course": "Software",
+          "title": "Methods: final weak-topic practice",
+          "minutes": 30,
+          "text": "Attempt questions independently and correct errors.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13204L"
+            }
+          ]
+        },
+        {
+          "id": "hci-package",
+          "course": "HCI",
+          "title": "HCI: prepare the submission package",
+          "minutes": 20,
+          "text": "Check genuine evidence, maps, page limit and team review.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        },
+        {
+          "id": "data-test",
+          "course": "Data",
+          "title": "Data: check this week's actual assessment",
+          "minutes": 10,
+          "text": "Verify exact date/time within 26–30 October and the practical schedule. An optional 15:30 research visit must fit the 16:00 practical.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF14387L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "methods-final",
+          "course": "Software",
+          "title": "Methods: final questions and logistics",
+          "minutes": 35,
+          "text": "Confirm time/room for 28 October and practise the weakest topic.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13204L"
+            }
+          ]
+        },
+        {
+          "id": "hci-final",
+          "course": "HCI",
+          "title": "HCI: final report corrections",
+          "minutes": 25,
+          "text": "Check the official cutoff and submission destination; preserve team review and AI-use disclosure where required.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "methods-logistics",
+          "course": "Software",
+          "title": "Methods test: check exact time and room",
+          "minutes": 10,
+          "text": "28 October is the recorded assessment date. Keep test attendance separate from this preparation tick.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13204L"
+            }
+          ]
+        },
+        {
+          "id": "hci-proofread",
+          "course": "HCI",
+          "title": "HCI: proofread and check required evidence",
+          "minutes": 35,
+          "text": "Do not omit maps, requirements, real research or team details.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        },
+        {
+          "id": "stats-conditional",
+          "course": "Statistics",
+          "title": "Statistics: conditional preparation or January practice",
+          "minutes": 15,
+          "text": "If explicitly admitted, use current official examples; otherwise practise foundations for the exam route.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-MAT02354L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "hci-final",
+          "course": "HCI",
+          "title": "HCI: final files and submission check",
+          "minutes": 40,
+          "text": "Check upload rules, deadline, page limit and any required AI disclosure.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        },
+        {
+          "id": "stats-materials",
+          "course": "Statistics",
+          "title": "Statistics: verify admission and permitted materials",
+          "minutes": 20,
+          "text": "Only if admitted to F1: check room, ID, answer sheets, pens, non-graphing calculator and one-sided handwritten A4 formulas. Otherwise continue January preparation.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-MAT02354L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "hci-submit",
+          "course": "HCI",
+          "title": "HCI: submit before actual cutoff and keep receipt",
+          "minutes": 40,
+          "text": "Personally submit the agreed report through the official destination; inspect the actual receipt. This checklist never submits it.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+            }
+          ]
+        },
+        {
+          "id": "stats-check",
+          "course": "Statistics",
+          "title": "Statistics: final conditional logistics",
+          "minutes": 20,
+          "text": "If admitted, verify the 31 October room and 10:00 start. If not, keep the normal-exam plan and avoid treating preparation as permission.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-MAT02354L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "reviewed_on": "2026-10-17",
+      "source_checked_on": "2026-10-17",
+      "source_urls": [
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+        "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+      ],
+      "official_deadlines_shifted": false,
+      "break_minutes": 10,
+      "priorities": [
+        {
+          "id": "stats-sitting",
+          "course": "Statistics",
+          "title": "Statistics F1 only if explicitly admitted",
+          "minutes": 20,
+          "text": "The notice gives 10:00–12:00. Without a timely Choice or explicit exception, do not assume a place. A sent email is not admission.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-MAT02354L"
+            }
+          ]
+        },
+        {
+          "id": "next-recovery",
+          "course": "Data",
+          "title": "Review the next actual coursework gap",
+          "minutes": 40,
+          "text": "After any assessment, record actual outcomes and choose the next genuine practical/project prerequisite within the weekly limit.",
+          "start": "Open the actual source or attempt the first question yourself.",
+          "consequence": "A proposed block is not completed work or official acceptance.",
+          "links": [
+            {
+              "label": "Official course",
+              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
+            },
+            {
+              "label": "17 October course findings",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF14387L"
             }
           ]
         }
@@ -541,14 +1363,14 @@
     {
       "id": "stats-f1-choice",
       "course": "Statistics",
-      "title": "F1 attendance choice",
+      "title": "CLOSED: F1 attendance choice",
       "date": "2026-10-16",
       "end_date": "2026-10-16",
       "time": "23:59",
       "timezone": "Europe/Lisbon",
       "certainty": "Date and cutoff confirmed",
       "condition": "If attending the first test",
-      "note": "The15 October final reminder says 16 October is the last signup day. If attending, personally check the actual saved SIM response. Nonresponse excludes F1, while the normal-exam route remains. No late registration or deadline extension is announced.",
+      "note": "Deadline passed on 16 October at 23:59. The notice refuses late entries. Without a timely saved response, only an explicit lecturer exception admits F1; an email alone is not registration. Otherwise use the normal-exam route, subject to eligibility.",
       "source_url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=24474",
       "source_checked_on": "2026-10-15",
       "cutoff_source_checked_on": "2026-10-06",
@@ -565,7 +1387,7 @@
       "timezone": null,
       "certainty": "Date confirmed; exact time unconfirmed",
       "condition": "Continuous assessment route",
-      "note": "Taking this test selects the continuous route. Confirm start time, room and permitted materials.",
+      "note": "Recorded test date 20 October; exact time, room and current scope unverified. Save the attendance Choice by noon the previous day if choosing F1. Sitting F1 selects continuous assessment and excludes the normal-season exam route in the retained guide; confirm current conditions.",
       "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
       "source_checked_on": "2026-10-06"
     },
@@ -620,8 +1442,8 @@
       "time": "10:00–12:00",
       "timezone": "Europe/Lisbon",
       "certainty": "Specific announcement gives this test time",
-      "condition": "If registered for F1",
-      "note": "Room pending. The choice title says 09:45 and the FUC has a 09:00–13:00 reservation; those are distinct from the latest specific test time. Confirm arrival instructions.",
+      "condition": "Only with a timely saved Choice or an explicit late-admission exception",
+      "note": "Signup has closed. Do not assume admission while an exception is undecided. The specific test time is 10:00–12:00; 09:45 is an arrival/Choice label and 09:00–13:00 an older reservation. Room and English support remain unconfirmed.",
       "source_url": "https://www.moodle.uevora.pt/2627/mod/forum/discuss.php?d=2101",
       "source_checked_on": "2026-10-06"
     },
@@ -951,6 +1773,20 @@
       "source_link_role": "affected_service_not_original_notice",
       "source_checked_on": "2026-10-14",
       "source_verification_method": "Official IT email received 13 October and read 14 October. No public notice URL was provided; evidence retained privately."
+    },
+    {
+      "id": "web-f1-choice-2026-10-19",
+      "course": "Web",
+      "title": "Attendance Choice closes at noon before F1",
+      "date": "2026-10-19",
+      "end_date": "2026-10-19",
+      "time": "12:00",
+      "timezone": "Europe/Lisbon",
+      "condition": "If choosing the recorded 20 October first test",
+      "certainty": "16 October notice; deadline derived from the retained 20 October test date",
+      "note": "Read the route conditions before deciding, save your own Choice response and inspect confirmation. If the live test date changes, the notice says noon the preceding day. No response is saved by this checklist.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
+      "source_checked_on": "2026-10-16"
     }
   ],
   "undated_requirements": [
@@ -958,7 +1794,7 @@
       "id": "hci-registration",
       "course": "HCI",
       "title": "Group and practical-section registration",
-      "note": "Check both separately. Confirm an agreed team and whether a teammate has already made the group response. Save a receipt or exact error; ask about late allocation if needed. A study tick does not confirm official acceptance.",
+      "note": "Confirm the actual allocated team and practical section. A solo group-registration entry was allowed for later allocation; it is not permission for a solo assessed project. Keep the official roster or late-allocation response.",
       "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
       "source_checked_on": "2026-10-06"
     },
@@ -966,7 +1802,7 @@
       "id": "software-section",
       "course": "Software",
       "title": "Practical-section allocation",
-      "note": "The recorded choice window ended 17 September at 14:00 Europe/Lisbon. If no accepted allocation is known, ask how late allocation is recorded. Attendance alone does not verify assignment.",
+      "note": "Choice closed 17 September at 14:00 Europe/Lisbon. Thursday placement, attendance-code repair and the actual Eventastic group remain distinct checks. Team size is 2–3 unless an individual exception is granted.",
       "source_url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=17184",
       "source_checked_on": "2026-10-06"
     },
@@ -982,7 +1818,7 @@
       "id": "data-project",
       "course": "Data",
       "title": "Final project",
-      "note": "January is mentioned; exact date, brief, format and method are unconfirmed.",
+      "note": "Compulsory 50% practical project even on exam routes. January is mentioned; exact date, brief, format, team and method remain unconfirmed.",
       "source_url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740",
       "source_checked_on": "2026-10-03"
     },
@@ -998,7 +1834,7 @@
       "id": "data-forum-comment",
       "course": "Data",
       "title": "Individual critical comment",
-      "note": "Each student writes at least 150 words on another group’s topic. Exact cutoff is unconfirmed; another topic must exist first.",
+      "note": "An individual critical comment must contain at least 150 words on another group's topic. Its posting evidence, the own group's main 300–500-word submission, grading and presence credit must be checked separately.",
       "source_url": "https://www.moodle.uevora.pt/2627/mod/forum/view.php?id=24511",
       "source_checked_on": "2026-10-03"
     },
@@ -1006,7 +1842,7 @@
       "id": "hci-oral",
       "course": "HCI",
       "title": "Mandatory project oral / individual discussion",
-      "note": "Date and time unposted. Confirm arrangements; an unjustified absence affects the project assessment.",
+      "note": "Individual oral discussion is compulsory; date/time unresolved. Newer Aula 2 has written 40%, project 60%; Friday lecture attendance is optional but assessed work is still required.",
       "source_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=24720",
       "source_checked_on": "2026-10-03"
     },
