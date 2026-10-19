@@ -1,10 +1,10 @@
 {
   "format": "evora-public-suggested-plan-v1",
-  "updated_on": "2026-10-17",
+  "updated_on": "2026-10-19",
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
-  "source_limit": "Full core Moodle sources remain last verified 6 October (Portuguese 3 October). Specific official messages were reviewed through 17 October, including the 16 October Web Choice notice. New PDF contents, saved Choices, current rosters, grades and upload receipts remain unverified. The 17 October course review records the precise source limits.",
+  "source_limit": "Full core Moodle sources remain last verified 6 October (Portuguese 3 October). Specific official messages were reviewed through 19 October, including the 16 October Web Choice notice. The 19 October date for its noon-before-test cutoff is derived from the retained 20 October test date; the notice does not explicitly state a timezone. Saved Choices, admission, current rosters, grades, new PDF contents and upload receipts remain unverified. Direct Moodle inspection could not be completed on 19 October.",
   "study_start": "2026-10-07",
   "study_end": "2027-02-03",
   "weekly_base_minutes": 420,
@@ -519,8 +519,8 @@
     },
     {
       "date": "2026-10-19",
-      "reviewed_on": "2026-10-17",
-      "source_checked_on": "2026-10-17",
+      "reviewed_on": "2026-10-19",
+      "source_checked_on": "2026-10-19",
       "source_urls": [
         "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
         "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
@@ -534,11 +534,11 @@
         {
           "id": "web-choice",
           "course": "Web",
-          "title": "Web: personally save/verify Choice before noon if taking F1",
+          "title": "Web: inspect the saved response and admission for tomorrow",
           "minutes": 10,
-          "text": "Read the route choice first. For the recorded 20 October test, the 16 October notice sets 19 October 12:00 as the Choice deadline. Retain the actual saved response.",
-          "start": "Open the actual source or attempt the first question yourself.",
-          "consequence": "A proposed block is not completed work or official acceptance.",
+          "text": "Inspect the actual Choice confirmation and current test instructions personally. The 16 October notice says noon on the preceding day: 19 October is derived from the retained 20 October test date, and its timezone is unstated. At this late review the contextual noon cutoff has elapsed; the actual saved response and admission remain unverified. If no confirmation is visible, seek lecturer clarification yourself before assuming admission.",
+          "start": "Spend the first five minutes locating your actual saved response or exact portal error, then the test time and room.",
+          "consequence": "An elapsed signup window does not establish a missed response; admission and the assessment route need actual evidence.",
           "links": [
             {
               "label": "Official course",
@@ -555,9 +555,9 @@
           "course": "Web",
           "title": "Web: timed HTML/CSS attempt and error correction",
           "minutes": 40,
-          "text": "Use actual PDFs/activities; confirm test time, room and office overlap. Finish one small independent task rather than only reading solutions.",
-          "start": "Open the actual source or attempt the first question yourself.",
-          "consequence": "A proposed block is not completed work or official acceptance.",
+          "text": "Use ten minutes for Anki, up to five minutes for one matched explanation, then twenty-five minutes for an independent HTML/CSS attempt and error correction. Exact test scope and assessed-work AI permission remain unverified; this is learning practice.",
+          "start": "Attempt a small HTML/CSS question from memory, then use the related cards to identify one error.",
+          "consequence": "Independent practice can reveal errors before tomorrow; this block does not establish mastery or attendance.",
           "links": [
             {
               "label": "Official course",
@@ -575,8 +575,8 @@
           "title": "HCI: check allocation and research evidence",
           "minutes": 10,
           "text": "Continue only the next real team/research prerequisite; neither an email nor generated sample interviews completes phase 1.",
-          "start": "Open the actual source or attempt the first question yourself.",
-          "consequence": "A proposed block is not completed work or official acceptance.",
+          "start": "Identify the next genuine team or research dependency and write one concrete next action.",
+          "consequence": "Phase 1 depends on real research evidence; a checklist tick or invented interview cannot satisfy it.",
           "links": [
             {
               "label": "Official course",
@@ -1387,7 +1387,7 @@
       "timezone": null,
       "certainty": "Date confirmed; exact time unconfirmed",
       "condition": "Continuous assessment route",
-      "note": "Recorded test date 20 October; exact time, room and current scope unverified. Save the attendance Choice by noon the previous day if choosing F1. Sitting F1 selects continuous assessment and excludes the normal-season exam route in the retained guide; confirm current conditions.",
+      "note": "Recorded test date 20 October; exact time, room, current scope and permitted materials remain unverified. The attendance notice specifies noon on the preceding day; the derived 19 October cutoff has elapsed at this late review, with no explicit timezone in that notice. Inspect the actual saved Choice and admission. Sitting F1 selects continuous assessment and excludes the normal-season exam route in the retained guide; confirm current conditions.",
       "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
       "source_checked_on": "2026-10-06"
     },
@@ -1777,16 +1777,19 @@
     {
       "id": "web-f1-choice-2026-10-19",
       "course": "Web",
-      "title": "Attendance Choice closes at noon before F1",
+      "title": "Derived attendance Choice cutoff: noon before F1",
       "date": "2026-10-19",
       "end_date": "2026-10-19",
       "time": "12:00",
-      "timezone": "Europe/Lisbon",
+      "timezone": null,
       "condition": "If choosing the recorded 20 October first test",
-      "certainty": "16 October notice; deadline derived from the retained 20 October test date",
-      "note": "Read the route conditions before deciding, save your own Choice response and inspect confirmation. If the live test date changes, the notice says noon the preceding day. No response is saved by this checklist.",
+      "certainty": "Relative noon cutoff in the 16 October notice; 19 October derived from the retained 20 October test; timezone unstated",
+      "note": "The notice permits changes until noon on the day before the test. The derived 19 October contextual cutoff has elapsed at this late review. A saved response and admission must be inspected personally; this checklist cannot establish that signup was completed or missed. If the live test date changes, recheck the preceding-day rule.",
       "source_url": "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
-      "source_checked_on": "2026-10-16"
+      "source_checked_on": "2026-10-19",
+      "contextual_timezone": "Europe/Lisbon",
+      "timezone_explicitly_stated": false,
+      "instruction_published_on": "2026-10-16"
     }
   ],
   "undated_requirements": [
