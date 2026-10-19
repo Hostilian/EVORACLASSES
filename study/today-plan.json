@@ -4,7 +4,7 @@
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
-  "source_limit": "Full core Moodle sources remain last verified 6 October (Portuguese 3 October). Specific official messages were reviewed through 19 October, including the 16 October Web Choice notice. The 19 October date for its noon-before-test cutoff is derived from the retained 20 October test date; the notice does not explicitly state a timezone. Saved Choices, admission, current rosters, grades, new PDF contents and upload receipts remain unverified. Direct Moodle inspection could not be completed on 19 October.",
+  "source_limit": "Full core Moodle inventories remain last verified 6 October (Portuguese 3 October). Specific messages were reviewed through 19 October. The Data course overview, Week 1 brief and assignment were read live on 19 October: this targeted check does not refresh other courses, grade reports or the full inventory. Individual source dates and timezone uncertainties remain explicit.",
   "study_start": "2026-10-07",
   "study_end": "2027-02-03",
   "weekly_base_minutes": 420,
@@ -592,14 +592,16 @@
     },
     {
       "date": "2026-10-20",
-      "reviewed_on": "2026-10-17",
-      "source_checked_on": "2026-10-17",
+      "reviewed_on": "2026-10-19",
+      "source_checked_on": "2026-10-19",
       "source_urls": [
         "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
         "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
         "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
         "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
-        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076",
+        "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=28281",
+        "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=28272"
       ],
       "official_deadlines_shifted": false,
       "break_minutes": 10,
@@ -624,11 +626,30 @@
           ]
         },
         {
+          "id": "data-week1-review",
+          "course": "Data",
+          "title": "Data Week 1: review and explain your actual report",
+          "minutes": 35,
+          "text": "Before the displayed 20 October 23:00 deadline, review the official brief and your draft against every requirement. Reproduce the exploratory outputs, understand the hypotheses and limitations, and verify permitted AI use and the accepted file type. Any official upload/submission is a separate personal action; this checklist does not perform it. Timezone remains unstated in the page.",
+          "start": "Spend five minutes matching the four questions and selected datasets to the official brief, then reproduce one result yourself.",
+          "consequence": "A draft is not a completed or accepted submission. If review takes longer, replace lower-priority study within the weekly budget rather than adding catch-up hours.",
+          "links": [
+            {
+              "label": "Official Week 1 brief",
+              "url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=28272"
+            },
+            {
+              "label": "Official assignment",
+              "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=28281"
+            }
+          ]
+        },
+        {
           "id": "hci-research",
           "course": "HCI",
           "title": "HCI: research notes and task requirements",
-          "minutes": 25,
-          "text": "Use actual participant evidence and organise the report outline under the 10-page limit.",
+          "minutes": 10,
+          "text": "Choose one real research prerequisite for the 30 October report. This shortened block makes room for the newly posted Data Week 1 deadline; no genuine participant evidence is invented.",
           "start": "Open the actual source or attempt the first question yourself.",
           "consequence": "A proposed block is not completed work or official acceptance.",
           "links": [
@@ -639,25 +660,6 @@
             {
               "label": "17 October course findings",
               "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
-            }
-          ]
-        },
-        {
-          "id": "methods-recall",
-          "course": "Software",
-          "title": "Methods: processes and requirements recall",
-          "minutes": 20,
-          "text": "Write one use case and distinguish user/system requirements. Test date is 28 October, not the 21 October readiness checkpoint.",
-          "start": "Open the actual source or attempt the first question yourself.",
-          "consequence": "A proposed block is not completed work or official acceptance.",
-          "links": [
-            {
-              "label": "Official course",
-              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=994"
-            },
-            {
-              "label": "17 October course findings",
-              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13204L"
             }
           ]
         }
@@ -1394,16 +1396,16 @@
     {
       "id": "data-test-1",
       "course": "Data",
-      "title": "First-test window",
-      "date": "2026-10-26",
+      "title": "First written test",
+      "date": "2026-10-30",
       "end_date": "2026-10-30",
       "time": null,
       "timezone": null,
-      "certainty": "Provisional window; year inferred from course context",
+      "certainty": "Live course overview says 30 October during class; year follows 2026/27 context; exact time/room unstated",
       "condition": null,
-      "note": "One test somewhere in this window. Exact day, time and room remain unconfirmed.",
-      "source_url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740",
-      "source_checked_on": "2026-10-06"
+      "note": "The 19 October live course overview replaces the older 26–30 October window with 30.out (during class). Confirm the exact start time, room, coverage and permitted materials. Ordinary class times are not a verified test start.",
+      "source_url": "https://www.moodle.uevora.pt/2627/course/view.php?id=965",
+      "source_checked_on": "2026-10-19"
     },
     {
       "id": "software-test-1",
@@ -1790,6 +1792,22 @@
       "contextual_timezone": "Europe/Lisbon",
       "timezone_explicitly_stated": false,
       "instruction_published_on": "2026-10-16"
+    },
+    {
+      "id": "data-semana-1",
+      "course": "Data",
+      "title": "Week 1: housing project report",
+      "date": "2026-10-20",
+      "end_date": "2026-10-20",
+      "time": "23:00",
+      "timezone": null,
+      "contextual_timezone": "Europe/Lisbon",
+      "certainty": "Date and displayed time read live 19 October; Moodle profile timezone not independently verified",
+      "condition": null,
+      "note": "One file: 3–4 testable questions/hypotheses and required indicators, identified versus selected official datasets across housing prices/income/population/a justified complementary indicator, a source catalogue, and reproducible Python exploratory results. Individual or pair work allowed. The checklist neither uploads nor submits work; check the accepted file type and course AI rules before any submission.",
+      "source_url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=28281",
+      "brief_url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=28272",
+      "source_checked_on": "2026-10-19"
     }
   ],
   "undated_requirements": [
