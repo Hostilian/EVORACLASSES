@@ -1,10 +1,10 @@
 {
   "format": "evora-public-suggested-plan-v1",
-  "updated_on": "2026-10-19",
+  "updated_on": "2026-10-20",
   "study_timezone": "Europe/London",
   "campus_timezone": "Europe/Lisbon",
   "course_sources_last_checked": "2026-10-06",
-  "source_limit": "Full core Moodle inventories remain last verified 6 October (Portuguese 3 October). Specific messages were reviewed through 19 October. The Data course overview, Week 1 brief and assignment were read live on 19 October: this targeted check does not refresh other courses, grade reports or the full inventory. Individual source dates and timezone uncertainties remain explicit.",
+  "source_limit": "Full core Moodle inventories remain last verified 6 October (Portuguese 3 October). Specific messages were reviewed through 19 October. The Data course overview, Week 1 brief and assignment were read live on 19 October: this targeted check does not refresh other courses, grade reports or the full inventory. Individual source dates and timezone uncertainties remain explicit. Authored summaries and suggestions were corrected on 20 October; this does not advance Moodle source verification dates.",
   "study_start": "2026-10-07",
   "study_end": "2027-02-03",
   "weekly_base_minutes": 420,
@@ -592,7 +592,7 @@
     },
     {
       "date": "2026-10-20",
-      "reviewed_on": "2026-10-19",
+      "reviewed_on": "2026-10-20",
       "source_checked_on": "2026-10-19",
       "source_urls": [
         "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
@@ -645,21 +645,17 @@
           ]
         },
         {
-          "id": "hci-research",
-          "course": "HCI",
-          "title": "HCI: research notes and task requirements",
+          "id": "document-check",
+          "course": "Administration",
           "minutes": 10,
-          "text": "Choose one real research prerequisite for the 30 October report. This shortened block makes room for the newly posted Data Week 1 deadline; no genuine participant evidence is invented.",
-          "start": "Open the actual source or attempt the first question yourself.",
-          "consequence": "A proposed block is not completed work or official acceptance.",
+          "title": "Check one pending document requirement",
+          "text": "Review your own pending document requirements privately. Identify any real missing evidence and review a draft request before deciding on a personal send. If no administrative action is due, use these ten minutes for a genuine HCI research prerequisite. Personal documents and messages are not included in this public suggestion.",
+          "start": "Spend five minutes checking your own document list and identify one missing item.",
+          "consequence": "Documents issued by another office need lead time. A checklist tick is not proof of a sent request, accepted document or official completion.",
           "links": [
             {
-              "label": "Official course",
-              "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
-            },
-            {
-              "label": "17 October course findings",
-              "url": "https://hostilian.github.io/EVORACLASSES/study/recovery_2026-10-17.html#audit-INF13186L"
+              "label": "Private plan viewer: load your own local file",
+              "url": "https://hostilian.github.io/EVORACLASSES/study/planner.html"
             }
           ]
         }
@@ -667,14 +663,15 @@
     },
     {
       "date": "2026-10-21",
-      "reviewed_on": "2026-10-17",
-      "source_checked_on": "2026-10-17",
+      "reviewed_on": "2026-10-20",
+      "source_checked_on": "2026-10-19",
       "source_urls": [
         "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
         "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
         "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
         "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
-        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
       ],
       "official_deadlines_shifted": false,
       "break_minutes": 10,
@@ -720,9 +717,9 @@
         {
           "id": "data-date",
           "course": "Data",
-          "title": "Data: resolve exact test day and main-topic evidence",
+          "title": "Data: verify test logistics and main-topic evidence",
           "minutes": 10,
-          "text": "Check the 26–30 October window, makeup-class notice, actual group and main post separately from an individual comment.",
+          "text": "The targeted 19 October overview gives F1 on 30 October during class. Verify exact start, room, coverage and any makeup-class notice; check actual group and main-topic evidence separately from an individual comment.",
           "start": "Open the actual source or attempt the first question yourself.",
           "consequence": "A proposed block is not completed work or official acceptance.",
           "links": [
@@ -959,14 +956,15 @@
     },
     {
       "date": "2026-10-26",
-      "reviewed_on": "2026-10-17",
-      "source_checked_on": "2026-10-17",
+      "reviewed_on": "2026-10-20",
+      "source_checked_on": "2026-10-19",
       "source_urls": [
         "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
         "https://www.moodle.uevora.pt/2627/mod/choice/view.php?id=27814",
         "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
         "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
-        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=1076",
+        "https://www.moodle.uevora.pt/2627/course/view.php?id=965"
       ],
       "official_deadlines_shifted": false,
       "break_minutes": 10,
@@ -1014,7 +1012,7 @@
           "course": "Data",
           "title": "Data: check this week's actual assessment",
           "minutes": 10,
-          "text": "Verify exact date/time within 26–30 October and the practical schedule. An optional 15:30 research visit must fit the 16:00 practical.",
+          "text": "The targeted 19 October overview gives F1 on 30 October during class; verify its exact start, room, coverage and the practical schedule. An optional 15:30 research visit must fit the 16:00 practical.",
           "start": "Open the actual source or attempt the first question yourself.",
           "consequence": "A proposed block is not completed work or official acceptance.",
           "links": [
