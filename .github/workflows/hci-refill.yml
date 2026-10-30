@@ -1,0 +1,24 @@
+name: HCI refill checks
+on:
+  pull_request:
+    paths:
+      - 'projects/hci/alunue-refill/**'
+      - '.github/workflows/hci-refill.yml'
+  push:
+    branches: ['hci/alunue-refill-20261030']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/hci/alunue-refill
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
+      - run: npm run check
+      - run: node --check dist/app.mjs && node --check dist/sw.js
