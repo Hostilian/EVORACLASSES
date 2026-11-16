@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software Tools Index — Évora 2026/27</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d2e;
+    --border: #2a2d3e;
+    --accent: #7c6af7;
+    --accent2: #4fc3f7;
+    --text: #e2e8f0;
+    --muted: #8892a4;
+    --tag-web: #1a3a2a;
+    --tag-web-t: #4ade80;
+    --tag-soft: #1a2a3a;
+    --tag-soft-t: #60a5fa;
+    --tag-data: #2a1a3a;
+    --tag-data-t: #c084fc;
+    --tag-hci: #3a2a1a;
+    --tag-hci-t: #fb923c;
+    --tag-stat: #1a3a3a;
+    --tag-stat-t: #2dd4bf;
+    --tag-ai: #3a1a1a;
+    --tag-ai-t: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; padding: 1.5rem; }
+  h1 { font-size: 1.5rem; color: var(--accent); margin-bottom: 0.4rem; }
+  .subtitle { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .legend { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+  .tag { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.72rem; font-weight: 600; }
+  .web   { background: var(--tag-web);  color: var(--tag-web-t); }
+  .soft  { background: var(--tag-soft); color: var(--tag-soft-t); }
+  .data  { background: var(--tag-data); color: var(--tag-data-t); }
+  .hci   { background: var(--tag-hci);  color: var(--tag-hci-t); }
+  .stat  { background: var(--tag-stat); color: var(--tag-stat-t); }
+  .ai    { background: var(--tag-ai);   color: var(--tag-ai-t); }
+
+  .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+  .filter-btn { background: var(--surface); border: 1px solid var(--border); color: var(--muted); padding: 0.3rem 0.9rem; border-radius: 999px; cursor: pointer; font-size: 0.8rem; transition: all .15s; }
+  .filter-btn:hover, .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; transition: border-color .2s; }
+  .card:hover { border-color: var(--accent); }
+  .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; }
+  .card-num { font-size: 0.7rem; color: var(--muted); font-weight: 700; min-width: 1.5rem; }
+  .card-title { font-size: 0.95rem; font-weight: 700; color: #fff; flex: 1; }
+  .stars { font-size: 0.75rem; color: #f59e0b; white-space: nowrap; }
+  .card-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; margin-bottom: 0.6rem; }
+  .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+  .relevance { font-size: 0.72rem; color: var(--accent2); margin-top: 0.5rem; font-style: italic; }
+
+  .count { color: var(--muted); font-size: 0.8rem; margin-bottom: 1rem; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<h1>Software Tools Index</h1>
+<p class="subtitle">23 real-world tools found in screenshots — mapped to your 5 Évora courses · Updated 2026-11-16</p>
+
+<div class="legend">
+  <span class="tag web">INF13207L Web Tech</span>
+  <span class="tag soft">INF13204L Soft Methods</span>
+  <span class="tag data">INF14387L Data Analysis</span>
+  <span class="tag hci">INF13186L HCI</span>
+  <span class="tag stat">MAT02354L Statistics</span>
+  <span class="tag ai">AI / General</span>
+</div>
+
+<div class="filters">
+  <button class="filter-btn active" onclick="filter('all')">All (23)</button>
+  <button class="filter-btn" onclick="filter('web')">Web Tech</button>
+  <button class="filter-btn" onclick="filter('soft')">Soft Methods</button>
+  <button class="filter-btn" onclick="filter('data')">Data Analysis</button>
+  <button class="filter-btn" onclick="filter('hci')">HCI</button>
+  <button class="filter-btn" onclick="filter('stat')">Statistics</button>
+  <button class="filter-btn" onclick="filter('ai')">AI Tools</button>
+</div>
+
+<p class="count" id="count">Showing 23 tools</p>
+
+<div class="grid" id="grid">
+
+  <div class="card" data-tags="web soft ai">
+    <div class="card-header">
+      <span class="card-num">#1</span>
+      <span class="card-title">Moltbot / Clawdbot</span>
+    </div>
+    <p class="card-desc">AI personal assistant that clears inbox, sends emails, manages calendar and checks in for flights — all via WhatsApp or Telegram. Self-hosted version available.</p>
+    <div class="card-tags">
+      <span class="tag web">Web Tech</span><span class="tag soft">Soft Methods</span><span class="tag ai">AI</span>
+    </div>
+    <p class="relevance">Web: agent architecture example. Soft Methods: AI-assisted workflow automation.</p>
+  </div>
+
+  <div class="card" data-tags="web soft">
+    <div class="card-header">
+      <span class="card-num">#2</span>
+      <span class="card-title">CEEHacks</span>
+    </div>
+    <p class="card-desc">ceehacks.com — organises tech hackathons in Central/Eastern Europe. HACK JAK BRNO 2025 and European Health Hackathon.</p>
+    <div class="card-tags">
+      <span class="tag web">Web Tech</span><span class="tag soft">Soft Methods</span>
+    </div>
+    <p class="relevance">Soft Methods: collaborative team project structure, real event-driven dev cycle.</p>
+  </div>
+
+  <div class="card" data-tags="ai web hci">
+    <div class="card-header">
+      <span class="card-num">#3</span>
+      <span class="card-title">AI Tools List (11 tools)</span>
+      <span class="stars">Threads post</span>
+    </div>
+    <p class="card-desc">Curated list: ChatGPT, PicWish, Perplexity.ai, Suno.ai, Canva, ElevenLabs, Grammarly, Luma.ai, RecCloud, Runway.ml, Descript.</p>
+    <div class="card-tags">
+      <span class="tag ai">AI</span><span class="tag web">Web Tech</span><span class="tag hci">HCI</span>
+    </div>
+    <p class="relevance">HCI: AI-augmented UX tools. Web Tech: API-driven SaaS landscape overview.</p>
+  </div>
+
+  <div class="card" data-tags="soft web ai">
+    <div class="card-header">
+      <span class="card-num">#4</span>
+      <span class="card-title">pixel-agents (GitHub)</span>
+      <span class="stars">⭐ 6,000</span>
+    </div>
+    <p class="card-desc">github.com/pablodelucca/pixel-agents — visualises AI agents as pixel art characters working in a virtual office. MIT licensed.</p>
+    <div class="card-tags">
+      <span class="tag soft">Soft Methods</span><span class="tag web">Web Tech</span><span class="tag ai">AI</span>
+    </div>
+    <p class="relevance">Soft Methods: multi-agent system design. Web: canvas rendering / frontend interaction.</p>
+  </div>
+
+  <div class="card" data-tags="soft ai data">
+    <div class="card-header">
+      <span class="card-num">#5</span>
+      <span class="card-title">My Brain Is Full — Crew</span>
+    </div>
+    <p class="card-desc">8+ AI agents with 13 specialised skills that manage an Obsidian vault: file, connect, search, transcribe and triage email. Claude-powered.</p>
+    <div class="card-tags">
+      <span class="tag soft">Soft Methods</span><span class="tag ai">AI</span><span class="tag data">Data Analysis</span>
+    </div>
+    <p class="relevance">Soft Methods: agent orchestration, skill decomposition. Data: knowledge graph automation.</p>
+  </div>
+
+  <div class="card" data-tags="soft data ai">
+    <div class="card-header">
+      <span class="card-num">#6</span>
+      <span class="card-title">Claude + TradingView MCP</span>
+      <span class="stars">1,800 likes</span>
+    </div>
+    <p class="card-desc">Claude AI running TradingView live from terminal via MCP protocol. Analyses 884 price lines, breakout stats, 413 hours of data in real-time.</p>
+    <div class="card-tags">
+      <span class="tag soft">Soft Methods</span><span class="tag data">Data Analysis</span><span class="tag ai">AI</span>
+    </div>
+    <p class="relevance">Data Analysis: AI-driven time-series analysis. Soft Methods: tool integration via protocol.</p>
+  </div>
+
+  <div class="card" data-tags="web soft hci">
+    <div class="card-header">
+      <span class="card-num">#7</span>
+      <span class="card-title">Obsidian + EU Startup Map</span>
+    </div>
+    <p class="card-desc">Obsidian — $350M company with 3 engineers. EU Web3/startup map built with Radix UI, shadcn/ui, Tailwind CSS.</p>
+    <div class="card-tags">
+      <span class="tag web">Web Tech</span><span class="tag soft">Soft Methods</span><span class="tag hci">HCI</span>
+    </div>
+    <p class="relevance">Web: Radix/shadcn/Tailwind stack. HCI: note-taking UX design. Soft Methods: lean team at scale.</p>
+  </div>
+
+  <div class="card" data-tags="web soft">
+    <div class="card-header">
+      <span class="card-num">#8</span>
+      <span class="card-title">Streambert (GitHub)</span>
+      <span class="stars">2.4K downloads</span>
+    </div>
+    <p class="card-desc">Cross-platform Electron desktop app to stream/download movies, TV series and anime. GPL-3.0. 2.4K downloads at v2.4.</p>
+    <div class="card-tags">
+      <span class="tag web">Web Tech</span><span class="tag soft">Soft Methods</span>
+    </div>
+    <p class="relevance">Web Tech: Electron + web APIs. Soft Methods: open-source desktop app lifecycle.</p>
+  </div>
+
+  <div class="card" data-tags="web soft hci">
+    <div class="card-header">
+      <span class="card-num">#9</span>
+      <span class="card-title">MakeLogo.ai + StalkNot + Dev Stack</span>
+    </div>
+    <p class="card-desc">Indie hacker shipped 17 apps in 1 year. MakeLogo.ai ($65K exit), StalkNot voice-to-text ($200K exit). Stack: Nuxt, Cursor, Vo.dev, Ahrefs.</p>
+    <div class="card-tags">
+      <span class="tag web">Web Tech</span><span class="tag soft">Soft Methods</span><span class="tag hci">HCI</span>
+    </div>
+    <p class="relevance">Web: Nuxt.js stack. HCI: rapid UX iteration/validation. Soft Methods: solo dev cycle.</p>
+  </div>
+
+  <div class="card" data-tags="soft ai web">
+    <div class="card-header">
+      <span class="card-num">#10</span>
+      <span class="card-title">Zyloo.io — Claude API Proxy</span>
+      <span class="stars">80 likes</span>
+    </div>
+    <p class="card-desc">Free API proxy for Claude models. Swap base URL to api.zyloo.io/v1 and access claude-opus-4-7 at no cost. Lists all current Claude model variants.</p>
+    <div class="card-tags">
+      <span class="tag soft">Soft Methods</span><span class="tag ai">AI</span><span class="tag web">Web Tech</span>
+    </div>
+    <p class="relevance">Web: REST API proxy pattern. Soft Methods: API versioning and routing architecture.</p>
+  </div>
+
+  <div class="card" data-tags="soft ai web">
+    <div class="card-header">
+      <span class="card-num">#11</span>
+      <span class="card-title">codex-plugin-cc</span>
+      <span class="stars">16,989 views</span>
+    </div>
+    <p class="card-desc">Official OpenAI plugin for Claude Code — installs Codex directly inside Claude Code sessions. "One command. No switching tools." Fable 5 + GPT 5.5.</p>
+    <div class="card-tags">
+      <span class="tag soft">Soft Methods</span><span class="tag ai">AI</span><span class="tag web">Web Tech</span>
+    </div>
+    <p class="relevance">Soft Methods: AI-assisted development tools. Web: plugin/extension architecture pattern.</p>
+  </div>
+
+  <div class="card" data-tags="hci soft web">
+    <div class="card-header">
+      <span class="card-num">#12</span>
+      <span class="card-title">glowup — Makeup Try-On App</span>
+      <span class="stars">$800K revenue</span>
+    </div>
+    <p class="card-desc">AI virtual makeup try-on app. Idea validated on TikTok comments before writing code. Made $800K. Founded by Louis after finding a user need in comments.</p>
+    <div class="card-tags">
+      <span class="tag hci">HCI</span><span class="tag soft">Soft Methods</span><span class="tag web">Web Tech</span>
+    </div>
+    <p class="relevance">HCI: need-finding from social media, AR interface. Soft Methods: lean validation before build.</p>
+  </div>
+
+  <div class="card" data-tags="web hci soft">
+    <div class="card-header">
+      <span class="card-num">#13</span>
+      <span class="card-title">toaster.locust.lol</span>
+      <span class="stars">73 likes</span>
+    </div>
+    <p class="card-desc">Free browser-based live-coding music environment. Writes code as the song plays in real-time (Tone.js). Open-source, github.com/StopB...</p>
+    <div class="card-tags">
+      <span class="tag web">Web Tech</span><span class="tag hci">HCI</span><span class="tag soft">Soft Methods</span>
+    </div>
+    <p class="relevance">Web: Tone.js, Web Audio API, live DOM manipulation. HCI: creative coding UX, real-time feedback.</p>
+  </div>
+
+  <div class="card" data-tags="data ai stat">
+    <div class="card-header">
+      <span class="card-num">#14</span>
+      <span class="card-title">Jev — AI Classifier</span>
+      <span class="stars">96.2K views</span>
+    </div>
+    <p class="card-desc">Lightweight general-purpose classifier — fast and cheap vs. LLM text generation. "Blazing fast and dirt cheap instead of making probabilistic decisions via text generation."</p>
+    <div class="card-tags">
+      <span class="tag data">Data Analysis</span><span class="tag ai">AI</span><span class="tag stat">Statistics</span>
+    </div>
+    <p class="relevance">Data Analysis: classification pipeline. Statistics: probabilistic vs. deterministic decision-making.</p>
+  </div>
+
+  <div class="card" data-tags="data ai stat">
+    <div class="card-header">
+      <span class="card-num">#15</span>
+      <span class="card-title">OpenRouter</span>
+      <span class="stars">194T tokens/week · Stripe acquired</span>
+    </div>
+    <p class="card-desc">LLM API aggregator. 10 quadrillion token annual run rate. 33% month-over-month growth for 3+ years. Volume doubled every 10.5 weeks. Acquired by Stripe.</p>
+    <div class="card-tags">
+      <span class="tag data">Data Analysis</span><span class="tag ai">AI</span><span class="tag stat">Statistics</span>
+    </div>
+    <p class="relevance">Data Analysis: exponential growth modelling. Statistics: compound growth rates, run-rate extrapolation.</p>
+  </div>
+
+  <div class="card" data-tags="soft web ai">
+    <div class="card-header">
+      <span class="card-num">#16</span>
+      <span class="card-title">Make.com — No-Code Automation</span>
+    </div>
+    <p class="card-desc">Visual no-code automation platform (like Zapier). Connects apps and automates workflows. Used here via ChatGPT plugin to run automation scenarios.</p>
+    <div class="card-tags">
+      <span class="tag soft">Soft Methods</span><span class="tag web">Web Tech</span><span class="tag ai">AI</span>
+    </div>
+    <p class="relevance">Soft Methods: workflow automation, no-code systems. Web: webhook/API integration patterns.</p>
+  </div>
+
+  <div class="card" data-tags="soft web ai">
+    <div class="card-header">
+      <span class="card-num">#17</span>
+      <span class="card-title">ChatGPT GitHub Plugin</span>
+    </div>
+    <p class="card-desc">Official ChatGPT plugin with ELEVATED RISK permissions connected to GitHub. Actions: check repo, compare commits, download git tree archive, read/write repos.</p>
+    <div class="card-tags">
+      <span class="tag soft">Soft Methods</span><span class="tag web">Web Tech</span><span class="tag ai">AI</span>
+    </div>
+    <p class="relevance">Soft Methods: AI-integrated version control. Web: OAuth permission scopes, API security model.</p>
+  </div>
+
+  <div class="card" data-tags="web data hci">
+    <div class="card-header">
+      <span class="card-num">#18</span>
+      <span class="card-title">God's Eye View (GitHub)</span>
+      <span class="stars">⭐ 63,800</span>
+    </div>
+    <p class="card-desc">Interactive 3D Earth showing real-time aircraft, satellites, ships, earthquakes, fires and public cameras on one globe. Browser-based WebGL visualisation.</p>
+    <div class="card-tags">
+      <span class="tag web">Web Tech</span><span class="tag data">Data Analysis</span><span class="tag hci">HCI</span>
+    </div>
+    <p class="relevance">Web: WebGL/3D in browser, real-time data APIs. HCI: information density in interactive maps. Data: multi-source live data fusion.</p>
+  </div>
+
+  <div class="card" data-tags="web data hci">
+    <div class="card-header">
+      <span class="card-num">#19</span>
+      <span class="card-title">World Monitor (GitHub)</span>
+      <span class="stars">⭐ 90,500</span>
+    </div>
+    <p class="card-desc">Global intelligence dashboard: news, conflicts, military, aircraft tracking, maritime traffic, natural disasters — all real-time in one open-source dashboard.</p>
+    <div class="card-tags">
+      <span class="tag web">Web Tech</span><span class="tag data">Data Analysis</span><span class="tag hci">HCI</span>
+    </div>
+    <p class="relevance">Web: real-time dashboard architecture. Data: multi-modal streaming data. HCI: complex information dashboards.</p>
+  </div>
+
+  <div class="card" data-tags="data ai stat">
+    <div class="card-header">
+      <span class="card-num">#20</span>
+      <span class="card-title">Calibri — 744B Parameter AI on Laptop</span>
+      <span class="stars">19K likes</span>
+    </div>
+    <p class="card-desc">744B parameter AI model running locally on a laptop. Edge inference demo — 0.2 tokens/second throughput noted. Shows local LLM deployment feasibility.</p>
+    <div class="card-tags">
+      <span class="tag data">Data Analysis</span><span class="tag ai">AI</span><span class="tag stat">Statistics</span>
+    </div>
+    <p class="relevance">Data Analysis: on-device inference tradeoffs. Statistics: parameter count vs. performance benchmarks.</p>
+  </div>
+
+  <div class="card" data-tags="data ai stat soft">
+    <div class="card-header">
+      <span class="card-num">#21</span>
+      <span class="card-title">Laya — AI Decision Engine (GitHub)</span>
+      <span class="stars">11K likes</span>
+    </div>
+    <p class="card-desc">github.com/NandhaKishorM/laya — Non-autoregressive System 1 decision engine. Typed decisions in 100+ languages in a single forward pass, 33ms latency. RL-trained.</p>
+    <div class="card-tags">
+      <span class="tag data">Data Analysis</span><span class="tag ai">AI</span><span class="tag stat">Statistics</span><span class="tag soft">Soft Methods</span>
+    </div>
+    <p class="relevance">Data Analysis: non-autoregressive architecture. Statistics: reinforcement learning scoring (RLCD). Soft Methods: system design for latency-critical decisions.</p>
+  </div>
+
+  <div class="card" data-tags="data soft web">
+    <div class="card-header">
+      <span class="card-num">#22</span>
+      <span class="card-title">Milesight ToolBox — IoT Config</span>
+    </div>
+    <p class="card-desc">Mobile app for configuring Milesight IoT devices (EM300-TH LoRaWAN temperature/humidity sensor). OTAA join type, device EUI, application settings, sensor readings.</p>
+    <div class="card-tags">
+      <span class="tag data">Data Analysis</span><span class="tag soft">Soft Methods</span><span class="tag web">Web Tech</span>
+    </div>
+    <p class="relevance">Data Analysis: sensor data pipelines, IoT readings. Soft Methods: embedded/IoT configuration tools. Web: MQTT/LoRaWAN API integration.</p>
+  </div>
+
+  <div class="card" data-tags="web hci ai data">
+    <div class="card-header">
+      <span class="card-num">#23</span>
+      <span class="card-title">Arena Zero / Higgsfield AI</span>
+    </div>
+    <p class="card-desc">World's First AI Action Series — fully AI-generated video content by Higgsfield AI platform. YouTube series "Arena Zero" with Seedance 2.0 breakdown videos.</p>
+    <div class="card-tags">
+      <span class="tag web">Web Tech</span><span class="tag hci">HCI</span><span class="tag ai">AI</span><span class="tag data">Data Analysis</span>
+    </div>
+    <p class="relevance">HCI: AI-generated media UX. Web: video generation APIs. Data Analysis: generative model pipelines.</p>
+  </div>
+
+</div>
+
+<script>
+function filter(tag) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  const cards = document.querySelectorAll('.card');
+  let shown = 0;
+  cards.forEach(c => {
+    const tags = c.dataset.tags.split(' ');
+    const show = tag === 'all' || tags.includes(tag);
+    c.classList.toggle('hidden', !show);
+    if (show) shown++;
+  });
+  document.getElementById('count').textContent = `Showing ${shown} tool${shown !== 1 ? 's' : ''}`;
+}
+</script>
+</body>
+</html>
