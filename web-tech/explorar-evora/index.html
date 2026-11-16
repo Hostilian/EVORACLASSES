@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Descubra eventos culturais e locais de interesse na cidade de Évora. Projeto académico de Tecnologias Web.">
+<title>Explorar Évora — A cidade tem histórias para contar</title>
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a href="#conteudo" class="skip-link">Saltar para o conteúdo</a>
+<div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+<header class="topbar">
+  <a class="brand" href="#inicio" aria-label="Explorar Évora, início"><span class="brand-symbol" aria-hidden="true">✳</span><span>EXPLORAR<span class="brand-accent">ÉVORA</span></span></a>
+  <nav class="main-nav" id="main-navigation" aria-label="Navegação principal"><a href="#eventos">Eventos</a><a href="#mapa">No mapa</a><a href="#sobre">Sobre Évora</a><a href="#gestao" id="nav-management" hidden>Gestão</a></nav>
+  <div class="nav-actions"><button type="button" class="menu-button" id="menu-button" aria-expanded="false" aria-controls="main-navigation" aria-label="Abrir menu de navegação" title="Menu"><span aria-hidden="true">☰</span></button><button type="button" class="theme-button" id="theme-button" aria-pressed="false" aria-label="Alternar para modo noturno" title="Alterar aspeto">◐ <span>Vista</span></button><span id="api-pill" class="connection-pill" role="status">A ligar…</span><button type="button" class="login-button" id="account-button">Entrar <span aria-hidden="true">↗</span></button></div>
+</header>
+<main id="conteudo">
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="hero-shape hero-shape-one" aria-hidden="true"></div><div class="hero-shape hero-shape-two" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="eyebrow light">38°34′ N · 7°54′ W <span class="eyebrow-dot">✦</span> ALENTEJO, PORTUGAL</p>
+    <h1 id="hero-title">A cidade está<br><em>viva.</em></h1>
+    <p class="hero-lead">Há histórias que não cabem num guia. Descubra os próximos encontros, as pessoas e os momentos que fazem Évora acontecer.</p>
+    <div class="hero-buttons"><a class="button button-cream" href="#eventos">Explorar eventos <span aria-hidden="true">↗</span></a><a class="hero-text-link" href="#mapa">Explorar o mapa <span aria-hidden="true">↘</span></a></div>
+    <div class="hero-foot"><span class="hero-foot-mark">É</span><span>Património, pessoas e possibilidades.</span><span class="hero-index">01 — 03</span></div>
+  </div>
+  <figure class="hero-photo" aria-hidden="true"><img src="evora-temple.jpg" alt="" decoding="async" fetchpriority="high"><figcaption><span class="photo-icon">✳</span><span>ÉVORA, PORTUGAL<br><small>UMA CIDADE. INFINITAS HISTÓRIAS.</small></span></figcaption></figure>
+  <div class="hero-art" aria-hidden="true"><div class="art-ring ring-1"></div><div class="art-ring ring-2"></div><div class="art-ring ring-3"></div><div class="art-tower"><span></span><span></span><span></span></div><div class="art-label">A CIDADE EM MOVIMENTO<br><strong>É V O R A</strong></div></div>
+</section>
+<div class="city-ticker" aria-hidden="true"><div class="ticker-inner"><span>ARTE &amp; CULTURA</span><i>✳</i><span>ENCONTROS REAIS</span><i>✳</i><span>ÉVORA VIVA</span><i>✳</i><span>HISTÓRIAS LOCAIS</span><i>✳</i><span>ARTE &amp; CULTURA</span><i>✳</i><span>ENCONTROS REAIS</span><i>✳</i><span>ÉVORA VIVA</span><i>✳</i><span>HISTÓRIAS LOCAIS</span><i>✳</i></div></div>
+<section class="intro-strip" id="sobre" aria-label="Sobre a plataforma" data-reveal>
+  <div><span class="micro-label">A nossa cidade</span><p>Das ruas históricas às novas ideias. Um espaço para descobrir o que acontece aqui.</p></div>
+  <div class="intro-stat" data-reveal data-delay="2"><strong id="all-count">—</strong><span>EVENTOS NO CATÁLOGO</span></div>
+  <div class="intro-stat" data-reveal data-delay="3"><strong id="agent-count">—</strong><span>AGENTES CULTURAIS</span></div>
+</section>
+<section class="events-section" id="eventos" aria-labelledby="event-title">
+  <div class="section-heading" data-reveal><div><p class="eyebrow">Agenda cultural · atualizado em tempo real</p><h2 id="event-title">O que acontece <em>por aqui</em></h2></div><p class="section-side">Encontre o seu próximo plano.<br>Évora começa aqui.</p></div>
+  <div class="tool-panel" role="search" data-reveal data-delay="1">
+    <form id="search-form" class="search-form">
+      <div class="field-search"><label for="search-text">Pesquisar eventos</label><input type="search" id="search-text" placeholder="Nome, tema ou descrição…" autocomplete="off"></div>
+      <div class="field-date"><label for="search-date">Data</label><input type="date" id="search-date"></div>
+      <button type="submit" class="button button-maroon">Pesquisar <span aria-hidden="true">↗</span></button>
+      <button type="button" class="button button-outline" id="reset-search">Limpar</button>
+    </form>
+    <div class="filter-line"><span>Filtrar resultados apresentados:</span><label for="local-agent">Agente</label><select id="local-agent"><option value="">Todos os agentes</option></select><label for="local-order">Ordenação</label><select id="local-order"><option value="date">Data mais próxima</option><option value="name">Nome A–Z</option></select></div>
+  </div>
+  <div class="list-meta"><p id="results-heading">A carregar eventos…</p><div><button type="button" class="text-action" id="catalog-button">Agenda completa ↗</button> <button type="button" class="text-action" id="reload-button">Atualizar ↻</button></div></div>
+  <div class="cards-grid" id="events-list" aria-live="polite"><p class="loading">A consultar a agenda cultural…</p></div>
+  <div id="pager" class="pager" aria-label="Paginação" hidden><button id="prev-page" type="button" class="page-nav">← Anterior</button><span id="page-info">Página 1</span><button id="next-page" type="button" class="page-nav">Seguinte →</button></div>
+</section>
+<section class="map-experience" id="mapa" aria-labelledby="map-experience-title">
+  <div class="map-experience-intro" data-reveal>
+    <div class="map-eyebrow"><span class="map-marker-symbol">⌖</span> DESCUBRA, ANTES DE CHEGAR <span class="map-edition">EXPLORAR ÉVORA / 03</span></div>
+    <div class="map-topline"><div>
+      <p class="eyebrow">Geografia cultural · Évora</p>
+      <h2 id="map-experience-title">A cidade é <em>o palco.</em></h2>
+    </div><p>Os eventos ganham outra vida quando os encontramos na cidade. Escolha um ponto da agenda e descubra onde tudo acontece.</p></div>
+  </div>
+  <div class="map-stage" data-reveal data-delay="1">
+    <div class="map-selector">
+      <div class="map-selector-head"><span>01 / PONTOS DA AGENDA</span><span id="map-events-count">—</span></div>
+      <div id="map-locations" class="map-locations" aria-label="Selecionar evento no mapa" role="group">
+        <p class="muted">A carregar locais da agenda…</p>
+      </div>
+      <p class="map-tip">Use os pontos acima para localizar cada evento.</p>
+    </div>
+    <div class="map-canvas" id="map-visual" aria-live="polite" aria-label="Mapa do evento selecionado">
+      <p class="map-placeholder">Os locais aparecem quando a agenda estiver disponível.</p>
+    </div>
+  </div>
+  <div class="map-disclaimer"><span>◎ EVENTOS DA API DA UNIVERSIDADE</span><span>MAPAS © CONTRIBUIDORES DO OPENSTREETMAP</span></div>
+</section>
+<section class="feature-banner" aria-label="Participe na cultura" data-reveal><div><p class="eyebrow light">A cultura faz-se em conjunto</p><h2>Há mais para <em>descobrir.</em></h2><p>Acompanhe a agenda, partilhe a sua opinião e ajude a construir uma Évora mais viva.</p></div><button id="feature-login" class="button button-cream" type="button">Participar <span aria-hidden="true">↗</span></button></section>
+<section id="gestao" class="management-section" hidden aria-labelledby="management-title"><div class="section-heading"><div><p class="eyebrow">Área reservada</p><h2 id="management-title">Gerir a <em>agenda</em></h2></div></div><p class="muted">As ações de escrita usam a API de apoio.</p><div id="management-content"></div></section>
+</main>
+<footer class="footer"><div><a class="brand footer-brand" href="#inicio"><span class="brand-symbol">✳</span> EXPLORAR ÉVORA</a><p>Um olhar contemporâneo sobre a cultura de Évora.</p></div><div class="footer-links"><a href="#eventos">Agenda</a><a href="https://www.uevora.pt/" target="_blank" rel="noopener noreferrer">Universidade de Évora ↗</a><a href="mailto:ex77222@alunos.uevora.pt">Contacto académico</a></div><div class="footer-credits"><small>Projeto académico · INF13207L · Tecnologias Web · 2026/2027</small><small>Eren Ozturk · 77222</small></div><div class="photo-credit">Fotografia do Templo Romano: <a href="https://www.pexels.com/photo/columns-in-a-traditional-temple-in-portugal-14967427/" target="_blank" rel="noopener noreferrer">Efe Ersoy / Pexels</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer">Licença Pexels</a> · corte e tonalidade adaptados</div></footer>
+<div class="modal-backdrop" id="event-modal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-event-title"><button type="button" class="modal-close" id="event-close" aria-label="Fechar detalhes">✕</button><div id="event-details"></div></section></div>
+<div class="modal-backdrop" id="auth-modal" hidden><section class="modal modal-small" role="dialog" aria-modal="true" aria-labelledby="auth-title"><button type="button" class="modal-close" id="auth-close" aria-label="Fechar autenticação">✕</button><p class="eyebrow">Acesso de demonstração</p><h2 id="auth-title">Bem-vindo <em>de volta.</em></h2><p class="muted">Autenticação simulada, sem palavra-passe nem serviço real de login.</p><form id="auth-form" class="stack"><label for="role-select">Perfil</label><select id="role-select"><option value="visitor">Visitante registado</option><option value="agent">Agente cultural</option><option value="admin">Administrador</option></select><label for="demo-name">Nome de apresentação</label><input id="demo-name" maxlength="50" value="Visitante de Évora" required><div id="agent-identity" hidden><label for="agent-select">Agente associado</label><select id="agent-select"></select></div><button class="button button-maroon" type="submit">Entrar na demonstração</button></form></section></div>
+<button id="back-to-top" type="button" class="back-to-top" aria-label="Voltar ao início">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
