@@ -21,3 +21,7 @@ jobs:
           persist-credentials: false
       - name: Check public files, links, history and study capacity
         run: python3 scripts/validate-public-study.py
+      - name: Validate mobile exam sprint source, weekly tasks and privacy
+        run: |
+          node --check study/exam-sprint.js
+          node scripts/check-exam-sprint.cjs
