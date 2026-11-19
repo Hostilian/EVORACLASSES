@@ -2,6 +2,10 @@
 
 English study support for five University of Évora classes. The active package was rebuilt from the course material visible in Moodle on **2 October 2026** and focuses on the work needed for assessments and practical projects.
 
+## 19 November evening — exam-grind hardening
+
+The active [phone exam tracker](study/exam-sprint.html) now retains an on-screen **carry-forward queue** for unfinished older weekly study tasks, alongside the existing browser checklist and optional private GitHub sync. Seven weeks through 28 December have five extra measurable ground-zero exam drills each (35 new self-practice tasks), with real question attempts and mock results logged by the student. No Moodle submission, grade, attendance or study-time record is invented. This is a planning-only refinement and does not activate outbound notifications.
+
 ## Start here
 
 - **[Exam sprint phone tracker — 19 Nov 2026](study/exam-sprint.html)**: eleven weeks of five-course exam-oriented checklists, dated project and written exam risk flags, genuine session logging, adjustable 20–40 h target (30–35 h recommended), local backup and optional authenticated sync to the existing private data-only repository. The dated [public task baseline](study/exam-sprint.json) contains no personal receipts. The private evidence register is `Hostilian/EVORA-STUDY-PROGRESS/plan/exam-sprint-2026-11-19.json`. This is **not a live Moodle integration**; the original [daily checklist](study/today.html) remains a separate older 7–8h/week plan.

@@ -266,6 +266,41 @@
           "title": "Clarify final exam/TP eligibility with instructor; diagnose algebra + probability",
           "method": "Office visit is an option, not automatically booked.",
           "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Data-exam-drill",
+          "course": "Data",
+          "title": "Foundations checkpoint: identify data types and fix missing/outlier examples",
+          "method": "Answer 10 original practice questions without notes; score yourself, correct every error and log genuine minutes.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Software-exam-drill",
+          "course": "Software",
+          "title": "Foundations checkpoint: distinguish lifecycle, requirements and use cases",
+          "method": "Without notes answer 10 questions; sketch one functional requirement and one acceptance criterion.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Web-exam-drill",
+          "course": "Web",
+          "title": "Foundations checkpoint: HTML, CSS and HTTP",
+          "method": "Build one simple valid page and answer 10 independent HTML/CSS/HTTP questions.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-HCI-exam-drill",
+          "course": "HCI",
+          "title": "Foundations checkpoint: users, tasks, wireframes and usability",
+          "method": "Write a persona/task scenario based on real evidence; answer 8 usability questions.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Stats-exam-drill",
+          "course": "Stats",
+          "title": "Math diagnostic: fractions, algebra and descriptive statistics",
+          "method": "Solve 15 problems without notes; explicitly list prerequisites you cannot yet solve.",
+          "kind": "personal-study-plan"
         }
       ]
     },
@@ -308,6 +343,41 @@
           "course": "Stats",
           "title": "Practice conditional probability, independence, counting and Bayes, 15 problems",
           "method": "Show full worked solutions and review mistakes.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-Data-exam-drill",
+          "course": "Data",
+          "title": "Cleaning checkpoint: choose missing-value and outlier treatments",
+          "method": "Solve 12 small data-quality scenarios. Explain why an imputation or outlier strategy is appropriate.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-Software-exam-drill",
+          "course": "Software",
+          "title": "Requirements checkpoint: model realistic actors and scenarios",
+          "method": "Write three use cases and independently test requirements against the actual current project rubric.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-Web-exam-drill",
+          "course": "Web",
+          "title": "JavaScript checkpoint: DOM events and forms",
+          "method": "Complete three small JS exercises without copying solutions, then correct and explain mistakes.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-HCI-exam-drill",
+          "course": "HCI",
+          "title": "Phase 2 quality checkpoint: evaluate actual screens",
+          "method": "Walk through three realistic tasks, inspect contrast/labels/navigation and note fixes before submission.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-Stats-exam-drill",
+          "course": "Stats",
+          "title": "Probability checkpoint: counting, independence and Bayes",
+          "method": "Solve 15 conditional-probability problems and check each working step.",
           "kind": "personal-study-plan"
         }
       ]
@@ -352,6 +422,41 @@
           "title": "Random variables, expectations, variance and basic distributions; 15 calculations",
           "method": "Learn foundation concepts before memorizing formulas.",
           "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-30-Data-exam-drill",
+          "course": "Data",
+          "title": "Preprocessing checkpoint: scaling, encoding and feature selection",
+          "method": "Solve 15 mixed transformation questions; reproduce one preprocessing step in a scratch notebook.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-30-Software-exam-drill",
+          "course": "Software",
+          "title": "UML checkpoint: choose the right diagram",
+          "method": "Draw a minimal class, use-case and sequence diagram; explain each relationship.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-30-Web-exam-drill",
+          "course": "Web",
+          "title": "Web infrastructure checkpoint: requests, state, cookies and security",
+          "method": "Answer 12 questions and trace one browser-to-server request step by step.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-30-HCI-exam-drill",
+          "course": "HCI",
+          "title": "Theory checkpoint: usability heuristics",
+          "method": "Explain each core heuristic in your own words and critique one screen with 8 evidence-based findings.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-30-Stats-exam-drill",
+          "course": "Stats",
+          "title": "Random-variable checkpoint: means, variances and distributions",
+          "method": "Calculate 15 examples including expectation, variance and binomial/normal probability.",
+          "kind": "personal-study-plan"
         }
       ]
     },
@@ -394,6 +499,41 @@
           "course": "Stats",
           "title": "Work binomial, Poisson and normal distribution calculations; 20 problems",
           "method": "Check formula choices and assumptions.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-07-Data-exam-drill",
+          "course": "Data",
+          "title": "Applied checkpoint: small end-to-end data cleaning case",
+          "method": "From a tiny public/sample dataset identify flaws, transform it, and document before/after checks.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-07-Software-exam-drill",
+          "course": "Software",
+          "title": "Design/testing checkpoint: requirements, UML and test cases",
+          "method": "Answer 12 mixed written questions, then derive test cases from two real requirements.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-07-Web-exam-drill",
+          "course": "Web",
+          "title": "Web implementation checkpoint: APIs and asynchronous JavaScript",
+          "method": "Create a small fetch example with error handling; answer 10 theory questions.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-07-HCI-exam-drill",
+          "course": "HCI",
+          "title": "Theory checkpoint: prototype evaluation and research",
+          "method": "Write a short evaluation plan and independently answer 10 HCI theory questions.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-07-Stats-exam-drill",
+          "course": "Stats",
+          "title": "Distribution checkpoint: binomial, Poisson and normal",
+          "method": "Solve 20 questions using the correct distribution and defend each choice.",
           "kind": "personal-study-plan"
         }
       ]
@@ -438,6 +578,41 @@
           "title": "Sampling, central limit intuition, confidence intervals; 20 mixed questions",
           "method": "Use calculator and SPSS when required.",
           "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-14-Data-exam-drill",
+          "course": "Data",
+          "title": "Exam checkpoint: first timed mixed data-analysis mock",
+          "method": "Answer at least 20 questions under a timer, record actual correct/total and fix three weaknesses.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-14-Software-exam-drill",
+          "course": "Software",
+          "title": "Exam checkpoint: timed software-methods mini-mock",
+          "method": "Answer 20 questions in 45–60 minutes, self-mark and log the score.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-14-Web-exam-drill",
+          "course": "Web",
+          "title": "Exam checkpoint: frontend and backend mini-mock",
+          "method": "Solve 20 mixed questions, self-mark, and log what was wrong.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-14-HCI-exam-drill",
+          "course": "HCI",
+          "title": "Exam checkpoint: interaction and evaluation mini-mock",
+          "method": "Attempt 15 questions and explain why each wrong answer is wrong.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-14-Stats-exam-drill",
+          "course": "Stats",
+          "title": "Inference checkpoint: sampling and confidence intervals",
+          "method": "Complete 15 numerical problems, identify formulas, assumptions and correction steps.",
+          "kind": "personal-study-plan"
         }
       ]
     },
@@ -481,6 +656,41 @@
           "title": "Practice inference, hypothesis testing, p-values and confidence intervals",
           "method": "Complete at least 25 mixed problems.",
           "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-21-Data-exam-drill",
+          "course": "Data",
+          "title": "Exam checkpoint: data quality, features, text and image topics",
+          "method": "Attempt a 30-question mixed mock using reviewed course topics; log true score and three mistakes.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-21-Software-exam-drill",
+          "course": "Software",
+          "title": "Exam checkpoint: lifecycle, Agile, requirements, UML, testing",
+          "method": "Complete 30 mixed questions and revisit any topic below your personal 70% practice threshold.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-21-Web-exam-drill",
+          "course": "Web",
+          "title": "Exam checkpoint: HTML/CSS/JS, HTTP, MVC and security",
+          "method": "Attempt a 30-question timed mock and independently repair two broken snippets.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-21-HCI-exam-drill",
+          "course": "HCI",
+          "title": "Exam checkpoint: heuristics, methods and prototyping",
+          "method": "Complete a timed 25-question set; improve Phase 3 only with real test evidence.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-21-Stats-exam-drill",
+          "course": "Stats",
+          "title": "Hypothesis-testing checkpoint: p-values, errors and decisions",
+          "method": "Solve 20 mixed problems; explain null/alternative hypotheses without looking.",
+          "kind": "personal-study-plan"
         }
       ]
     },
@@ -523,6 +733,41 @@
           "course": "Stats",
           "title": "Two timed problem sets, formula sheet from memory and inference practice",
           "method": "Final exam recorded 15 Jan.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-28-Data-exam-drill",
+          "course": "Data",
+          "title": "Final checkpoint: rehearse the possible 4–8 January exam window",
+          "method": "Complete one timed exam-style set and audit weakest foundations; confirm actual date in Moodle.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-28-Software-exam-drill",
+          "course": "Software",
+          "title": "Final checkpoint: 8 January normal-exam preparation",
+          "method": "Run a 60-minute practice set, then check live exam location and remaining project requirements.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-28-Web-exam-drill",
+          "course": "Web",
+          "title": "Final checkpoint: exam and compulsory P2",
+          "method": "Run a timed exam-style set; verify normal-route eligibility and Project 2 status separately.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-28-HCI-exam-drill",
+          "course": "HCI",
+          "title": "Final checkpoint: written exam and Phase 3 status",
+          "method": "Complete one 45-minute theory mock and separately confirm actual Phase 3 submission evidence.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-28-Stats-exam-drill",
+          "course": "Stats",
+          "title": "Final checkpoint: formula recall and January exam readiness",
+          "method": "Take a timed calculation set, log the true score, review weakest two techniques.",
           "kind": "personal-study-plan"
         }
       ]
@@ -704,5 +949,15 @@
     "study_home": "https://hostilian.github.io/EVORACLASSES/",
     "public_cards": "https://hostilian.github.io/EVORACLASSES/study/anki_cards.html",
     "phone_legacy": "https://hostilian.github.io/EVORACLASSES/study/today.html"
+  },
+  "study_method": {
+    "format": "beginner-to-exam-v1",
+    "weekly_target_hours": 35,
+    "course_study_hours": 27,
+    "shared_project_hours": 8,
+    "source": "self-study guidance; not official coursework",
+    "daily_rule": "Learn a concept, practice without notes, log genuine completed minutes and correct errors.",
+    "mock_rule": "Only log an actual self-marked score. No score means readiness unknown.",
+    "carryover_rule": "Unfinished earlier personal-study tasks remain visible as catch-up suggestions; they are NOT official late-submission notices."
   }
 }

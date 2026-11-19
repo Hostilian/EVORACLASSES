@@ -34,6 +34,10 @@ const html=read('study/exam-sprint.html');
 for(const p of ['exam-sprint.js','exam-sprint.css','exam-sprint.json'])
  assert.ok(fs.existsSync(path.join(root,'study',p)));
 assert.ok(html.includes('id="course-checklists"'));
+assert.ok(html.includes('id="catchup-list"'));
+assert.ok(html.includes('id="catchup-count"'));
+assert.ok(read('study/exam-sprint.js').includes('renderBacklog()'));
+for(const w of data.weeks.slice(0,7))for(const c of shorts)assert.ok(w.tasks.some(t=>t.id===w.id+'-'+c+'-exam-drill'),'Missing zero-to-exam weekly drill '+w.id+' '+c);
 assert.ok(html.includes('id="private-token"'));
 assert.ok(html.includes('id="session-list"'));
 assert.ok(read('index.html').includes('study/exam-sprint.html'));

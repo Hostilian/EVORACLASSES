@@ -106,7 +106,8 @@
   function renderNext(){
     const area=$('next-steps');clear(area);
     const tasks=taskList(week()).filter(t=>!checked(t.id));
-    const order={HCI:1,Software:2,Data:3,Web:4,Stats:5};
+    const start=week().start;
+    const order=start<'2026-12-01'?{HCI:1,Software:2,Data:3,Web:4,Stats:5}:start<'2026-12-15'?{Software:1,Data:2,Stats:3,Web:4,HCI:5}:start<'2027-01-09'?{Data:1,Software:2,Web:3,Stats:4,HCI:5}:{Web:1,HCI:2,Stats:3,Software:4,Data:5};
     tasks.sort((a,b)=>(a.kind==='recurring-source-review'?10:(order[a.course]||9))-(b.kind==='recurring-source-review'?10:(order[b.course]||9)));
     if(!tasks.length){area.append(el('p','All weekly review items have been checked. Record your actual study hours and check the next week.','muted'));return;}
     for(const [i,t] of tasks.slice(0,3).entries()){
@@ -114,6 +115,25 @@
       info.append(el('strong',t.course+' · '+t.title),el('p',t.method));
       row.append(number,info);area.append(row);
     }
+  }
+  function renderBacklog(){
+    const area=$('catchup-list');clear(area);
+    const pending=plan.weeks.slice(0,selectedIndex).flatMap(w=>w.tasks.filter(t=>!checked(t.id)).map(t=>({task:t,sourceWeek:w.start})));
+    $('catchup-count').textContent=pending.length+' unfinished suggestion'+(pending.length===1?'':'s')+' from earlier weeks';
+    if(!pending.length){area.append(el('p','Nothing carried forward from earlier weekly plans.','muted'));return;}
+    const latest=pending.slice(-8).reverse();
+    for(const item of latest){
+      const row=el('div',undefined,'catchup-row'),copy=el('div'),go=el('button','Open '+dateLabel(item.sourceWeek));
+      go.type='button';
+      go.setAttribute('aria-label','Review unfinished '+item.task.course+' task from '+item.sourceWeek);
+      go.addEventListener('click',()=>{
+        const idx=plan.weeks.findIndex(w=>w.start===item.sourceWeek);
+        if(idx>=0){selectedIndex=idx;render();$('weekly').scrollIntoView({behavior:'smooth'});}
+      });
+      copy.append(el('strong',item.task.course+' · '+item.task.title),el('small','Planned for week '+dateLabel(item.sourceWeek)+' — personal study suggestion, not an official overdue assignment.'));
+      row.append(copy,go);area.append(row);
+    }
+    if(pending.length>latest.length)area.append(el('p',(pending.length-latest.length)+' more older tasks are still preserved in their original weeks. Use Previous to review them.','muted tiny'));
   }
   function renderCourses(){
     const area=$('course-checklists');clear(area);
@@ -123,7 +143,8 @@
       const details=el('details',undefined,'course-panel');details.open=done!==tasks.length;
       const scores=progress.sessions.filter(s=>s.course===c.short&&s.type==='mock'&&s.total>0).sort((a,b)=>b.date.localeCompare(a.date)||b.at.localeCompare(a.at));
       const lastScore=scores.length?' · latest self-mock '+scores[0].correct+'/'+scores[0].total+' ('+Math.round(scores[0].correct*100/scores[0].total)+'%)':' · no self-mock score yet';
-      const summary=el('summary');const label=el('div');label.append(el('span',c.name,'course-title'),el('span','Exam: '+(c.examEnd!==c.exam?dateLabel(c.exam)+'–'+dateLabel(c.examEnd):dateLabel(c.exam))+' · '+c.examConfidence+lastScore,'course-date'));
+      const courseMins=weeklySessions(w).filter(s=>s.course===c.short).reduce((sum,s)=>sum+s.minutes,0);
+      const summary=el('summary');const label=el('div');label.append(el('span',c.name,'course-title'),el('span','Exam: '+(c.examEnd!==c.exam?dateLabel(c.exam)+'–'+dateLabel(c.examEnd):dateLabel(c.exam))+' · '+c.examConfidence+lastScore+' · '+humanTime(courseMins)+' logged / '+c.hours+'h study target','course-date'));
       summary.append(label,el('span',done+'/'+tasks.length,'pct'));details.append(summary);
       const body=el('div',undefined,'course-body');
       for(const task of tasks){
@@ -176,7 +197,7 @@
     $('week-prev').disabled=selectedIndex===0;
     $('week-next').disabled=selectedIndex===plan.weeks.length-1;
     $('target').value=String(progress.target);
-    renderSummary();renderNext();renderCourses();renderSessions();renderDeadlines();
+    renderSummary();renderNext();renderBacklog();renderCourses();renderSessions();renderDeadlines();
   }
   function currentWeek(){
     const now=today(),idx=plan.weeks.findIndex(w=>inWeek(now,w));

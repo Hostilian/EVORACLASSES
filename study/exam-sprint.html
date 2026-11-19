@@ -16,7 +16,7 @@
     <nav class="toplinks" aria-label="Quick navigation"><a href="../index.html">← Study home</a><a href="today.html">Legacy daily checklist</a><a href="anki_cards.html">Practice cards</a></nav>
     <p class="eyebrow">Operation Graduate 2027 / exam sprint</p>
     <h1>Make this week count.</h1>
-    <p class="lead">Five courses. One weekly checklist. Real study hours and exam practice, not imaginary progress.</p>
+    <p class="lead">Five courses. One weekly checklist. Ground-zero drills, honest mock scores and real study hours — no imaginary progress.</p>
     <div class="metrics">
       <div><strong id="hours-done">0h</strong><span>logged this week</span></div>
       <div><strong id="hours-target">35h</strong><span>weekly target</span></div>
@@ -33,9 +33,14 @@
     <section class="toolbar card" aria-labelledby="week-title">
       <div><p class="eyebrow">Week-by-week control</p><h2 id="week-title">This week</h2><p id="week-theme" class="muted"></p></div>
       <div class="weekbuttons"><button type="button" id="week-prev">← Previous</button><button type="button" id="week-now">Current</button><button type="button" id="week-next">Next →</button></div>
-      <div class="goal"><label for="target">Weekly target</label><select id="target"><option value="20">20 h · recovery</option><option value="25">25 h · moderate</option><option value="30">30 h · intensive</option><option value="35">35 h · exam sprint</option><option value="40">40 h · only if sustainable</option></select><span class="muted tiny">Workload includes project work, mock exams, Anki and problem solving. Don't count scheduled hours until you actually work them.</span></div>
+      <div class="goal"><label for="target">Weekly target</label><select id="target"><option value="20">20 h · recovery</option><option value="25">25 h · moderate</option><option value="30">30 h · intensive</option><option value="35">35 h · exam sprint</option><option value="40">40 h · only if sustainable</option></select><span class="muted tiny">35h suggestion = 27h across five course study targets plus 8h for required projects. Count only real completed work. Adjust for internship and sleep.</span></div>
     </section>
     <section class="card" aria-labelledby="first-steps"><div class="heading"><div><p class="eyebrow">Do next</p><h2 id="first-steps">Three moves that matter</h2></div><a href="#weekly">All weekly tasks</a></div><div id="next-steps"></div></section>
+    <section class="card" id="catchup" aria-labelledby="catchup-title">
+      <div class="heading"><div><p class="eyebrow">Nothing silently disappears</p><h2 id="catchup-title">Carry-forward queue</h2></div><span class="muted tiny" id="catchup-count">0 unfinished suggestions</span></div>
+      <p class="muted tiny">Unfinished study suggestions remain in their original week, with a shortcut back to each task. They are not new official deadlines, and completing them never proves a Moodle submission.</p>
+      <div id="catchup-list"></div>
+    </section>
     <section class="card" id="weekly" aria-labelledby="checklist-title">
       <div class="heading"><div><p class="eyebrow">Course by course</p><h2 id="checklist-title">Weekly checklist</h2></div><span class="muted tiny">Checks = self-reported work, not submissions or passing grades</span></div>
       <div id="course-checklists"></div>
