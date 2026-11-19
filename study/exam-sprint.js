@@ -262,7 +262,9 @@
         if([409,422].includes(res.status)&&attempt===0)continue;
         if(![200,201].includes(res.status))throw Error('Private save rejected (GitHub '+res.status+').');
         const check=await readFile(REMOTE_PATH);
-        if(!check.value||JSON.stringify(parseProgress(check.value).checks)!==JSON.stringify(parseProgress(merged).checks)||parseProgress(check.value).sessions.length!==merged.sessions.length)throw Error('Read-back did not match. Keep your local backup and retry manually.');
+        if(!check.value)throw Error('Private write returned no read-back data. Keep your local backup.');
+        const verified=parseProgress(check.value),expected=parseProgress(merged);
+        if(JSON.stringify(verified.checks)!==JSON.stringify(expected.checks)||JSON.stringify(verified.sessions)!==JSON.stringify(expected.sessions)||JSON.stringify(verified.removed_sessions)!==JSON.stringify(expected.removed_sessions))throw Error('Private read-back differed in tasks, sessions or removals. Keep your local backup and retry manually.');
         progress=merged;saveLocal();
         note('sync-status','Private GitHub write and read-back verified. This does not mean Moodle tasks were submitted or reminders delivered.');
         render();return;
