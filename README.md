@@ -4,6 +4,9 @@ English study support for five University of Évora classes. The active package 
 
 ## Start here
 
+- **[Exam sprint phone tracker — 19 Nov 2026](study/exam-sprint.html)**: eleven weeks of five-course exam-oriented checklists, dated project and written exam risk flags, genuine session logging, adjustable 20–40 h target (30–35 h recommended), local backup and optional authenticated sync to the existing private data-only repository. The dated [public task baseline](study/exam-sprint.json) contains no personal receipts. The private evidence register is `Hostilian/EVORA-STUDY-PROGRESS/plan/exam-sprint-2026-11-19.json`. This is **not a live Moodle integration**; the original [daily checklist](study/today.html) remains a separate older 7–8h/week plan.
+
+
 - [17 October five-course findings](study/recovery_2026-10-17.html): complete course rules, closed Statistics signup, Web Choice deadline, project requirements and unresolved checks. Personal evidence stays in the saved private checklist and calendar.
 
 - [Library and reminder status](study/pipeline.html): direct links to the private source archive and exact phone setup steps; verified features and pending Moodle/phone/delivery checks remain distinct.
