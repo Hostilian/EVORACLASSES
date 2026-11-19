@@ -1,0 +1,708 @@
+{
+  "format": "evora-exam-sprint-public-v1",
+  "updated_on": "2026-11-19",
+  "timezone": "Europe/Lisbon",
+  "source_note": "Manual course planning and dated prior Moodle/Calendar/teacher notices; NOT a live authenticated Moodle integration. Personal submission/attendance/grade data exists only in restricted repository, never in this public baseline.",
+  "weekly_target_hours": 35,
+  "weekly_reasonable_range_hours": [
+    30,
+    35
+  ],
+  "project_reserve_hours": 8,
+  "courses": [
+    {
+      "code": "INF14387L",
+      "short": "Data",
+      "name": "Data Transformation & Analysis",
+      "moodle": "https://www.moodle.uevora.pt/2627/course/view.php?id=965",
+      "exam": "2027-01-04",
+      "examEnd": "2027-01-08",
+      "examNote": "Normal exam is a 4–8 Jan window; exact day/time unverified; keep entire window free",
+      "examConfidence": "provisional",
+      "hours": 7
+    },
+    {
+      "code": "INF13204L",
+      "short": "Software",
+      "name": "Software Development Methods",
+      "moodle": "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
+      "exam": "2027-01-08",
+      "examEnd": "2027-01-08",
+      "examNote": "Normal exam previously checked in Moodle; time/room pending",
+      "examConfidence": "historical-course",
+      "hours": 5
+    },
+    {
+      "code": "INF13207L",
+      "short": "Web",
+      "name": "Web Technologies",
+      "moodle": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
+      "exam": "2027-01-11",
+      "examEnd": "2027-01-11",
+      "examNote": "Normal exam/third test depending on route; eligibility/time pending",
+      "examConfidence": "historical-course",
+      "hours": 5
+    },
+    {
+      "code": "INF13186L",
+      "short": "HCI",
+      "name": "Human–Computer Interaction",
+      "moodle": "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+      "exam": "2027-01-14",
+      "examEnd": "2027-01-14",
+      "examNote": "Normal exam date previously checked; written frequência 8 Jan only if applicable; check route",
+      "examConfidence": "historical-course",
+      "hours": 3
+    },
+    {
+      "code": "MAT02354L",
+      "short": "Stats",
+      "name": "Probability & Statistics",
+      "moodle": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076",
+      "exam": "2027-01-15",
+      "examEnd": "2027-01-15",
+      "examNote": "Final exam date from recorded FUC; room and eligibility pending",
+      "examConfidence": "historical-course",
+      "hours": 7
+    }
+  ],
+  "deadlines": [
+    {
+      "date": "2026-11-20",
+      "course": "Web",
+      "title": "F2 written test 14:30",
+      "certainty": "conditional",
+      "note": "Only if minimum F1 grade / continuous route; after missed F1, seek clarification.",
+      "url": "https://www.moodle.uevora.pt/2627/mod/forum/discuss.php?d=5880"
+    },
+    {
+      "date": "2026-11-30",
+      "course": "HCI",
+      "title": "Phase 2 project deadline",
+      "certainty": "announced",
+      "note": "Teacher announcement confirms date; time/portal still needs Moodle check.",
+      "url": "https://www.moodle.uevora.pt/2627/mod/forum/discuss.php?d=4636"
+    },
+    {
+      "date": "2026-12-09",
+      "course": "Software",
+      "title": "Test 2",
+      "certainty": "conditional",
+      "note": "Continuous route only; time/room unverified.",
+      "url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845"
+    },
+    {
+      "date": "2026-12-14",
+      "course": "Software",
+      "title": "reservas@UÉvora Part 1 specification",
+      "certainty": "historical-course",
+      "note": "Recorded due date; cutoff and current assignment instructions need recheck.",
+      "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18846"
+    },
+    {
+      "date": "2026-12-14",
+      "course": "Data",
+      "title": "F2 window begins (14–18 Dec)",
+      "certainty": "provisional",
+      "note": "Continuous assessment; exact day/time unposted.",
+      "url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740"
+    },
+    {
+      "date": "2026-12-30",
+      "course": "HCI",
+      "title": "Phase 3 target date",
+      "certainty": "provisional",
+      "note": "Prior project timing only; verify official activity and deadline.",
+      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+    },
+    {
+      "date": "2027-01-04",
+      "course": "Data",
+      "title": "Normal final examination window begins (4–8 Jan)",
+      "certainty": "provisional",
+      "note": "Exact day/time/room unposted.",
+      "url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740"
+    },
+    {
+      "date": "2027-01-08",
+      "course": "Software",
+      "title": "Normal final examination",
+      "certainty": "historical-course",
+      "note": "Time/room and eligible route unverified.",
+      "url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845"
+    },
+    {
+      "date": "2027-01-08",
+      "course": "HCI",
+      "title": "Written frequência",
+      "certainty": "provisional",
+      "note": "Continuous assessment; check possible Software exam clash.",
+      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+    },
+    {
+      "date": "2027-01-11",
+      "course": "Web",
+      "title": "Normal examination / third test",
+      "certainty": "historical-course",
+      "note": "Depends on exam route; time unverified.",
+      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+    },
+    {
+      "date": "2027-01-14",
+      "course": "HCI",
+      "title": "Normal examination",
+      "certainty": "historical-course",
+      "note": "Time/room unverified; project still weighted.",
+      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+    },
+    {
+      "date": "2027-01-15",
+      "course": "Stats",
+      "title": "Final examination",
+      "certainty": "historical-course",
+      "note": "FUC calendar date; final-exam enrollment and practical rules need confirmation.",
+      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+    },
+    {
+      "date": "2027-01-22",
+      "course": "Software",
+      "title": "Resit examination",
+      "certainty": "historical-course",
+      "note": "Only if needed and eligible.",
+      "url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845"
+    },
+    {
+      "date": "2027-01-24",
+      "course": "Software",
+      "title": "Project Part 2 possible deadline",
+      "certainty": "conflicting",
+      "note": "Imported iCalendar Jan 24 conflicts with source assignment text; don't rely on date without Moodle recheck.",
+      "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18847"
+    },
+    {
+      "date": "2027-01-27",
+      "course": "Web",
+      "title": "Resit examination",
+      "certainty": "historical-course",
+      "note": "Potential same-day HCI resit; time not verified.",
+      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
+    },
+    {
+      "date": "2027-01-27",
+      "course": "HCI",
+      "title": "Resit examination",
+      "certainty": "historical-course",
+      "note": "Potential same-day Web resit; time not verified.",
+      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
+    },
+    {
+      "date": "2027-01-29",
+      "course": "Stats",
+      "title": "Resit examination",
+      "certainty": "provisional",
+      "note": "Previously recorded; verify date, eligibility and time.",
+      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=1076"
+    }
+  ],
+  "weeks": [
+    {
+      "id": "2026-11-16",
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "theme": "Recover + diagnose",
+      "tasks": [
+        {
+          "id": "2026-11-16-Data-0",
+          "course": "Data",
+          "title": "Audit Week 1/2/Entrega 3 receipts; list remaining practical activities",
+          "method": "Check existing receipts; do not repeat submissions.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Data-1",
+          "course": "Data",
+          "title": "Foundations: data types, missingness and outliers; solve 10 short questions",
+          "method": "Record score and corrections.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Software-2",
+          "course": "Software",
+          "title": "Read current reservas@UÉvora brief; identify actors, scope and constraints",
+          "method": "Do not reuse Eventastic/LAN Party as assessed spec.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Software-3",
+          "course": "Software",
+          "title": "Draft functional/nonfunctional requirements and first use-case outline",
+          "method": "Confirm real rubric before assessed work.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Web-4",
+          "course": "Web",
+          "title": "Check T1 receipt, F2 final-route condition and Project 2 requirement",
+          "method": "T1 receipt is private evidence; not automatic grade.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Web-5",
+          "course": "Web",
+          "title": "Review HTML/CSS and HTTP; independently solve 10 foundational questions",
+          "method": "Use Web cards and actual course slides.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-HCI-6",
+          "course": "HCI",
+          "title": "Create Phase 2 scenarios, information architecture and first wireframes",
+          "method": "Use real observed work; avoid invented user feedback.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-16-Stats-7",
+          "course": "Stats",
+          "title": "Clarify final exam/TP eligibility with instructor; diagnose algebra + probability",
+          "method": "Office visit is an option, not automatically booked.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-23",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "theme": "HCI Phase 2 + foundations",
+      "tasks": [
+        {
+          "id": "2026-11-23-Data-0",
+          "course": "Data",
+          "title": "Study cleaning strategies; run a missing-value/outlier worked example",
+          "method": "Use course notebooks where allowed.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-Software-1",
+          "course": "Software",
+          "title": "Complete use-case descriptions, acceptance criteria and traceability matrix",
+          "method": "Validate actors and scenarios against current rubric.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-Web-2",
+          "course": "Web",
+          "title": "Practice JavaScript basics, DOM/events and forms; 15 self-test questions",
+          "method": "Focus on practical understanding, not passive videos.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-HCI-3",
+          "course": "HCI",
+          "title": "Finish and inspect Phase 2 deliverables, then verify Moodle upload and receipt before 30 Nov",
+          "method": "Submission by user only.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-Stats-4",
+          "course": "Stats",
+          "title": "Practice conditional probability, independence, counting and Bayes, 15 problems",
+          "method": "Show full worked solutions and review mistakes.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-30",
+      "start": "2026-11-30",
+      "end": "2026-12-06",
+      "theme": "Build foundations",
+      "tasks": [
+        {
+          "id": "2026-11-30-Data-0",
+          "course": "Data",
+          "title": "Study normalization, discretization and feature selection; 20-question review",
+          "method": "Record weak areas.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-30-Software-1",
+          "course": "Software",
+          "title": "Build UML use-case/class/sequence/activity diagrams from the assessed brief",
+          "method": "Ensure consistency across requirements and diagrams.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-30-Web-2",
+          "course": "Web",
+          "title": "Study HTTP, client/server, state, sessions and security; answer 15 questions",
+          "method": "Include XSS vs CSRF concept checks.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-30-HCI-3",
+          "course": "HCI",
+          "title": "Review Phase 2 receipt, then study Nielsen heuristics and usability testing",
+          "method": "Do not mark Phase 2 accepted without teacher evidence.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-30-Stats-4",
+          "course": "Stats",
+          "title": "Random variables, expectations, variance and basic distributions; 15 calculations",
+          "method": "Learn foundation concepts before memorizing formulas.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2026-12-07",
+      "start": "2026-12-07",
+      "end": "2026-12-13",
+      "theme": "Part 1 + core topics",
+      "tasks": [
+        {
+          "id": "2026-12-07-Data-0",
+          "course": "Data",
+          "title": "Practice Python data cleaning and feature engineering in one small notebook",
+          "method": "Verify any mandatory current project/weekly hand-in.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-07-Software-1",
+          "course": "Software",
+          "title": "Finish reservas@UÉvora Part 1 by 11 Dec for 14 Dec target; verify required wiki/diagrams",
+          "method": "Do not submit automatically. Test 2 only if route applies.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-07-Web-2",
+          "course": "Web",
+          "title": "Review JavaScript asynchronous requests, APIs, forms and storage; 1 timed mini-mock",
+          "method": "Record score, not assumed mastery.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-07-HCI-3",
+          "course": "HCI",
+          "title": "Prepare Phase 3 plan: prototype changes, real evaluation evidence, findings",
+          "method": "Confirm Phase 3 deadline on Moodle.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-07-Stats-4",
+          "course": "Stats",
+          "title": "Work binomial, Poisson and normal distribution calculations; 20 problems",
+          "method": "Check formula choices and assumptions.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2026-12-14",
+      "start": "2026-12-14",
+      "end": "2026-12-20",
+      "theme": "Practical delivery + mocks",
+      "tasks": [
+        {
+          "id": "2026-12-14-Data-0",
+          "course": "Data",
+          "title": "Do a 60–90 minute mixed practice test and inspect compulsory project progress",
+          "method": "F2 14–18 Dec only if continuous route.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-14-Software-1",
+          "course": "Software",
+          "title": "Verify Part 1 Moodle submission receipt and discussion requirements; first 60-minute mock",
+          "method": "Do not mark received until Moodle confirms.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-14-Web-2",
+          "course": "Web",
+          "title": "Practice backend/MVC, web security and deployment; timed mixed mock",
+          "method": "Check Project 2 source and remaining work.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-14-HCI-3",
+          "course": "HCI",
+          "title": "Timed HCI theory mock; work on real usability evaluation and Phase 3 screens",
+          "method": "Keep research evidence genuine.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-14-Stats-4",
+          "course": "Stats",
+          "title": "Sampling, central limit intuition, confidence intervals; 20 mixed questions",
+          "method": "Use calculator and SPSS when required.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2026-12-21",
+      "start": "2026-12-21",
+      "end": "2026-12-27",
+      "theme": "Mixed practice",
+      "tasks": [
+        {
+          "id": "2026-12-21-Data-0",
+          "course": "Data",
+          "title": "Complete two timed mocks on data quality/cleaning/features/text/images",
+          "method": "Build error notebook by topic.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-21-Software-1",
+          "course": "Software",
+          "title": "Complete two timed mocks on lifecycle, requirements, UML and testing",
+          "method": "Fix three most frequent mistakes.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-21-Web-2",
+          "course": "Web",
+          "title": "Complete two timed mocks and review remaining P2 practical requirements",
+          "method": "Prioritize high-yield mistakes.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-21-HCI-3",
+          "course": "HCI",
+          "title": "Mock heuristics, research methodology and interface evaluation; progress Phase 3",
+          "method": "Avoid fabricated usability tests.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-21-Stats-4",
+          "course": "Stats",
+          "title": "Practice inference, hypothesis testing, p-values and confidence intervals",
+          "method": "Complete at least 25 mixed problems.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2026-12-28",
+      "start": "2026-12-28",
+      "end": "2027-01-03",
+      "theme": "Mock exam week",
+      "tasks": [
+        {
+          "id": "2026-12-28-Data-0",
+          "course": "Data",
+          "title": "Final readiness: two full mixed mocks; patch weakest topics before 4–8 Jan",
+          "method": "Exact exam date still must be verified.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-28-Software-1",
+          "course": "Software",
+          "title": "Final readiness: full timed mock; revise requirements, UML, Agile and tests",
+          "method": "Prepare for recorded 8 Jan exam.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-28-Web-2",
+          "course": "Web",
+          "title": "Full timed mock; review HTTP, CSS/JS, architecture and practical P2",
+          "method": "Prepare for recorded 11 Jan exam.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-28-HCI-3",
+          "course": "HCI",
+          "title": "Verify Phase 3 status and receipt if due; full timed theory mock",
+          "method": "Written final recorded 14 Jan.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-12-28-Stats-4",
+          "course": "Stats",
+          "title": "Two timed problem sets, formula sheet from memory and inference practice",
+          "method": "Final exam recorded 15 Jan.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2027-01-04",
+      "start": "2027-01-04",
+      "end": "2027-01-10",
+      "theme": "January first exams",
+      "tasks": [
+        {
+          "id": "2027-01-04-Data-0",
+          "course": "Data",
+          "title": "Check exact exam notice daily; sit scheduled normal final if eligible; save exam attendance evidence",
+          "method": "4–8 Jan is an uncertain window, not five examinations.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-04-Software-1",
+          "course": "Software",
+          "title": "8 Jan normal final: timed revision and confirmed room/time check",
+          "method": "Check route and mandatory project status.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-04-Web-2",
+          "course": "Web",
+          "title": "11 Jan normal final: one complete mock and error review",
+          "method": "Check time/room and route.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-04-HCI-3",
+          "course": "HCI",
+          "title": "Review normal exam on 14 Jan; frequency on 8 Jan only if eligible and applicable",
+          "method": "Check potential clash with Software.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-04-Stats-4",
+          "course": "Stats",
+          "title": "Review probability/distributions daily ahead of 15 Jan final",
+          "method": "Check registration and location.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2027-01-11",
+      "start": "2027-01-11",
+      "end": "2027-01-17",
+      "theme": "January core exams",
+      "tasks": [
+        {
+          "id": "2027-01-11-Data-0",
+          "course": "Data",
+          "title": "Review results/feedback and check any exam resit rules if required",
+          "method": "No invented result or missing official resit date.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-11-Software-1",
+          "course": "Software",
+          "title": "Review exam result and project feedback; identify resit areas if needed",
+          "method": "22 Jan is recorded resit option.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-11-Web-2",
+          "course": "Web",
+          "title": "11 Jan exam; afterwards capture questions/weaknesses for resit only if needed",
+          "method": "Do not treat calendar tick as exam attendance.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-11-HCI-3",
+          "course": "HCI",
+          "title": "14 Jan exam: full mock, then sit if eligible",
+          "method": "Project evidence still matters.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-11-Stats-4",
+          "course": "Stats",
+          "title": "15 Jan exam: two practice sets and exam logistics",
+          "method": "SPSS/TP eligibility to verify.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2027-01-18",
+      "start": "2027-01-18",
+      "end": "2027-01-24",
+      "theme": "Resit preparation",
+      "tasks": [
+        {
+          "id": "2027-01-18-Data-0",
+          "course": "Data",
+          "title": "Check official results and resit timetable before further preparation",
+          "method": "Resit day not confirmed.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-18-Software-1",
+          "course": "Software",
+          "title": "22 Jan resit if needed; verify Part 2 deadline conflict around 24 Jan",
+          "method": "Read exact activity, no fabricated submission.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-18-Web-2",
+          "course": "Web",
+          "title": "If resit needed, practise weak areas and check 27 Jan notice",
+          "method": "Check same-day HCI conflict.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-18-HCI-3",
+          "course": "HCI",
+          "title": "If resit needed, practise theory and check 27 Jan notice",
+          "method": "Check same-day Web conflict.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-18-Stats-4",
+          "course": "Stats",
+          "title": "If resit needed, practise weak statistical inference and confirm 29 Jan date",
+          "method": "Do not assume resit automatically booked.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    },
+    {
+      "id": "2027-01-25",
+      "start": "2027-01-25",
+      "end": "2027-01-31",
+      "theme": "Resit checks",
+      "tasks": [
+        {
+          "id": "2027-01-25-Data-0",
+          "course": "Data",
+          "title": "Verify any remaining exam/result actions with official sources",
+          "method": "No date invented.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-25-Software-1",
+          "course": "Software",
+          "title": "Check Part 2 receipt/feedback and registration if relevant",
+          "method": "Jan 24/25 source conflict must be resolved.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-25-Web-2",
+          "course": "Web",
+          "title": "27 Jan resit if needed; check time, room and eligibility",
+          "method": "Possible HCI date clash.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-25-HCI-3",
+          "course": "HCI",
+          "title": "27 Jan resit if needed; check time, room and eligibility",
+          "method": "Possible Web date clash.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2027-01-25-Stats-4",
+          "course": "Stats",
+          "title": "29 Jan resit only if confirmed and needed",
+          "method": "Unverified time and route.",
+          "kind": "personal-study-plan"
+        }
+      ]
+    }
+  ],
+  "links": {
+    "study_home": "https://hostilian.github.io/EVORACLASSES/",
+    "public_cards": "https://hostilian.github.io/EVORACLASSES/study/anki_cards.html",
+    "phone_legacy": "https://hostilian.github.io/EVORACLASSES/study/today.html"
+  }
+}
