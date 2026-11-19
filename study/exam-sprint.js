@@ -59,7 +59,8 @@
     }
     for(const s of obj.sessions){
       if(!s||typeof s.id!=='string'||s.id.length>90||!safeDate(s.date)||!plan.courses.some(c=>c.short===s.course)||!['problems','theory','mock','project','anki'].includes(s.type)||!Number.isInteger(s.minutes)||s.minutes<5||s.minutes>360)continue;
-      clean.sessions.push({id:s.id,date:s.date,course:s.course,minutes:s.minutes,type:s.type,note:String(s.note||'').slice(0,250),at:typeof s.at==='string'?s.at:isoNow()});
+      const result=Number.isInteger(s.correct)&&Number.isInteger(s.total)&&s.correct>=0&&s.total>0&&s.total<=1000&&s.correct<=s.total&&s.type==='mock'?{correct:s.correct,total:s.total}:{};
+      clean.sessions.push({id:s.id,date:s.date,course:s.course,minutes:s.minutes,type:s.type,note:String(s.note||'').slice(0,250),at:typeof s.at==='string'?s.at:isoNow(),...result});
     }
     if(obj.removed_sessions&&typeof obj.removed_sessions==='object'&&!Array.isArray(obj.removed_sessions))for(const [id,at] of Object.entries(obj.removed_sessions)){if(typeof id==='string'&&id.length<91&&typeof at==='string'&&!Number.isNaN(Date.parse(at)))clean.removed_sessions[id]=at;}
     clean.sessions=clean.sessions.filter(x=>!clean.removed_sessions[x.id]||x.at>clean.removed_sessions[x.id]);
@@ -120,7 +121,9 @@
     for(const c of plan.courses){
       const tasks=taskList(w).filter(t=>t.course===c.short),done=tasks.filter(t=>checked(t.id)).length;
       const details=el('details',undefined,'course-panel');details.open=done!==tasks.length;
-      const summary=el('summary');const label=el('div');label.append(el('span',c.name,'course-title'),el('span','Exam: '+(c.examEnd!==c.exam?dateLabel(c.exam)+'–'+dateLabel(c.examEnd):dateLabel(c.exam))+' · '+c.examConfidence,'course-date'));
+      const scores=progress.sessions.filter(s=>s.course===c.short&&s.type==='mock'&&s.total>0).sort((a,b)=>b.date.localeCompare(a.date)||b.at.localeCompare(a.at));
+      const lastScore=scores.length?' · latest self-mock '+scores[0].correct+'/'+scores[0].total+' ('+Math.round(scores[0].correct*100/scores[0].total)+'%)':' · no self-mock score yet';
+      const summary=el('summary');const label=el('div');label.append(el('span',c.name,'course-title'),el('span','Exam: '+(c.examEnd!==c.exam?dateLabel(c.exam)+'–'+dateLabel(c.examEnd):dateLabel(c.exam))+' · '+c.examConfidence+lastScore,'course-date'));
       summary.append(label,el('span',done+'/'+tasks.length,'pct'));details.append(summary);
       const body=el('div',undefined,'course-body');
       for(const task of tasks){
@@ -144,7 +147,7 @@
     if(!sessions.length){area.append(el('p','No verified-by-you study sessions recorded for this week.','muted'));return;}
     for(const s of sessions){
       const row=el('div',undefined,'session'),info=el('div'),del=el('button','Remove');
-      info.append(el('strong',dateLabel(s.date)+' · '+s.course+' · '+humanTime(s.minutes)+' · '+s.type));
+      info.append(el('strong',dateLabel(s.date)+' · '+s.course+' · '+humanTime(s.minutes)+' · '+s.type+(s.total?' · self-mock '+s.correct+'/'+s.total:'')));
       if(s.note)info.append(el('small',s.note));
       del.type='button';del.setAttribute('aria-label','Remove this recorded session');
       del.addEventListener('click',()=>{if(!confirm('Remove this study session from the tracker? A later manual sync will also remove it in your private cloud record.'))return;progress.removed_sessions[s.id]=isoNow();progress.sessions=progress.sessions.filter(x=>x.id!==s.id);saveLocal();render();});
@@ -299,10 +302,12 @@
     $('session-form').addEventListener('submit',e=>{
       e.preventDefault();
       const date=$('session-date').value,minutes=Number($('session-minutes').value),selected=$('session-course').value,type=$('session-type').value;
+      const correctRaw=$('session-correct').value.trim(),totalRaw=$('session-total').value.trim(),hasScore=correctRaw!==''||totalRaw!=='';
+      if(hasScore&&(correctRaw===''||totalRaw===''||type!=='mock'||!Number.isInteger(Number(correctRaw))||!Number.isInteger(Number(totalRaw))||Number(correctRaw)<0||Number(totalRaw)<1||Number(totalRaw)>1000||Number(correctRaw)>Number(totalRaw)))return note('log-status','For a scored mock, enter both correct and total questions (0 ≤ correct ≤ total).',true);
       if(!safeDate(date)||date>today()||!Number.isInteger(minutes)||minutes<5||minutes>360||!course(selected))return note('log-status','Enter a past/current date, an available course and 5–360 genuine minutes.',true);
       const id='session-'+Date.now()+'-'+Math.random().toString(36).slice(2,10);
-      progress.sessions.push({id,date,course:selected,type,minutes,note:$('session-note').value.trim().slice(0,250),at:isoNow()});
-      $('session-note').value='';
+      progress.sessions.push({id,date,course:selected,type,minutes,note:$('session-note').value.trim().slice(0,250),at:isoNow(),...(hasScore?{correct:Number(correctRaw),total:Number(totalRaw)}:{})});
+      $('session-note').value='';$('session-correct').value='';$('session-total').value='';
       const idx=plan.weeks.findIndex(w=>inWeek(date,w));if(idx>=0)selectedIndex=idx;
       saveLocal();render();note('log-status','Completed session recorded locally. For cross-device backup, use the explicit private sync button.');
     });
