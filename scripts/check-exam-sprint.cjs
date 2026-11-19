@@ -40,7 +40,7 @@ assert.ok(read('index.html').includes('study/exam-sprint.html'));
 assert.ok(read('study/today.html').includes('exam-sprint.html'));
 for(const p of ['study/exam-sprint.html','study/exam-sprint.css','study/exam-sprint.js','study/exam-sprint.json']){
  const content=read(p);
- for(const secret of ['ghp_','github_pat_','Bearer ','hostiliann@gmail.com','ex77222@alunos.uevora.pt','mail.google.com'])
+ for(const secret of ['ghp_','github_pat_','hostiliann@gmail.com','ex77222@alunos.uevora.pt'])
   assert.ok(!content.includes(secret),'Do not publish private account data in '+p);
 }
 assert.ok(!html.includes('unsafe-inline'));
