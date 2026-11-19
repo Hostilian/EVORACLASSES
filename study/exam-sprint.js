@@ -10,7 +10,7 @@
   const MAX_BYTES=500000;
   const $=id=>document.getElementById(id);
   let plan=null,selectedIndex=0,token='',repoBranch='',remoteReady=false,submitting=false,evidence=null;
-  const newProgress=()=>({format:FORMAT,version:1,target:35,checks:{},sessions:[],updated_at:null});
+  const newProgress=()=>({format:FORMAT,version:1,target:35,checks:{},sessions:[],removed_sessions:{},updated_at:null});
   let progress=newProgress();
   const today=()=>{
     const parts=Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Lisbon',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
@@ -61,6 +61,8 @@
       if(!s||typeof s.id!=='string'||s.id.length>90||!safeDate(s.date)||!plan.courses.some(c=>c.short===s.course)||!['problems','theory','mock','project','anki'].includes(s.type)||!Number.isInteger(s.minutes)||s.minutes<5||s.minutes>360)continue;
       clean.sessions.push({id:s.id,date:s.date,course:s.course,minutes:s.minutes,type:s.type,note:String(s.note||'').slice(0,250),at:typeof s.at==='string'?s.at:isoNow()});
     }
+    if(obj.removed_sessions&&typeof obj.removed_sessions==='object'&&!Array.isArray(obj.removed_sessions))for(const [id,at] of Object.entries(obj.removed_sessions)){if(typeof id==='string'&&id.length<91&&typeof at==='string'&&!Number.isNaN(Date.parse(at)))clean.removed_sessions[id]=at;}
+    clean.sessions=clean.sessions.filter(x=>!clean.removed_sessions[x.id]||x.at>clean.removed_sessions[x.id]);
     clean.updated_at=typeof obj.updated_at==='string'?obj.updated_at:null;
     return clean;
   }
@@ -85,7 +87,8 @@
       if(all.has(s.id)&&JSON.stringify(all.get(s.id))!==JSON.stringify(s))throw Error('Conflicting session ID; export both devices before retrying.');
       all.set(s.id,s);
     }
-    merged.sessions=[...all.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.id.localeCompare(b.id));
+    for(const id of new Set([...Object.keys(local.removed_sessions||{}),...Object.keys(remote.removed_sessions||{})])){const a=local.removed_sessions?.[id],b=remote.removed_sessions?.[id];merged.removed_sessions[id]=!a?b:!b?a:(a>=b?a:b);}
+    merged.sessions=[...all.values()].filter(s=>!merged.removed_sessions[s.id]||s.at>merged.removed_sessions[s.id]).sort((a,b)=>a.date.localeCompare(b.date)||a.id.localeCompare(b.id));
     merged.updated_at=isoNow();
     return merged;
   }
@@ -144,7 +147,7 @@
       info.append(el('strong',dateLabel(s.date)+' · '+s.course+' · '+humanTime(s.minutes)+' · '+s.type));
       if(s.note)info.append(el('small',s.note));
       del.type='button';del.setAttribute('aria-label','Remove this recorded session');
-      del.addEventListener('click',()=>{if(!confirm('Remove this study session from the local tracker?'))return;progress.sessions=progress.sessions.filter(x=>x.id!==s.id);saveLocal();render();});
+      del.addEventListener('click',()=>{if(!confirm('Remove this study session from the tracker? A later manual sync will also remove it in your private cloud record.'))return;progress.removed_sessions[s.id]=isoNow();progress.sessions=progress.sessions.filter(x=>x.id!==s.id);saveLocal();render();});
       row.append(info,del);area.append(row);
     }
   }
