@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#122d35">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self' https://api.github.com; img-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; worker-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Évora Exam Sprint — five-course phone tracker</title>
+  <link rel="stylesheet" href="exam-sprint.css">
+  <script src="exam-sprint.js" defer></script>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="wide">
+    <nav class="toplinks" aria-label="Quick navigation"><a href="../index.html">← Study home</a><a href="today.html">Legacy daily checklist</a><a href="anki_cards.html">Practice cards</a></nav>
+    <p class="eyebrow">Operation Graduate 2027 / exam sprint</p>
+    <h1>Make this week count.</h1>
+    <p class="lead">Five courses. One weekly checklist. Real study hours and exam practice, not imaginary progress.</p>
+    <div class="metrics">
+      <div><strong id="hours-done">0h</strong><span>logged this week</span></div>
+      <div><strong id="hours-target">35h</strong><span>weekly target</span></div>
+      <div><strong id="tasks-done">0/0</strong><span>weekly checks</span></div>
+      <div><strong id="days-to-first">—</strong><span>days to earliest January exam window</span></div>
+    </div>
+    <div class="bar" role="progressbar" id="hour-progress" aria-label="Weekly logged study versus goal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="hour-bar"></span></div>
+    <p class="hero-foot">Private ticks are stored in this browser. Optional private GitHub sync needs your restricted data-only token and is never automatic. This page does not log into Moodle.</p>
+  </div>
+</header>
+<main class="wide">
+  <p id="status" class="notice" role="status">Loading dated study suggestions…</p>
+  <div id="workspace" hidden>
+    <section class="toolbar card" aria-labelledby="week-title">
+      <div><p class="eyebrow">Week-by-week control</p><h2 id="week-title">This week</h2><p id="week-theme" class="muted"></p></div>
+      <div class="weekbuttons"><button type="button" id="week-prev">← Previous</button><button type="button" id="week-now">Current</button><button type="button" id="week-next">Next →</button></div>
+      <div class="goal"><label for="target">Weekly target</label><select id="target"><option value="20">20 h · recovery</option><option value="25">25 h · moderate</option><option value="30">30 h · intensive</option><option value="35">35 h · exam sprint</option><option value="40">40 h · only if sustainable</option></select><span class="muted tiny">Workload includes project work, mock exams, Anki and problem solving. Don't count scheduled hours until you actually work them.</span></div>
+    </section>
+    <section class="card" aria-labelledby="first-steps"><div class="heading"><div><p class="eyebrow">Do next</p><h2 id="first-steps">Three moves that matter</h2></div><a href="#weekly">All weekly tasks</a></div><div id="next-steps"></div></section>
+    <section class="card" id="weekly" aria-labelledby="checklist-title">
+      <div class="heading"><div><p class="eyebrow">Course by course</p><h2 id="checklist-title">Weekly checklist</h2></div><span class="muted tiny">Checks = self-reported work, not submissions or passing grades</span></div>
+      <div id="course-checklists"></div>
+    </section>
+    <section class="card" id="log" aria-labelledby="log-title">
+      <p class="eyebrow">Evidence of effort</p><h2 id="log-title">Log a real study session</h2>
+      <form id="session-form">
+        <div class="formgrid"><label>Date <input id="session-date" type="date" required></label><label>Course <select id="session-course" required></select></label><label>Minutes <input id="session-minutes" type="number" min="5" max="360" step="5" value="45" required></label><label>Type <select id="session-type"><option value="problems">Independent problems</option><option value="theory">Concept review</option><option value="mock">Timed mock</option><option value="project">Assessed project work</option><option value="anki">Recall / Anki</option></select></label></div>
+        <label>What did you actually do? (optional)<input id="session-note" maxlength="250" placeholder="e.g. 12/20 conditional probability problems; rework Bayes"></label>
+        <button class="accent" type="submit">Add completed session</button>
+      </form>
+      <p id="log-status" class="muted tiny" role="status">Only genuine completed sessions should be logged.</p>
+      <div class="heading"><h3>Sessions in selected week</h3><button type="button" id="clear-week" class="quiet">Clear no data</button></div><div id="session-list"></div>
+    </section>
+    <section class="card" id="deadlines" aria-labelledby="deadline-title">
+      <div class="heading"><div><p class="eyebrow">Date and route safeguards</p><h2 id="deadline-title">Upcoming assessments</h2></div><a href="https://calendar.google.com/calendar/u/0/r" rel="noopener noreferrer" target="_blank">Calendar</a></div><p class="muted tiny">Dates are previously checked course records or provisional planning windows. Conditions and uncertainty are explicitly labeled. Moodle determines final time, room, eligibility and submission status.</p><div id="deadline-list"></div>
+    </section>
+    <section class="card" id="private" aria-labelledby="private-title">
+      <p class="eyebrow">Private evidence and phone-to-computer handoff</p><h2 id="private-title">Sync to your existing private progress repository</h2>
+      <p>Local ticks and study logs work without a connection. Optional cloud storage writes only <code>progress/exam-sprint-v1.json</code> in your own private <code>Hostilian/EVORA-STUDY-PROGRESS</code> repository; it does not alter your existing daily tracker or notification code. Your key stays in this page's memory, not in the repository or browser storage. Reenter after reopening.</p>
+      <label for="private-token">Fine-grained GitHub token (Contents read/write for EVORA-STUDY-PROGRESS only)</label>
+      <input id="private-token" type="password" autocomplete="off" spellcheck="false" placeholder="Enter locally; never paste in chat">
+      <div class="actions"><button id="connect" type="button">Connect &amp; read</button><button id="sync" type="button" disabled>Save &amp; verify private sync</button><button id="disconnect" type="button" disabled>Disconnect</button></div>
+      <p id="sync-status" class="notice" role="status">Not connected. No cloud save is claimed.</p>
+      <div id="verified-evidence" hidden><h3>Original submission evidence</h3><p class="muted tiny">Only data from the private evidence register appears here after authenticated read. A receipt proves submission, not grading.</p><div id="evidence-list"></div></div>
+      <h3>Offline backup / transfer</h3><div class="actions"><button id="export" type="button">Export backup JSON</button><label class="upload">Import saved backup <input id="import" type="file" accept=".json,application/json"></label></div><p id="backup-status" class="muted tiny" role="status">Use export/import if cloud sync is not configured; existing daily-checklist progress remains separate.</p>
+    </section>
+  </div>
+</main>
+<footer class="wide"><p>Source baseline reviewed 19 November 2026. No emails, Moodle uploads, reminders or third-party notifications are sent by this page. <a href="#top">Back to top ↑</a></p></footer>
+</body></html>
