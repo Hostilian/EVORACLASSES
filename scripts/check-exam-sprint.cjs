@@ -45,4 +45,7 @@ for(const p of ['study/exam-sprint.html','study/exam-sprint.css','study/exam-spr
 }
 assert.ok(!html.includes('unsafe-inline'));
 assert.ok(read('study/exam-sprint.js').includes('verified')&&read('study/exam-sprint.js').includes('REPO'));
+for(const code of ['INF13207L','INF13204L','INF14387L','INF13186L','MAT02354L'])
+ assert.ok(read('study/courses/'+code+'.html').includes('../exam-sprint.html'),'Missing phone sprint navigation in '+code);
+assert.ok(read('study/study_guide.html').includes('exam-sprint.html'));
 console.log(JSON.stringify({course_count:shorts.size,weekly_checklists:data.weeks.length,authored_tasks:tasks,dated_assessments:data.deadlines.length,personal_receipts_public:false,legacy_plan_preserved:true}));
