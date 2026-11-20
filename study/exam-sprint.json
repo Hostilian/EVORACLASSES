@@ -1,8 +1,8 @@
 {
   "format": "evora-exam-sprint-public-v1",
-  "updated_on": "2026-11-19",
+  "updated_on": "2026-11-20",
   "timezone": "Europe/Lisbon",
-  "source_note": "Manual course planning and dated prior Moodle/Calendar/teacher notices; NOT a live authenticated Moodle integration. Personal submission/attendance/grade data exists only in restricted repository, never in this public baseline.",
+  "source_note": "Manual course planning and dated prior Moodle/Calendar/teacher notices; NOT a live authenticated Moodle integration. Personal submission/attendance/grade data exists only in restricted repository, never in this public baseline. Update 20 Nov: course-wide lecturer notice confirms HCI Phase-1 videos ungraded; Web T1 continuous route requires two individual progress reports/week and final upload. Jan dates remain historical/provisional as individually marked; no new authenticated Moodle assessment snapshot.",
   "weekly_target_hours": 35,
   "weekly_reasonable_range_hours": [
     30,
@@ -378,6 +378,27 @@
           "course": "Stats",
           "title": "Probability checkpoint: counting, independence and Bayes",
           "method": "Solve 15 conditional-probability problems and check each working step.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-Web-continuous-route-source-gate",
+          "course": "Web",
+          "title": "Check whether final-exam route bypasses twice-weekly individual T1 progress reports; do not assume the T1 upload settles continuous assessment",
+          "method": "31 Oct lecturer notice requires two truthful individual progress paragraphs/week for CONTINUOUS assessment plus final T1. Confirm exam-route applicability with lecturer; do not retroactively invent progress.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-HCI-phase2-brief-and-video-gate",
+          "course": "HCI",
+          "title": "Verify Phase 2 usage/task scenarios and screens against Moodle; confirm the Phase 1 video is ungraded (course-wide), but still check whether mute audio needs replacing",
+          "method": "Official lecturer forum 4 Nov says all videos not graded; Phase 2 due 30 Nov. The actual Phase 1 project remains separate assessed work.",
+          "kind": "personal-study-plan"
+        },
+        {
+          "id": "2026-11-23-Software-practical-route-confirm",
+          "course": "Software",
+          "title": "Clarify final-exam route vs project/practical obligations in current reservas@UÉvora brief",
+          "method": "The final written exam does not automatically waive practical parts; preserve actual current assessed brief and solo permission evidence.",
           "kind": "personal-study-plan"
         }
       ]
