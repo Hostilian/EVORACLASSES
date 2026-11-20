@@ -1,3 +1,5 @@
+> **20 NOVEMBER — MOBILE BENEFITS DASHBOARD:** [Voucher/student benefit filters + frozen soup prices](study/benefits/index.html) · [Sourced detailed catalogue](study/benefits/verified-opportunities-2026-11-20.md). No grant or store stock is automatically verified at viewing time.
+
 > **20 NOVEMBER — VERIFIED BENEFITS & BUDGET FOOD:** [Education voucher deadlines, free student plans and frozen-soup comparison](study/benefits/verified-opportunities-2026-11-20.md). Public sources only; private applications and grants are not claimed.
 
 > **20 NOVEMBER — SOURCE-AUDITED COURSE UPDATE:** The [20 November course-announcement audit](study/audits/2026-11-20-source-verified-course-updates.md) records lecturer-confirmed **HCI Phase-1 videos ungraded for the whole class**, the **30 Nov HCI Phase-2 deadline**, the **Web T1 twice-weekly individual progress note condition for continuous assessment only**, and provisional vs confirmed future dates. The [phone exam tracker](study/exam-sprint.html) has three new *unchecked* verification tasks for the 23 Nov week. No personal academic data or completed work were inferred.
