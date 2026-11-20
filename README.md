@@ -1,3 +1,5 @@
+> **20 NOVEMBER — SOURCE-AUDITED COURSE UPDATE:** The [20 November course-announcement audit](study/audits/2026-11-20-source-verified-course-updates.md) records lecturer-confirmed **HCI Phase-1 videos ungraded for the whole class**, the **30 Nov HCI Phase-2 deadline**, the **Web T1 twice-weekly individual progress note condition for continuous assessment only**, and provisional vs confirmed future dates. The [phone exam tracker](study/exam-sprint.html) has three new *unchecked* verification tasks for the 23 Nov week. No personal academic data or completed work were inferred.
+
 # Évora Erasmus study package — 2026/27
 
 English study support for five University of Évora classes. The active package was rebuilt from the course material visible in Moodle on **2 October 2026** and focuses on the work needed for assessments and practical projects.
