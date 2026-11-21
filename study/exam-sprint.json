@@ -2,7 +2,7 @@
   "format": "evora-exam-sprint-public-v1",
   "updated_on": "2026-11-21",
   "timezone": "Europe/Lisbon",
-  "source_note": "21 Nov source review: project-only verification published at study/project-deadlines.html. Student's selected written-final-exam strategy means continuous written tests have been removed from the user-facing deadline feed; earlier historical snapshots remain in Git history. Projects still required in Web, Software Methods, Data and HCI. Dates without current source remain provisional; exam times/eligibility and private receipts not reflected here. No live Moodle sync.",
+  "source_note": "21 Nov source review: project-only verification published at study/project-deadlines.html. Student's selected written-final-exam strategy means continuous written tests have been removed from the user-facing deadline feed; earlier historical snapshots remain in Git history. Projects still required in Web, Software Methods, Data and HCI. Dates without current source remain provisional; exam times/eligibility and private receipts not reflected here. No live Moodle sync. 14 Dec MDS Part1, 30 Dec HCI Phase3 and Jan24 MDS Part2 moved from timed feed to explicitly unresolved source-review queue, without deleting their historical evidence.",
   "weekly_target_hours": 35,
   "weekly_reasonable_range_hours": [
     30,
@@ -76,22 +76,6 @@
       "url": "https://www.moodle.uevora.pt/2627/mod/forum/discuss.php?d=4636"
     },
     {
-      "date": "2026-12-14",
-      "course": "Software",
-      "title": "reservas@UÉvora Part 1 specification",
-      "certainty": "historical-course",
-      "note": "Recorded due date; cutoff and current assignment instructions need recheck.",
-      "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18846"
-    },
-    {
-      "date": "2026-12-30",
-      "course": "HCI",
-      "title": "Phase 3 target date",
-      "certainty": "provisional",
-      "note": "Prior project timing only; verify official activity and deadline.",
-      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
-    },
-    {
       "date": "2027-01-04",
       "course": "Data",
       "title": "Normal final examination window begins (4–8 Jan)",
@@ -138,14 +122,6 @@
       "certainty": "historical-course",
       "note": "Only if needed and eligible.",
       "url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845"
-    },
-    {
-      "date": "2027-01-24",
-      "course": "Software",
-      "title": "Project Part 2 possible deadline",
-      "certainty": "conflicting",
-      "note": "Imported iCalendar Jan 24 conflicts with source assignment text; don't rely on date without Moodle recheck.",
-      "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18847"
     },
     {
       "date": "2027-01-27",
@@ -949,5 +925,34 @@
     "daily_rule": "Learn a concept, practice without notes, log genuine completed minutes and correct errors.",
     "mock_rule": "Only log an actual self-marked score. No score means readiness unknown.",
     "carryover_rule": "Unfinished earlier personal-study tasks remain visible as catch-up suggestions; they are NOT official late-submission notices."
-  }
+  },
+  "project_verification_queue": [
+    {
+      "course": "Software",
+      "historical_date": "2026-12-14",
+      "title": "reservas@UÉvora Part 1 specification",
+      "evidence": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18846",
+      "certainty": "historical-course",
+      "reason": "Recorded due date; cutoff and current assignment instructions need recheck.",
+      "display_mode": "unresolved; not a hard official deadline"
+    },
+    {
+      "course": "HCI",
+      "historical_date": "2026-12-30",
+      "title": "Phase 3 target date",
+      "evidence": "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
+      "certainty": "provisional",
+      "reason": "Prior project timing only; verify official activity and deadline.",
+      "display_mode": "unresolved; not a hard official deadline"
+    },
+    {
+      "course": "Software",
+      "historical_date": "2027-01-24",
+      "title": "Project Part 2 possible deadline",
+      "evidence": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18847",
+      "certainty": "conflicting",
+      "reason": "Imported iCalendar Jan 24 conflicts with source assignment text; don't rely on date without Moodle recheck.",
+      "display_mode": "unresolved; not a hard official deadline"
+    }
+  ]
 }
