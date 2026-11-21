@@ -1,8 +1,8 @@
 {
   "format": "evora-exam-sprint-public-v1",
-  "updated_on": "2026-11-20",
+  "updated_on": "2026-11-21",
   "timezone": "Europe/Lisbon",
-  "source_note": "Manual course planning and dated prior Moodle/Calendar/teacher notices; NOT a live authenticated Moodle integration. Personal submission/attendance/grade data exists only in restricted repository, never in this public baseline. Update 20 Nov: course-wide lecturer notice confirms HCI Phase-1 videos ungraded; Web T1 continuous route requires two individual progress reports/week and final upload. Jan dates remain historical/provisional as individually marked; no new authenticated Moodle assessment snapshot.",
+  "source_note": "21 Nov source review: project-only verification published at study/project-deadlines.html. Student's selected written-final-exam strategy means continuous written tests have been removed from the user-facing deadline feed; earlier historical snapshots remain in Git history. Projects still required in Web, Software Methods, Data and HCI. Dates without current source remain provisional; exam times/eligibility and private receipts not reflected here. No live Moodle sync.",
   "weekly_target_hours": 35,
   "weekly_reasonable_range_hours": [
     30,
@@ -68,14 +68,6 @@
   ],
   "deadlines": [
     {
-      "date": "2026-11-20",
-      "course": "Web",
-      "title": "F2 written test 14:30",
-      "certainty": "conditional",
-      "note": "Only if minimum F1 grade / continuous route; after missed F1, seek clarification.",
-      "url": "https://www.moodle.uevora.pt/2627/mod/forum/discuss.php?d=5880"
-    },
-    {
       "date": "2026-11-30",
       "course": "HCI",
       "title": "Phase 2 project deadline",
@@ -84,28 +76,12 @@
       "url": "https://www.moodle.uevora.pt/2627/mod/forum/discuss.php?d=4636"
     },
     {
-      "date": "2026-12-09",
-      "course": "Software",
-      "title": "Test 2",
-      "certainty": "conditional",
-      "note": "Continuous route only; time/room unverified.",
-      "url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845"
-    },
-    {
       "date": "2026-12-14",
       "course": "Software",
       "title": "reservas@UÉvora Part 1 specification",
       "certainty": "historical-course",
       "note": "Recorded due date; cutoff and current assignment instructions need recheck.",
       "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18846"
-    },
-    {
-      "date": "2026-12-14",
-      "course": "Data",
-      "title": "F2 window begins (14–18 Dec)",
-      "certainty": "provisional",
-      "note": "Continuous assessment; exact day/time unposted.",
-      "url": "https://www.moodle.uevora.pt/2627/course/section.php?id=8740"
     },
     {
       "date": "2026-12-30",
@@ -130,14 +106,6 @@
       "certainty": "historical-course",
       "note": "Time/room and eligible route unverified.",
       "url": "https://www.moodle.uevora.pt/2627/mod/page/view.php?id=18845"
-    },
-    {
-      "date": "2027-01-08",
-      "course": "HCI",
-      "title": "Written frequência",
-      "certainty": "provisional",
-      "note": "Continuous assessment; check possible Software exam clash.",
-      "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=966"
     },
     {
       "date": "2027-01-11",
@@ -969,7 +937,8 @@
   "links": {
     "study_home": "https://hostilian.github.io/EVORACLASSES/",
     "public_cards": "https://hostilian.github.io/EVORACLASSES/study/anki_cards.html",
-    "phone_legacy": "https://hostilian.github.io/EVORACLASSES/study/today.html"
+    "phone_legacy": "https://hostilian.github.io/EVORACLASSES/study/today.html",
+    "project_deadlines": "https://hostilian.github.io/EVORACLASSES/study/project-deadlines.html"
   },
   "study_method": {
     "format": "beginner-to-exam-v1",
