@@ -2,7 +2,7 @@
   "format": "evora-exam-sprint-public-v1",
   "updated_on": "2026-11-22",
   "timezone": "Europe/Lisbon",
-  "source_note": "22 Nov authenticated live Moodle check: HCI Phase2 due 1 Dec 00:00 (last submission day 30 Nov) and MDS Part1 due 13 Dec 23:59; course project sections and announcement forums checked for all five courses. Web T2, MDS Part2, HCI Phase3, and Data final deadline were not yet posted; Data final project period is December/January. Stats official 2026/27 FUC normal Jan15 09:00–13:00 and resit Jan29 09:00–13:00. Private grades/submissions must NOT be included in this public feed.",
+  "source_note": "22 Nov audit of previous authenticated Moodle captures, notably 16 Nov (no successful fresh 22 Nov signed-in readback): HCI Phase2 due 1 Dec 00:00 (last submission day 30 Nov) and MDS Part1 due 13 Dec 23:59; previously captured course project sections and lecturer announcements reviewed across five courses. Web T2, MDS Part2, HCI Phase3, and Data final deadline were not recovered in saved accessible captures; Data final project period is December/January. Stats official 2026/27 FUC normal Jan15 09:00–13:00 and resit Jan29 09:00–13:00. Private grades/submissions must NOT be included in this public feed.",
   "weekly_target_hours": 35,
   "weekly_reasonable_range_hours": [
     30,
@@ -39,7 +39,7 @@
       "moodle": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
       "exam": "2027-01-11",
       "examEnd": "2027-01-11",
-      "examNote": "11 Jan normal exam confirmed on live 22 Nov course page; room/clock and individual normal exam eligibility still unverified",
+      "examNote": "11 Jan normal exam was recorded on an earlier course page; not independently reconfirmed on 22 Nov; room/clock and individual normal exam eligibility still unverified",
       "examConfidence": "announced",
       "hours": 5
     },
@@ -72,7 +72,7 @@
       "course": "HCI",
       "title": "Phase 2 project deadline",
       "certainty": "announced",
-      "note": "Teacher last submission day Monday 30 Nov; live authenticated 22 Nov Moodle activity due Tuesday 1 Dec 00:00. Submit before midnight Monday; do not infer personal grade or status from public feed.",
+      "note": "Teacher last submission day Monday 30 Nov; authenticated 16 Nov Moodle activity capture records due Tuesday 1 Dec 00:00; fresh 22 Nov readback unavailable. Submit before midnight Monday; do not infer personal grade or status from public feed.",
       "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=31816"
     },
     {
@@ -80,7 +80,7 @@
       "course": "Software",
       "title": "Mandatory reservas@UÉvora Part 1 specification due 23:59",
       "certainty": "announced",
-      "note": "Live authenticated 22 Nov Moodle due Sunday 13 Dec 23:59. Required project-specific private GitHub repo, native Wiki, UML/spec/report and Moodle repository-link submission; oral week of 14 Dec (slot TBD). Final written exam does not replace practical.",
+      "note": "Saved authenticated 16 Nov Moodle assignment records due Sunday 13 Dec 23:59. Required project-specific private GitHub repo, native Wiki, UML/spec/report and Moodle repository-link submission; oral week of 14 Dec (slot TBD). Final written exam does not replace practical.",
       "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18846"
     },
     {
@@ -104,7 +104,7 @@
       "course": "Web",
       "title": "Normal final written examination",
       "certainty": "announced",
-      "note": "Course 22 Nov live Important Dates lists 11 Jan normal exam; clock, room and student's exam eligibility unverified.",
+      "note": "Earlier captured Moodle Important Dates lists 11 Jan normal exam; fresh 22 Nov readback unavailable; clock, room and student's exam eligibility unverified.",
       "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
     },
     {
