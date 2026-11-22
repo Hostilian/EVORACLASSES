@@ -71,7 +71,7 @@
       "date": "2026-11-30",
       "course": "HCI",
       "title": "Phase 2 project deadline",
-      "certainty": "authenticated-nov16",
+      "certainty": "announced",
       "note": "Teacher last working day Monday 30 Nov; original authenticated Moodle assignment (16 Nov capture) displays due Tuesday 1 Dec 00:00. Grade/submission status after 16 Nov not rechecked.",
       "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=31816"
     },
@@ -79,7 +79,7 @@
       "date": "2026-12-13",
       "course": "Software",
       "title": "Mandatory reservas@UÉvora Part 1 specification due 23:59",
-      "certainty": "authenticated-nov16",
+      "certainty": "announced",
       "note": "Teacher's original assignment due Sunday 13 Dec 23:59. Required private GitHub native Wiki + UML/spec/report and Moodle GitHub-link submission; oral discussion during week of 14 Dec, appointment TBA. Final exam does not replace practical.",
       "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18846"
     },
@@ -119,7 +119,7 @@
       "date": "2027-01-15",
       "course": "Stats",
       "title": "Final examination",
-      "certainty": "official-2026-fuc",
+      "certainty": "historical-course",
       "note": "Normal final written examination **09:00–13:00**, as specified by original 2026/27 official Moodle FUC. Enrollment/individual eligibility and room must still be confirmed.",
       "url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=16389"
     },
@@ -151,7 +151,7 @@
       "date": "2027-01-29",
       "course": "Stats",
       "title": "Resit examination",
-      "certainty": "official-2026-fuc",
+      "certainty": "historical-course",
       "note": "Resit written examination **09:00–13:00**, as specified by original 2026/27 official Moodle FUC. Enrollment/individual eligibility and room must still be confirmed.",
       "url": "https://www.moodle.uevora.pt/2627/mod/resource/view.php?id=16389"
     }
