@@ -959,7 +959,7 @@
       "title": "Mandatory T2 brief, project date, presentation and upload",
       "evidence": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
       "certainty": "not-posted-in-available-capture",
-      "reason": "Signed-in 22 Nov Moodle course Projects section and announcement forum contain no T2 enunciado, upload or due date yet. Mandatory T2 still worth 20%; recheck for publication.",
+      "reason": "Last successful saved Moodle course review did not recover a T2 brief, upload activity or date. It is unknown whether T2 has since been posted. Mandatory T2 remains worth 20%; inspect current signed-in Moodle before scheduling.",
       "display_mode": "unresolved; do not invent due date"
     },
     {
