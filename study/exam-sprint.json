@@ -2,7 +2,7 @@
   "format": "evora-exam-sprint-public-v1",
   "updated_on": "2026-11-22",
   "timezone": "Europe/Lisbon",
-  "source_note": "22 Nov sources: final written-exam route, mandatory project dates only. Original Moodle authenticated 16 Nov laptop snapshots confirm MDS Part 1 13 Dec 23:59 and HCI Phase 2 1 Dec 00:00 (last working day 30 Nov); Stats official 2026/27 FUC confirms normal Jan15 09:00–13:00/recurso Jan29 09:00–13:00. These are NOT fresh 22 Nov authenticated readbacks; unknown project deadlines remain unknown. Private grades/receipts must not be published.",
+  "source_note": "22 Nov authenticated live Moodle check: HCI Phase2 due 1 Dec 00:00 (last submission day 30 Nov) and MDS Part1 due 13 Dec 23:59; course project sections and announcement forums checked for all five courses. Web T2, MDS Part2, HCI Phase3, and Data final deadline were not yet posted; Data final project period is December/January. Stats official 2026/27 FUC normal Jan15 09:00–13:00 and resit Jan29 09:00–13:00. Private grades/submissions must NOT be included in this public feed.",
   "weekly_target_hours": 35,
   "weekly_reasonable_range_hours": [
     30,
@@ -39,8 +39,8 @@
       "moodle": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
       "exam": "2027-01-11",
       "examEnd": "2027-01-11",
-      "examNote": "Normal exam/third test depending on route; eligibility/time pending",
-      "examConfidence": "historical-course",
+      "examNote": "11 Jan normal exam confirmed on live 22 Nov course page; room/clock and individual normal exam eligibility still unverified",
+      "examConfidence": "announced",
       "hours": 5
     },
     {
@@ -72,7 +72,7 @@
       "course": "HCI",
       "title": "Phase 2 project deadline",
       "certainty": "announced",
-      "note": "Teacher last working day Monday 30 Nov; original authenticated Moodle assignment (16 Nov capture) displays due Tuesday 1 Dec 00:00. Grade/submission status after 16 Nov not rechecked.",
+      "note": "Teacher last submission day Monday 30 Nov; live authenticated 22 Nov Moodle activity due Tuesday 1 Dec 00:00. Submit before midnight Monday; do not infer personal grade or status from public feed.",
       "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=31816"
     },
     {
@@ -80,7 +80,7 @@
       "course": "Software",
       "title": "Mandatory reservas@UÉvora Part 1 specification due 23:59",
       "certainty": "announced",
-      "note": "Teacher's original assignment due Sunday 13 Dec 23:59. Required private GitHub native Wiki + UML/spec/report and Moodle GitHub-link submission; oral discussion during week of 14 Dec, appointment TBA. Final exam does not replace practical.",
+      "note": "Live authenticated 22 Nov Moodle due Sunday 13 Dec 23:59. Required project-specific private GitHub repo, native Wiki, UML/spec/report and Moodle repository-link submission; oral week of 14 Dec (slot TBD). Final written exam does not replace practical.",
       "url": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18846"
     },
     {
@@ -102,9 +102,9 @@
     {
       "date": "2027-01-11",
       "course": "Web",
-      "title": "Normal examination / third test",
-      "certainty": "historical-course",
-      "note": "Depends on exam route; time unverified.",
+      "title": "Normal final written examination",
+      "certainty": "announced",
+      "note": "Course 22 Nov live Important Dates lists 11 Jan normal exam; clock, room and student's exam eligibility unverified.",
       "url": "https://www.moodle.uevora.pt/2627/course/view.php?id=737"
     },
     {
@@ -941,16 +941,16 @@
       "title": "Phase 3 target date",
       "evidence": "https://www.moodle.uevora.pt/2627/course/view.php?id=966",
       "certainty": "provisional",
-      "reason": "Prior project timing only; verify official activity and deadline.",
+      "reason": "No Phase3 assignment published in live signed-in Moodle 22 Nov; 30 Dec is an older projected date only.",
       "display_mode": "unresolved; not a hard official deadline"
     },
     {
       "course": "Software",
       "historical_date": "2027-01-24",
       "title": "Project Part 2 possible deadline",
-      "evidence": "https://www.moodle.uevora.pt/2627/mod/assign/view.php?id=18847",
+      "evidence": "https://www.moodle.uevora.pt/2627/course/view.php?id=994",
       "certainty": "conflicting",
-      "reason": "Imported iCalendar Jan 24 conflicts with source assignment text; don't rely on date without Moodle recheck.",
+      "reason": "Signed-in 22 Nov course contains Part1 only; older Part2 Moodle activity ID 18847 now errors 'Can't find data record'. Imported Jan24 Eventastic entry is invalid as current evidence.",
       "display_mode": "unresolved; not a hard official deadline"
     },
     {
@@ -959,7 +959,7 @@
       "title": "Mandatory T2 brief, project date, presentation and upload",
       "evidence": "https://www.moodle.uevora.pt/2627/course/view.php?id=737",
       "certainty": "not-posted-in-available-capture",
-      "reason": "No T2 assignment/cutoff found in authenticated 16 Nov local archive or notifications through 22 Nov; cannot infer no project.",
+      "reason": "Signed-in 22 Nov Moodle course Projects section and announcement forum contain no T2 enunciado, upload or due date yet. Mandatory T2 still worth 20%; recheck for publication.",
       "display_mode": "unresolved; do not invent due date"
     },
     {
@@ -968,7 +968,7 @@
       "title": "Post-Week3 incremental work and final report/presentation",
       "evidence": "https://www.moodle.uevora.pt/2627/course/view.php?id=965",
       "certainty": "unrecovered",
-      "reason": "Original Week3 brief says integrated final project/presentation date to be announced. Weeks1–3 receipts are not final completion.",
+      "reason": "Signed-in 22 Nov course dates label final project December/January, without day/time, and Work section lists only Entregas1–3. Need integrated modelling/report and presentation, not just weekly receipts.",
       "display_mode": "unresolved; do not invent due date"
     },
     {
